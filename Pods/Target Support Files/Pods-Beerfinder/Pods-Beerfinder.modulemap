@@ -1,0 +1,6 @@
+framework module Pods_Beerfinder {
+  umbrella header "Pods-Beerfinder-umbrella.h"
+
+  export *
+  module * { export * }
+}

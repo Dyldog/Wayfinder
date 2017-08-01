@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MQ5-bI-NOn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="cLw-hn-ajK">
+            <objects>
+                <viewController id="MQ5-bI-NOn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hTc-Gj-Pra"/>
+                        <viewControllerLayoutGuide type="bottom" id="wVz-1R-ezh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vwI-mR-5tP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUK-mi-FhT" userLabel="Button View">
+                                <rect key="frame" x="0.0" y="629" width="375" height="38"/>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.1215686275" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="Lvs-u7-P5T"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Q0-18-rPV" userLabel="Top Info View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="82.5"/>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.1215686275" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82.5" id="GeZ-ky-WY1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.20000000000000001" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8Q0-18-rPV" firstAttribute="leading" secondItem="vwI-mR-5tP" secondAttribute="leading" id="2IL-Qw-u0V"/>
+                            <constraint firstAttribute="trailing" secondItem="HUK-mi-FhT" secondAttribute="trailing" id="8Mn-Pb-XDU"/>
+                            <constraint firstItem="wVz-1R-ezh" firstAttribute="top" secondItem="HUK-mi-FhT" secondAttribute="bottom" id="JB7-yx-4aA"/>
+                            <constraint firstAttribute="trailing" secondItem="8Q0-18-rPV" secondAttribute="trailing" id="Kgn-qS-yXA"/>
+                            <constraint firstItem="HUK-mi-FhT" firstAttribute="leading" secondItem="vwI-mR-5tP" secondAttribute="leading" id="U77-tz-Nsb"/>
+                            <constraint firstItem="8Q0-18-rPV" firstAttribute="top" secondItem="vwI-mR-5tP" secondAttribute="top" id="eIc-MS-D1c"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="view" destination="vwI-mR-5tP" id="ZNB-jw-0Vc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8lR-HK-dAq" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
