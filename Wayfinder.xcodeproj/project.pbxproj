@@ -35,6 +35,7 @@
 		FCC6D4561F2717D400E8EA1B /* HeadingArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6D4541F2717D400E8EA1B /* HeadingArrowView.swift */; };
 		FCC6D4581F2730E600E8EA1B /* LocationSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6D4571F2730E600E8EA1B /* LocationSearchManager.swift */; };
 		FCC6D4591F2730E600E8EA1B /* LocationSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6D4571F2730E600E8EA1B /* LocationSearchManager.swift */; };
+		FCF0CC571F74E8020077A72D /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0CC561F74E8020077A72D /* Credentials.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		FCC6D4511F27178800E8EA1B /* HeadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeadingView.swift; path = "Wayfinder Shared/HeadingView.swift"; sourceTree = "<group>"; };
 		FCC6D4541F2717D400E8EA1B /* HeadingArrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadingArrowView.swift; sourceTree = "<group>"; };
 		FCC6D4571F2730E600E8EA1B /* LocationSearchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchManager.swift; sourceTree = "<group>"; };
+		FCF0CC561F74E8020077A72D /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				FC0BA1FF1F2744A200CA2C0F /* Bottleshop.swift */,
 				FC0BA2011F2744A300CA2C0F /* BottleshopManager.swift */,
 				FC0BA2001F2744A200CA2C0F /* HeadingBottleView.swift */,
+				FCF0CC561F74E8020077A72D /* Credentials.swift */,
 				FCC6D4361F27154100E8EA1B /* Main.storyboard */,
 				FCC6D4391F27154100E8EA1B /* Assets.xcassets */,
 				FCC6D43B1F27154100E8EA1B /* LaunchScreen.storyboard */,
@@ -349,6 +352,7 @@
 				FCC6D4591F2730E600E8EA1B /* LocationSearchManager.swift in Sources */,
 				FC0BA2031F2744A300CA2C0F /* HeadingBottleView.swift in Sources */,
 				FCC6D4331F27154100E8EA1B /* AppDelegate.swift in Sources */,
+				FCF0CC571F74E8020077A72D /* Credentials.swift in Sources */,
 				FCC6D44B1F2715ED00E8EA1B /* UserLocationManager.swift in Sources */,
 				FCC6D4561F2717D400E8EA1B /* HeadingArrowView.swift in Sources */,
 				FC0BA2071F27488F00CA2C0F /* Headable.swift in Sources */,

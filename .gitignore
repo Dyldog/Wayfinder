@@ -1,1 +1,6 @@
 **/Credentials.plist
+**/Credentials.swift
+
+Podfile.lock
+
+.DS_Store

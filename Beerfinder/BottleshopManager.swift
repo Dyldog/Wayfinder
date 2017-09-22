@@ -21,11 +21,11 @@ class BottleshopManager: NSObject {
     
     let googlePlacesURL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     
-    let googleMapsAPIKey : String = {
-        let path = Bundle.main.path(forResource: "Credentials", ofType: "plist")!
-        let keys = NSDictionary(contentsOfFile: path)!
-        return keys.object(forKey: "googleMapsAPIKey") as! String
-    }()
+//    let googleMapsAPIKey : String = {
+//        let path = Bundle.main.path(forResource: "Credentials", ofType: "plist")!
+//        let keys = NSDictionary(contentsOfFile: path)!
+//        return keys.object(forKey: "googleMapsAPIKey") as! String
+//    }()
     
     func searchForBottleshops(near searchLocation: CLLocation){
         guard currentRequest == nil else {
@@ -36,7 +36,7 @@ class BottleshopManager: NSObject {
         let requestParams = ["location" : locationString,
                              "rankby" : "distance",
                              "type" : "liquor_store",
-                             "key" : "AIzaSyDuNxWvIyx96-cnS3Bj9OambX6Eye8DgyY"] //TODO: Secure API key
+                             "key" : googleAPIKey]
         
         currentRequest = Alamofire.request(googlePlacesURL, parameters: requestParams)
         currentRequest!.responseJSON { response in

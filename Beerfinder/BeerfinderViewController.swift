@@ -24,6 +24,10 @@ class BeerfinderViewController: HeadingViewController, BottleshopManagerDelegate
         // Dispose of any resources that can be recreated.
     }
 
+    override func titleForEmptyDestination() -> String {
+        return "Searching..."
+    }
+    
     override func userLocationManagerDidUpdate() {
         guard let userLocation = self.userLocationManager.latestLocation else {
             return

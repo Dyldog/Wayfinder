@@ -38,7 +38,7 @@ class HeadingViewController: UIViewController, UserLocationManagerDelegate {
         // For taking screenshots
 //        self.destinationLabel!.text = "ADVENTURE!!"
 //        self.distanceLabel!.text = "1337 km"
-//        self.headingArrowView!.headingAngle = -0.5
+//        self.headingView!.headingAngle = -0.5
     }
     
     // MARK: - User Location Manager
