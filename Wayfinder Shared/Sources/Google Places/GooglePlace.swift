@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class Bottleshop: NSObject, Headable {
+class GooglePlace: NSObject, Headable {
     let name : String
     let address : String
     let location : CLLocation

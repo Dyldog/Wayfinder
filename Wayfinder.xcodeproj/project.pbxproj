@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		01EC4F6F63D058734A3CCFAA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3691D1D9F0DD8B9FBFF79B9 /* MainViewController.swift */; };
 		04851ADD17B513B157EDCE99 /* BeerBottle.svg in Resources */ = {isa = PBXBuildFile; fileRef = DE0C8D3C4993410EB67F9E8E /* BeerBottle.svg */; };
+		073E4D7D63C7F3EDDAB5C4ED /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7594B0C115F9A933BB71FA /* Credentials.swift */; };
 		07B1BDCF5B42856173FCF7EC /* AppStoreIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 978D8F2B55228D89BC557AD8 /* AppStoreIcon.png */; };
 		0A856F75BDF4477E17F7B61A /* HeadingIcon.psd in Resources */ = {isa = PBXBuildFile; fileRef = E260FA5BB79E48EC3479FB35 /* HeadingIcon.psd */; };
 		0B18830C4FE2A354FE8F4405 /* Icon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 800DE97F5EDF2D7EFF45E8F0 /* Icon-83.5@2x.png */; };
@@ -20,7 +21,7 @@
 		202C744F117F3D380E9816C4 /* BeerBottle.psd in Resources */ = {isa = PBXBuildFile; fileRef = 38BF93D7CC4ADB4146FE562C /* BeerBottle.psd */; };
 		271588BC52D422CF6174B6DE /* AppStoreIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A19B761B1A781FA73A9AE482 /* AppStoreIcon.png */; };
 		28D197D2C3F232B44DBCCC43 /* Beerfinder Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 85243BCCD2B9BF64DF5246FA /* Beerfinder Screenshot.png */; };
-		29DEF1E1E60D4C2841092F88 /* BottleshopManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C44766533FD7C5650121FE5 /* BottleshopManager.swift */; };
+		2E4807B2EB497EEB0D107129 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7594B0C115F9A933BB71FA /* Credentials.swift */; };
 		326862934FFF11CA74DB05FD /* HeadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB61391E5059F3C974B4BF /* HeadingViewController.swift */; };
 		47588E3216E6995462325A13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AC02015C39898C4B36CA69 /* Assets.xcassets */; };
 		47DB9DCA9D26C85E0A1F885B /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD59327F7494FAFF0F836E6 /* Icon-60@2x.png */; };
@@ -28,6 +29,7 @@
 		4A2C6C6CB4C575E45D0E7A6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BBEC821DE61C6980B85CAE /* LaunchScreen.storyboard */; };
 		4F0A44C4F09A6038EE133909 /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CEB75B366636025F53F456 /* HeadingView.swift */; };
 		55EB36DD2048A1DB0F24AA7B /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3FE8C91B4985C435303275 /* Icon-60@3x.png */; };
+		565ADC537593C1554FF6F00F /* GooglePlacesHeadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CEAA5465FC63ACFC673D1A /* GooglePlacesHeadingViewController.swift */; };
 		57BC81E6B8DA7603DF731D40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C93DC3D8049FEBF69E77681 /* Assets.xcassets */; };
 		5D26EEB8E4CB14CD0B48C79C /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D4CC0B08D6C6580617A141 /* Icon-60@2x.png */; };
 		6336805EA368D488DE400D83 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D94BEF21E6C0BB3E81FC942 /* Alamofire.framework */; };
@@ -40,15 +42,18 @@
 		8E3409CA1810C95A064C1632 /* LocationSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D307BAD66A44F226D8EAE3D0 /* LocationSelectionViewController.swift */; };
 		8EEC53EDBED23E99D1AF3AAE /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0721586132419E5DCC6FA /* Icon-76.png */; };
 		904176F2B8F8AB6BA2D29863 /* LocationSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A16449C40DC67B1FF4F5B8 /* LocationSearchManager.swift */; };
+		9580DAD4BED979675800691C /* GooglePlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1397FDAD5606F03145CD4654 /* GooglePlacesManager.swift */; };
+		964CA9E727D3D19681989FA8 /* GooglePlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1397FDAD5606F03145CD4654 /* GooglePlacesManager.swift */; };
 		988A5DAEBAA58F46E8D25857 /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E436F24573AE07D7A9801C /* UserLocationManager.swift */; };
-		991FC8358001E79E6B36D83F /* Bottleshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEB562DC89B438549586ED2 /* Bottleshop.swift */; };
 		9B7A4455AD089A9C70272018 /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CEB75B366636025F53F456 /* HeadingView.swift */; };
+		ADB987C95B1489B9013FC506 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B784982CEA88FD70E321706 /* GooglePlace.swift */; };
 		B567B37EC5B134D54E5372D2 /* LocationSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A16449C40DC67B1FF4F5B8 /* LocationSearchManager.swift */; };
 		BE3E8C1BA0EE49C36394520D /* HeadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB61391E5059F3C974B4BF /* HeadingViewController.swift */; };
 		BF602F84F7486D5F6A776FA3 /* Icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = C895FD6593A8774770B5D8A0 /* Icon-1024.png */; };
-		CD458A2AFD89B79F01285CA4 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD83560843A3FA614F31D74 /* Credentials.swift */; };
 		D26F04B1D4B6F91670EF7B3A /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CE5DD3BF418DC919B951E8B /* Icon-76@2x.png */; };
+		DA49199505B591F89EC2F2E6 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B784982CEA88FD70E321706 /* GooglePlace.swift */; };
 		DD971A6450A26655BFAEC0E4 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A64B3610BB5730E54A4B603 /* Icon-60@3x.png */; };
+		E162AE9803A50F28995FBC11 /* GooglePlacesHeadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CEAA5465FC63ACFC673D1A /* GooglePlacesHeadingViewController.swift */; };
 		E41D9FC899A362ACD6836621 /* Headable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37A0FE530C0CCE6EFF20671 /* Headable.swift */; };
 		E5C6CBC60C725175F2705EC7 /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E436F24573AE07D7A9801C /* UserLocationManager.swift */; };
 		EABAAF9430B1C64F950A64DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4790F713DD5BF885395F4E6F /* Main.storyboard */; };
@@ -82,19 +87,21 @@
 
 /* Begin PBXFileReference section */
 		0E2F5431C6315E716CF764F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0E7594B0C115F9A933BB71FA /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		113E3209A7B9D90DD082148B /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		11CEAA5465FC63ACFC673D1A /* GooglePlacesHeadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesHeadingViewController.swift; sourceTree = "<group>"; };
+		1397FDAD5606F03145CD4654 /* GooglePlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesManager.swift; sourceTree = "<group>"; };
 		15E436F24573AE07D7A9801C /* UserLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationManager.swift; sourceTree = "<group>"; };
 		1DE0721586132419E5DCC6FA /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
-		2C44766533FD7C5650121FE5 /* BottleshopManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleshopManager.swift; sourceTree = "<group>"; };
 		2CE5DD3BF418DC919B951E8B /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
 		2E647307DE665BAD370F1497 /* AppHeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHeadingView.swift; sourceTree = "<group>"; };
 		31A951B0AE3D7453863A8652 /* Wayfinder.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Wayfinder.plist; sourceTree = "<group>"; };
 		32CEB75B366636025F53F456 /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
-		38BF93D7CC4ADB4146FE562C /* BeerBottle.psd */ = {isa = PBXFileReference; path = BeerBottle.psd; sourceTree = "<group>"; };
+		38BF93D7CC4ADB4146FE562C /* BeerBottle.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = BeerBottle.psd; sourceTree = "<group>"; };
 		3C93DC3D8049FEBF69E77681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46BC5B0A9BABD9FC105455C1 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
 		4A64B3610BB5730E54A4B603 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
-		5AEB562DC89B438549586ED2 /* Bottleshop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bottleshop.swift; sourceTree = "<group>"; };
+		4B784982CEA88FD70E321706 /* GooglePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 		6E3FE8C91B4985C435303275 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
 		7451E6607B3ABF4A0C504FAC /* Wayfinder Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wayfinder Screenshot.png"; sourceTree = "<group>"; };
 		7C4D6CDD1BDE293C34531B0B /* Icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-1024.png"; sourceTree = "<group>"; };
@@ -106,9 +113,8 @@
 		978D8F2B55228D89BC557AD8 /* AppStoreIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppStoreIcon.png; sourceTree = "<group>"; };
 		9CDF7B242B967CF26A9D205D /* Beerfinder.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Beerfinder.plist; sourceTree = "<group>"; };
 		9D1FA2762EB8D3CB249C457B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9DD83560843A3FA614F31D74 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		A19B761B1A781FA73A9AE482 /* AppStoreIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppStoreIcon.png; sourceTree = "<group>"; };
-		A2D09DA17447473E6FD871BB /* BeerfinderIcon.psd */ = {isa = PBXFileReference; path = BeerfinderIcon.psd; sourceTree = "<group>"; };
+		A2D09DA17447473E6FD871BB /* BeerfinderIcon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = BeerfinderIcon.psd; sourceTree = "<group>"; };
 		A37A0FE530C0CCE6EFF20671 /* Headable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headable.swift; sourceTree = "<group>"; };
 		B6AC02015C39898C4B36CA69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C10597A41A99124131BC855A /* BeerBottle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BeerBottle.png; sourceTree = "<group>"; };
@@ -119,9 +125,9 @@
 		D307BAD66A44F226D8EAE3D0 /* LocationSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectionViewController.swift; sourceTree = "<group>"; };
 		D3691D1D9F0DD8B9FBFF79B9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D43A18671B0B386D9F68EF52 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		DE0C8D3C4993410EB67F9E8E /* BeerBottle.svg */ = {isa = PBXFileReference; path = BeerBottle.svg; sourceTree = "<group>"; };
+		DE0C8D3C4993410EB67F9E8E /* BeerBottle.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = BeerBottle.svg; sourceTree = "<group>"; };
 		DF8FDD196D9008C489267BC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E260FA5BB79E48EC3479FB35 /* HeadingIcon.psd */ = {isa = PBXFileReference; path = HeadingIcon.psd; sourceTree = "<group>"; };
+		E260FA5BB79E48EC3479FB35 /* HeadingIcon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = HeadingIcon.psd; sourceTree = "<group>"; };
 		E3A16449C40DC67B1FF4F5B8 /* LocationSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchManager.swift; sourceTree = "<group>"; };
 		F9976E765530E50E51D84AC0 /* Icon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-83.5@2x.png"; sourceTree = "<group>"; };
 		FCBB61391E5059F3C974B4BF /* HeadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +160,17 @@
 				4790F713DD5BF885395F4E6F /* Main.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		14FD97FFE94DBAD0E131B149 /* Google Places */ = {
+			isa = PBXGroup;
+			children = (
+				0E7594B0C115F9A933BB71FA /* Credentials.swift */,
+				4B784982CEA88FD70E321706 /* GooglePlace.swift */,
+				11CEAA5465FC63ACFC673D1A /* GooglePlacesHeadingViewController.swift */,
+				1397FDAD5606F03145CD4654 /* GooglePlacesManager.swift */,
+			);
+			path = "Google Places";
 			sourceTree = "<group>";
 		};
 		1A5A1A60F88BA3BD43EAF7AC /* Resources */ = {
@@ -216,9 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				2E647307DE665BAD370F1497 /* AppHeadingView.swift */,
-				5AEB562DC89B438549586ED2 /* Bottleshop.swift */,
-				2C44766533FD7C5650121FE5 /* BottleshopManager.swift */,
-				9DD83560843A3FA614F31D74 /* Credentials.swift */,
 				D3691D1D9F0DD8B9FBFF79B9 /* MainViewController.swift */,
 			);
 			path = Sources;
@@ -330,13 +344,12 @@
 		DC478C8A5ADD3AB7734983C7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				14FD97FFE94DBAD0E131B149 /* Google Places */,
 				DF8FDD196D9008C489267BC4 /* AppDelegate.swift */,
-				A37A0FE530C0CCE6EFF20671 /* Headable.swift */,
-				32CEB75B366636025F53F456 /* HeadingView.swift */,
-				FCBB61391E5059F3C974B4BF /* HeadingViewController.swift */,
-				E3A16449C40DC67B1FF4F5B8 /* LocationSearchManager.swift */,
-				D307BAD66A44F226D8EAE3D0 /* LocationSelectionViewController.swift */,
-				15E436F24573AE07D7A9801C /* UserLocationManager.swift */,
+				FCE6A01B24382B7900A0B752 /* Heading View Controller */,
+				FCE6A01C24382B9600A0B752 /* Map Kit */,
+				FCE6A01E24382BA600A0B752 /* Location Selection */,
+				FCE6A01D24382B9F00A0B752 /* User Location */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -347,6 +360,40 @@
 				B89B21228733704959FB5F43 /* Build */,
 			);
 			path = Carthage;
+			sourceTree = "<group>";
+		};
+		FCE6A01B24382B7900A0B752 /* Heading View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A37A0FE530C0CCE6EFF20671 /* Headable.swift */,
+				32CEB75B366636025F53F456 /* HeadingView.swift */,
+				FCBB61391E5059F3C974B4BF /* HeadingViewController.swift */,
+			);
+			path = "Heading View Controller";
+			sourceTree = "<group>";
+		};
+		FCE6A01C24382B9600A0B752 /* Map Kit */ = {
+			isa = PBXGroup;
+			children = (
+				E3A16449C40DC67B1FF4F5B8 /* LocationSearchManager.swift */,
+			);
+			path = "Map Kit";
+			sourceTree = "<group>";
+		};
+		FCE6A01D24382B9F00A0B752 /* User Location */ = {
+			isa = PBXGroup;
+			children = (
+				15E436F24573AE07D7A9801C /* UserLocationManager.swift */,
+			);
+			path = "User Location";
+			sourceTree = "<group>";
+		};
+		FCE6A01E24382BA600A0B752 /* Location Selection */ = {
+			isa = PBXGroup;
+			children = (
+				D307BAD66A44F226D8EAE3D0 /* LocationSelectionViewController.swift */,
+			);
+			path = "Location Selection";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,8 +443,6 @@
 		9499B4BE23B59EED43F9A70F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = 38C1857F17A1D050119316EB /* Build configuration list for PBXProject "Wayfinder" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -515,11 +560,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD1EB9FBD3A7A6C925765A2A /* AppHeadingView.swift in Sources */,
-				991FC8358001E79E6B36D83F /* Bottleshop.swift in Sources */,
-				29DEF1E1E60D4C2841092F88 /* BottleshopManager.swift in Sources */,
-				CD458A2AFD89B79F01285CA4 /* Credentials.swift in Sources */,
 				01EC4F6F63D058734A3CCFAA /* MainViewController.swift in Sources */,
 				7E33A9381D3E2EA5E5B1CCC8 /* AppDelegate.swift in Sources */,
+				2E4807B2EB497EEB0D107129 /* Credentials.swift in Sources */,
+				ADB987C95B1489B9013FC506 /* GooglePlace.swift in Sources */,
+				E162AE9803A50F28995FBC11 /* GooglePlacesHeadingViewController.swift in Sources */,
+				964CA9E727D3D19681989FA8 /* GooglePlacesManager.swift in Sources */,
 				E41D9FC899A362ACD6836621 /* Headable.swift in Sources */,
 				4F0A44C4F09A6038EE133909 /* HeadingView.swift in Sources */,
 				326862934FFF11CA74DB05FD /* HeadingViewController.swift in Sources */,
@@ -534,6 +580,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				17E28DFDBF7B77385B08D7BC /* AppDelegate.swift in Sources */,
+				073E4D7D63C7F3EDDAB5C4ED /* Credentials.swift in Sources */,
+				DA49199505B591F89EC2F2E6 /* GooglePlace.swift in Sources */,
+				565ADC537593C1554FF6F00F /* GooglePlacesHeadingViewController.swift in Sources */,
+				9580DAD4BED979675800691C /* GooglePlacesManager.swift in Sources */,
 				8045AB8B22B60EE117CA5292 /* Headable.swift in Sources */,
 				9B7A4455AD089A9C70272018 /* HeadingView.swift in Sources */,
 				BE3E8C1BA0EE49C36394520D /* HeadingViewController.swift in Sources */,

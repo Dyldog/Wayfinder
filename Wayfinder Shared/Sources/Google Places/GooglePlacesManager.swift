@@ -1,5 +1,5 @@
 //
-//  BottleshopManager.swift
+//  GooglePlacesManager.swift
 //  Heading-Liquor
 //
 //  Created by Dylan Elliott on 19/7/17.
@@ -10,14 +10,14 @@ import UIKit
 import Alamofire
 import CoreLocation
 
-protocol BottleshopManagerDelegate {
-    func didFindBottleshops(_ bottleshops: [Bottleshop])
+protocol GooglePlacesManagerDelegate {
+    func didFindPlaces(_ places: [GooglePlace])
 }
 
-class BottleshopManager: NSObject {
+class GooglePlacesManager: NSObject {
     
     var currentRequest : DataRequest?
-    var delegate : BottleshopManagerDelegate?
+    var delegate : GooglePlacesManagerDelegate?
     
     let googlePlacesURL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     
@@ -42,14 +42,14 @@ class BottleshopManager: NSObject {
         currentRequest!.responseJSON { response in
             switch response.result {
             case .success(let responseJSON as [String: Any]):
-                var bottleshops = [Bottleshop]()
+                var bottleshops = [GooglePlace]()
                 
                 for bottleshopDict in responseJSON["results"] as! [[String : Any]] {
-                    let newBottleshop = Bottleshop(bottleshopDict)
+                    let newBottleshop = GooglePlace(bottleshopDict)
                     
                     bottleshops.append(newBottleshop)
                 }
-                self.delegate?.didFindBottleshops(bottleshops)
+                self.delegate?.didFindPlaces(bottleshops)
                 
                 self.currentRequest = nil
             case .success:
