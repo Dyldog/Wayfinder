@@ -52,6 +52,7 @@ let project = Project(
 	name: "Wayfinder",
 	targets: [
         .makeFinder("Wayfinder", type: .multi),
-        .makeFinder("Beerfinder", type: .single("liquor_store"))
+        .makeFinder("Beerfinder", type: .single("liquor_store")),
+        .makeFinder("SupermarketFinder", type: .single("supermarket"))
 	]
 )
