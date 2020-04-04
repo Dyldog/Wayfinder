@@ -3,185 +3,306 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E396888AE7C031B66FB933A3 /* Pods_Beerfinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD726E50F8899968E013DD1E /* Pods_Beerfinder.framework */; };
-		FC0BA2021F2744A300CA2C0F /* Bottleshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BA1FF1F2744A200CA2C0F /* Bottleshop.swift */; };
-		FC0BA2031F2744A300CA2C0F /* HeadingBottleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BA2001F2744A200CA2C0F /* HeadingBottleView.swift */; };
-		FC0BA2041F2744A300CA2C0F /* BottleshopManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BA2011F2744A300CA2C0F /* BottleshopManager.swift */; };
-		FC0BA2061F27488F00CA2C0F /* Headable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BA2051F27488F00CA2C0F /* Headable.swift */; };
-		FC0BA2071F27488F00CA2C0F /* Headable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BA2051F27488F00CA2C0F /* Headable.swift */; };
-		FCBDD5601F30273D006729A4 /* Credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCBDD55F1F30273D006729A4 /* Credentials.plist */; };
-		FCC6D41B1F27152200E8EA1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6D41A1F27152200E8EA1B /* AppDelegate.swift */; };
-		FCC6D41D1F27152200E8EA1B /* WayfinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6D41C1F27152200E8EA1B /* WayfinderViewController.swift */; };
-		FCC6D4201F27152200E8EA1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC6D41E1F27152200E8EA1B /* Main.storyboard */; };
-		FCC6D4221F27152200E8EA1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC6D4211F27152200E8EA1B /* Assets.xcassets */; };
-		FCC6D4251F27152200E8EA1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC6D4231F27152200E8EA1B /* LaunchScreen.storyboard */; };
-		FCC6D4331F27154100E8EA1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6D4321F27154100E8EA1B /* AppDelegate.swift */; };
-		FCC6D4351F27154100E8EA1B /* BeerfinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6D4341F27154100E8EA1B /* BeerfinderViewController.swift */; };
-		FCC6D4381F27154100E8EA1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC6D4361F27154100E8EA1B /* Main.storyboard */; };
-		FCC6D43A1F27154100E8EA1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC6D4391F27154100E8EA1B /* Assets.xcassets */; };
-		FCC6D43D1F27154100E8EA1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC6D43B1F27154100E8EA1B /* LaunchScreen.storyboard */; };
-		FCC6D44A1F2715ED00E8EA1B /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6D4491F2715ED00E8EA1B /* UserLocationManager.swift */; };
-		FCC6D44B1F2715ED00E8EA1B /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6D4491F2715ED00E8EA1B /* UserLocationManager.swift */; };
-		FCC6D44D1F27164100E8EA1B /* HeadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6D44C1F27164100E8EA1B /* HeadingViewController.swift */; };
-		FCC6D44E1F27164100E8EA1B /* HeadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6D44C1F27164100E8EA1B /* HeadingViewController.swift */; };
-		FCC6D4501F27173C00E8EA1B /* LocationSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6D44F1F27173C00E8EA1B /* LocationSelectionViewController.swift */; };
-		FCC6D4521F27178800E8EA1B /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6D4511F27178800E8EA1B /* HeadingView.swift */; };
-		FCC6D4531F27178800E8EA1B /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6D4511F27178800E8EA1B /* HeadingView.swift */; };
-		FCC6D4551F2717D400E8EA1B /* HeadingArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6D4541F2717D400E8EA1B /* HeadingArrowView.swift */; };
-		FCC6D4561F2717D400E8EA1B /* HeadingArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6D4541F2717D400E8EA1B /* HeadingArrowView.swift */; };
-		FCC6D4581F2730E600E8EA1B /* LocationSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6D4571F2730E600E8EA1B /* LocationSearchManager.swift */; };
-		FCC6D4591F2730E600E8EA1B /* LocationSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC6D4571F2730E600E8EA1B /* LocationSearchManager.swift */; };
-		FCF0CC571F74E8020077A72D /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF0CC561F74E8020077A72D /* Credentials.swift */; };
+		03A40416B62F6A31AE31A8C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E218C78453E67BF0E2C267 /* LaunchScreen.storyboard */; };
+		04851ADD17B513B157EDCE99 /* BeerBottle.svg in Resources */ = {isa = PBXBuildFile; fileRef = DE0C8D3C4993410EB67F9E8E /* BeerBottle.svg */; };
+		07B1BDCF5B42856173FCF7EC /* AppStoreIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 978D8F2B55228D89BC557AD8 /* AppStoreIcon.png */; };
+		0A856F75BDF4477E17F7B61A /* HeadingIcon.psd in Resources */ = {isa = PBXBuildFile; fileRef = E260FA5BB79E48EC3479FB35 /* HeadingIcon.psd */; };
+		0B18830C4FE2A354FE8F4405 /* Icon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 800DE97F5EDF2D7EFF45E8F0 /* Icon-83.5@2x.png */; };
+		110B5337D6F874C8F84106B8 /* HeadingArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E4A36841A36FEF20AD429F /* HeadingArrowView.swift */; };
+		13A072BFDD7A1890576845A4 /* Icon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9976E765530E50E51D84AC0 /* Icon-83.5@2x.png */; };
+		16A3B2783D5D649DBC7EB923 /* HeadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6814C80CFBA82A29FE10DFFD /* HeadingViewController.swift */; };
+		1718E4DD9A20F35D4A759C75 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BC5B0A9BABD9FC105455C1 /* Icon-76@2x.png */; };
+		19B03F493D3E8958DB9034CB /* Icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C4D6CDD1BDE293C34531B0B /* Icon-1024.png */; };
+		1E648013B42AE9EC38B045CE /* HeadingBottleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB98FABA9867434E252DA8 /* HeadingBottleView.swift */; };
+		202C744F117F3D380E9816C4 /* BeerBottle.psd in Resources */ = {isa = PBXBuildFile; fileRef = 38BF93D7CC4ADB4146FE562C /* BeerBottle.psd */; };
+		271588BC52D422CF6174B6DE /* AppStoreIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A19B761B1A781FA73A9AE482 /* AppStoreIcon.png */; };
+		28D197D2C3F232B44DBCCC43 /* Beerfinder Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 85243BCCD2B9BF64DF5246FA /* Beerfinder Screenshot.png */; };
+		29DEF1E1E60D4C2841092F88 /* BottleshopManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C44766533FD7C5650121FE5 /* BottleshopManager.swift */; };
+		2F73E9D110293EE8A7ACB3B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A780B3671E1A86984D813C /* LaunchScreen.storyboard */; };
+		3093751FDE0285DC41796B7A /* WayfinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04114577391E841D6D045C80 /* WayfinderViewController.swift */; };
+		3D86A527973D6266BD021476 /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BA90D2C3F6EE4DC2BF580E /* HeadingView.swift */; };
+		47588E3216E6995462325A13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AC02015C39898C4B36CA69 /* Assets.xcassets */; };
+		47DB9DCA9D26C85E0A1F885B /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD59327F7494FAFF0F836E6 /* Icon-60@2x.png */; };
+		48E6D86C358AB0FFA897FCCE /* BeerfinderIcon.psd in Resources */ = {isa = PBXBuildFile; fileRef = A2D09DA17447473E6FD871BB /* BeerfinderIcon.psd */; };
+		55EB36DD2048A1DB0F24AA7B /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3FE8C91B4985C435303275 /* Icon-60@3x.png */; };
+		57BC81E6B8DA7603DF731D40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C93DC3D8049FEBF69E77681 /* Assets.xcassets */; };
+		5D26EEB8E4CB14CD0B48C79C /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D4CC0B08D6C6580617A141 /* Icon-60@2x.png */; };
+		698BF09F1A2E55DD98CB1588 /* Headable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501FE9553C604F553D391CB4 /* Headable.swift */; };
+		6C6CDC426A5105B01F896684 /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564212948817B0C9CB569E53 /* UserLocationManager.swift */; };
+		77CB922481D385625A9021AC /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564212948817B0C9CB569E53 /* UserLocationManager.swift */; };
+		8EEC53EDBED23E99D1AF3AAE /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0721586132419E5DCC6FA /* Icon-76.png */; };
+		962209345AE4813C784444E8 /* LocationSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F90C00EFF8E4961BD3F6E8 /* LocationSelectionViewController.swift */; };
+		989A3DEFF6A191F0F2D0D72C /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BA90D2C3F6EE4DC2BF580E /* HeadingView.swift */; };
+		991FC8358001E79E6B36D83F /* Bottleshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEB562DC89B438549586ED2 /* Bottleshop.swift */; };
+		9EF761755F33E197372594D0 /* Headable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501FE9553C604F553D391CB4 /* Headable.swift */; };
+		9EF76CA60A0ED53F2DA68990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06603E4045C0BBE82EFC4795 /* AppDelegate.swift */; };
+		A40A269683BAC0F5E19FBCC1 /* LocationSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234343480A678B67D5FDA197 /* LocationSearchManager.swift */; };
+		AEB8371F5756629BF1DDE9E4 /* HeadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6814C80CFBA82A29FE10DFFD /* HeadingViewController.swift */; };
+		BF602F84F7486D5F6A776FA3 /* Icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = C895FD6593A8774770B5D8A0 /* Icon-1024.png */; };
+		C81B85B87F1E76E0EEE5F010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A9086755AAD33664319FA4 /* AppDelegate.swift */; };
+		CD458A2AFD89B79F01285CA4 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD83560843A3FA614F31D74 /* Credentials.swift */; };
+		D26F04B1D4B6F91670EF7B3A /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CE5DD3BF418DC919B951E8B /* Icon-76@2x.png */; };
+		D895AF30B8445BA445FFBD79 /* BeerfinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15103BB562110F6342B9FE3D /* BeerfinderViewController.swift */; };
+		DD971A6450A26655BFAEC0E4 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A64B3610BB5730E54A4B603 /* Icon-60@3x.png */; };
+		DFE811FCC30136BEDEE6A190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1AF4EAD6769F8892FAAD79 /* Main.storyboard */; };
+		E6C05A194AB9AD8843C72DAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D2C240B4A13359D024A8811 /* Main.storyboard */; };
+		ED11187CD115880FDE370F59 /* Wayfinder Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 7451E6607B3ABF4A0C504FAC /* Wayfinder Screenshot.png */; };
+		EE49A724AAF9358CFCE69A37 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 113E3209A7B9D90DD082148B /* Icon-76.png */; };
+		F0B698C23D43EABBF979242B /* BeerBottle.png in Resources */ = {isa = PBXBuildFile; fileRef = C10597A41A99124131BC855A /* BeerBottle.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3F455488D63ADB59B4750EA0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77AC0BA6BA825CBF1F244A71 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		6921C46C508A29E3D80826C0 /* Pods-Beerfinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beerfinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beerfinder/Pods-Beerfinder.release.xcconfig"; sourceTree = "<group>"; };
-		BD4E896A5477F8A85124CC0B /* Pods-Beerfinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beerfinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beerfinder/Pods-Beerfinder.debug.xcconfig"; sourceTree = "<group>"; };
-		CD726E50F8899968E013DD1E /* Pods_Beerfinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beerfinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC0BA1FF1F2744A200CA2C0F /* Bottleshop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bottleshop.swift; sourceTree = "<group>"; };
-		FC0BA2001F2744A200CA2C0F /* HeadingBottleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadingBottleView.swift; sourceTree = "<group>"; };
-		FC0BA2011F2744A300CA2C0F /* BottleshopManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottleshopManager.swift; sourceTree = "<group>"; };
-		FC0BA2051F27488F00CA2C0F /* Headable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Headable.swift; path = "Wayfinder Shared/Headable.swift"; sourceTree = "<group>"; };
-		FCBDD55F1F30273D006729A4 /* Credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Credentials.plist; sourceTree = "<group>"; };
-		FCC6D4171F27152200E8EA1B /* Wayfinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wayfinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCC6D41A1F27152200E8EA1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCC6D41C1F27152200E8EA1B /* WayfinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayfinderViewController.swift; sourceTree = "<group>"; };
-		FCC6D41F1F27152200E8EA1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FCC6D4211F27152200E8EA1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FCC6D4241F27152200E8EA1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FCC6D4261F27152200E8EA1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FCC6D4301F27154100E8EA1B /* Beerfinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beerfinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCC6D4321F27154100E8EA1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCC6D4341F27154100E8EA1B /* BeerfinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerfinderViewController.swift; sourceTree = "<group>"; };
-		FCC6D4371F27154100E8EA1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FCC6D4391F27154100E8EA1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FCC6D43C1F27154100E8EA1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FCC6D43E1F27154100E8EA1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FCC6D4491F2715ED00E8EA1B /* UserLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserLocationManager.swift; path = "Wayfinder Shared/UserLocationManager.swift"; sourceTree = "<group>"; };
-		FCC6D44C1F27164100E8EA1B /* HeadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeadingViewController.swift; path = "Wayfinder Shared/HeadingViewController.swift"; sourceTree = "<group>"; };
-		FCC6D44F1F27173C00E8EA1B /* LocationSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSelectionViewController.swift; sourceTree = "<group>"; };
-		FCC6D4511F27178800E8EA1B /* HeadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeadingView.swift; path = "Wayfinder Shared/HeadingView.swift"; sourceTree = "<group>"; };
-		FCC6D4541F2717D400E8EA1B /* HeadingArrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadingArrowView.swift; sourceTree = "<group>"; };
-		FCC6D4571F2730E600E8EA1B /* LocationSearchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchManager.swift; sourceTree = "<group>"; };
-		FCF0CC561F74E8020077A72D /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		04114577391E841D6D045C80 /* WayfinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayfinderViewController.swift; sourceTree = "<group>"; };
+		06603E4045C0BBE82EFC4795 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		113E3209A7B9D90DD082148B /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		15103BB562110F6342B9FE3D /* BeerfinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerfinderViewController.swift; sourceTree = "<group>"; };
+		1DE0721586132419E5DCC6FA /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		234343480A678B67D5FDA197 /* LocationSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchManager.swift; sourceTree = "<group>"; };
+		23E4A36841A36FEF20AD429F /* HeadingArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingArrowView.swift; sourceTree = "<group>"; };
+		2C44766533FD7C5650121FE5 /* BottleshopManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleshopManager.swift; sourceTree = "<group>"; };
+		2CE5DD3BF418DC919B951E8B /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		31A9086755AAD33664319FA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3305400A37974C53E411CDCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		38BF93D7CC4ADB4146FE562C /* BeerBottle.psd */ = {isa = PBXFileReference; path = BeerBottle.psd; sourceTree = "<group>"; };
+		3C93DC3D8049FEBF69E77681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E7A8EC04EF81B51566AF640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		426951E54B213EEF2688C64A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46BC5B0A9BABD9FC105455C1 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		46F90C00EFF8E4961BD3F6E8 /* LocationSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectionViewController.swift; sourceTree = "<group>"; };
+		4A64B3610BB5730E54A4B603 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		4B526BA9955C37B024ACA70D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B9923FA4A7466796B3772F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		501FE9553C604F553D391CB4 /* Headable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headable.swift; sourceTree = "<group>"; };
+		564212948817B0C9CB569E53 /* UserLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationManager.swift; sourceTree = "<group>"; };
+		5AEB562DC89B438549586ED2 /* Bottleshop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bottleshop.swift; sourceTree = "<group>"; };
+		6814C80CFBA82A29FE10DFFD /* HeadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingViewController.swift; sourceTree = "<group>"; };
+		6E3FE8C91B4985C435303275 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		7451E6607B3ABF4A0C504FAC /* Wayfinder Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wayfinder Screenshot.png"; sourceTree = "<group>"; };
+		7C4D6CDD1BDE293C34531B0B /* Icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-1024.png"; sourceTree = "<group>"; };
+		800DE97F5EDF2D7EFF45E8F0 /* Icon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-83.5@2x.png"; sourceTree = "<group>"; };
+		85243BCCD2B9BF64DF5246FA /* Beerfinder Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Beerfinder Screenshot.png"; sourceTree = "<group>"; };
+		8CD59327F7494FAFF0F836E6 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		8FBB98FABA9867434E252DA8 /* HeadingBottleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingBottleView.swift; sourceTree = "<group>"; };
+		9317B56848AAD5576044CFE9 /* Wayfinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wayfinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		978D8F2B55228D89BC557AD8 /* AppStoreIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppStoreIcon.png; sourceTree = "<group>"; };
+		9DD83560843A3FA614F31D74 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		A19B761B1A781FA73A9AE482 /* AppStoreIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppStoreIcon.png; sourceTree = "<group>"; };
+		A2D09DA17447473E6FD871BB /* BeerfinderIcon.psd */ = {isa = PBXFileReference; path = BeerfinderIcon.psd; sourceTree = "<group>"; };
+		B6AC02015C39898C4B36CA69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C10597A41A99124131BC855A /* BeerBottle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BeerBottle.png; sourceTree = "<group>"; };
+		C73F35224ED3702A975672FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C7D4CC0B08D6C6580617A141 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		C895FD6593A8774770B5D8A0 /* Icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-1024.png"; sourceTree = "<group>"; };
+		CC9A0C577A8D0EF59C3198C2 /* Beerfinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beerfinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE0C8D3C4993410EB67F9E8E /* BeerBottle.svg */ = {isa = PBXFileReference; path = BeerBottle.svg; sourceTree = "<group>"; };
+		E260FA5BB79E48EC3479FB35 /* HeadingIcon.psd */ = {isa = PBXFileReference; path = HeadingIcon.psd; sourceTree = "<group>"; };
+		E3BA90D2C3F6EE4DC2BF580E /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
+		F9976E765530E50E51D84AC0 /* Icon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-83.5@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FCC6D4141F27152200E8EA1B /* Frameworks */ = {
+		413FE51BB64FEC963FD9E090 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FCC6D42D1F27154100E8EA1B /* Frameworks */ = {
+		9D23B03087CE6ED570058B47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E396888AE7C031B66FB933A3 /* Pods_Beerfinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AA44CCE340D2C7D489B40D32 /* Frameworks */ = {
+		1A5A1A60F88BA3BD43EAF7AC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CD726E50F8899968E013DD1E /* Pods_Beerfinder.framework */,
+				2719C362D795287C858D6830 /* Images */,
+				B6E218C78453E67BF0E2C267 /* LaunchScreen.storyboard */,
+				9C1AF4EAD6769F8892FAAD79 /* Main.storyboard */,
+				B6AC02015C39898C4B36CA69 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2719C362D795287C858D6830 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				978D8F2B55228D89BC557AD8 /* AppStoreIcon.png */,
+				C10597A41A99124131BC855A /* BeerBottle.png */,
+				38BF93D7CC4ADB4146FE562C /* BeerBottle.psd */,
+				DE0C8D3C4993410EB67F9E8E /* BeerBottle.svg */,
+				85243BCCD2B9BF64DF5246FA /* Beerfinder Screenshot.png */,
+				A2D09DA17447473E6FD871BB /* BeerfinderIcon.psd */,
+				C7D4CC0B08D6C6580617A141 /* Icon-60@2x.png */,
+				6E3FE8C91B4985C435303275 /* Icon-60@3x.png */,
+				113E3209A7B9D90DD082148B /* Icon-76.png */,
+				2CE5DD3BF418DC919B951E8B /* Icon-76@2x.png */,
+				800DE97F5EDF2D7EFF45E8F0 /* Icon-83.5@2x.png */,
+				7C4D6CDD1BDE293C34531B0B /* Icon-1024.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		29FE9CF0FF171AEF4EFCA805 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				72B707B9A063962B89C84D03 /* Beerfinder */,
+				5DA63654B3D5E33FB4B9F509 /* Wayfinder */,
+				D3A380B3B86EB9F5EE6113E3 /* Wayfinder Shared */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		30C8CEEBC00C94DF81E54D30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B0EE69A3C8FC0357D45352C2 /* Pods */ = {
+		5DA63654B3D5E33FB4B9F509 /* Wayfinder */ = {
 			isa = PBXGroup;
 			children = (
-				BD4E896A5477F8A85124CC0B /* Pods-Beerfinder.debug.xcconfig */,
-				6921C46C508A29E3D80826C0 /* Pods-Beerfinder.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FCC6D40E1F27152200E8EA1B = {
-			isa = PBXGroup;
-			children = (
-				FCC6D4481F2715DA00E8EA1B /* Wayfinder Shared */,
-				FCC6D4191F27152200E8EA1B /* Wayfinder */,
-				FCC6D4311F27154100E8EA1B /* Beerfinder */,
-				FCC6D4181F27152200E8EA1B /* Products */,
-				B0EE69A3C8FC0357D45352C2 /* Pods */,
-				AA44CCE340D2C7D489B40D32 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		FCC6D4181F27152200E8EA1B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FCC6D4171F27152200E8EA1B /* Wayfinder.app */,
-				FCC6D4301F27154100E8EA1B /* Beerfinder.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FCC6D4191F27152200E8EA1B /* Wayfinder */ = {
-			isa = PBXGroup;
-			children = (
-				FCC6D41A1F27152200E8EA1B /* AppDelegate.swift */,
-				FCC6D41C1F27152200E8EA1B /* WayfinderViewController.swift */,
-				FCC6D44F1F27173C00E8EA1B /* LocationSelectionViewController.swift */,
-				FCC6D4571F2730E600E8EA1B /* LocationSearchManager.swift */,
-				FCC6D4541F2717D400E8EA1B /* HeadingArrowView.swift */,
-				FCC6D41E1F27152200E8EA1B /* Main.storyboard */,
-				FCC6D4211F27152200E8EA1B /* Assets.xcassets */,
-				FCC6D4231F27152200E8EA1B /* LaunchScreen.storyboard */,
-				FCC6D4261F27152200E8EA1B /* Info.plist */,
+				9985B3FFD299952A10D30136 /* Resources */,
+				890E9B063148A299CA61E5C8 /* Sources */,
 			);
 			path = Wayfinder;
 			sourceTree = "<group>";
 		};
-		FCC6D4311F27154100E8EA1B /* Beerfinder */ = {
+		5DF5CF8CDBF411583AAF6C44 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				FCC6D4321F27154100E8EA1B /* AppDelegate.swift */,
-				FCC6D4341F27154100E8EA1B /* BeerfinderViewController.swift */,
-				FC0BA1FF1F2744A200CA2C0F /* Bottleshop.swift */,
-				FC0BA2011F2744A300CA2C0F /* BottleshopManager.swift */,
-				FC0BA2001F2744A200CA2C0F /* HeadingBottleView.swift */,
-				FCF0CC561F74E8020077A72D /* Credentials.swift */,
-				FCC6D4361F27154100E8EA1B /* Main.storyboard */,
-				FCC6D4391F27154100E8EA1B /* Assets.xcassets */,
-				FCC6D43B1F27154100E8EA1B /* LaunchScreen.storyboard */,
-				FCC6D43E1F27154100E8EA1B /* Info.plist */,
-				FCBDD55F1F30273D006729A4 /* Credentials.plist */,
+				31A9086755AAD33664319FA4 /* AppDelegate.swift */,
+				15103BB562110F6342B9FE3D /* BeerfinderViewController.swift */,
+				5AEB562DC89B438549586ED2 /* Bottleshop.swift */,
+				2C44766533FD7C5650121FE5 /* BottleshopManager.swift */,
+				9DD83560843A3FA614F31D74 /* Credentials.swift */,
+				8FBB98FABA9867434E252DA8 /* HeadingBottleView.swift */,
+				C73F35224ED3702A975672FC /* Info.plist */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		72B707B9A063962B89C84D03 /* Beerfinder */ = {
+			isa = PBXGroup;
+			children = (
+				1A5A1A60F88BA3BD43EAF7AC /* Resources */,
+				5DF5CF8CDBF411583AAF6C44 /* Sources */,
 			);
 			path = Beerfinder;
 			sourceTree = "<group>";
 		};
-		FCC6D4481F2715DA00E8EA1B /* Wayfinder Shared */ = {
+		776BF138FF362267C0B8D862 = {
 			isa = PBXGroup;
 			children = (
-				FCC6D4491F2715ED00E8EA1B /* UserLocationManager.swift */,
-				FCC6D44C1F27164100E8EA1B /* HeadingViewController.swift */,
-				FCC6D4511F27178800E8EA1B /* HeadingView.swift */,
-				FC0BA2051F27488F00CA2C0F /* Headable.swift */,
+				29FE9CF0FF171AEF4EFCA805 /* Project */,
+				30C8CEEBC00C94DF81E54D30 /* Frameworks */,
+				92BB247E6C7A42A1EA90A8CA /* Products */,
 			);
-			name = "Wayfinder Shared";
+			sourceTree = "<group>";
+		};
+		890E9B063148A299CA61E5C8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				06603E4045C0BBE82EFC4795 /* AppDelegate.swift */,
+				23E4A36841A36FEF20AD429F /* HeadingArrowView.swift */,
+				3305400A37974C53E411CDCC /* Info.plist */,
+				234343480A678B67D5FDA197 /* LocationSearchManager.swift */,
+				46F90C00EFF8E4961BD3F6E8 /* LocationSelectionViewController.swift */,
+				04114577391E841D6D045C80 /* WayfinderViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		92BB247E6C7A42A1EA90A8CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC9A0C577A8D0EF59C3198C2 /* Beerfinder.app */,
+				9317B56848AAD5576044CFE9 /* Wayfinder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9985B3FFD299952A10D30136 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BDF17453946D0691B08D386E /* Images */,
+				F5A780B3671E1A86984D813C /* LaunchScreen.storyboard */,
+				6D2C240B4A13359D024A8811 /* Main.storyboard */,
+				3C93DC3D8049FEBF69E77681 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BDF17453946D0691B08D386E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A19B761B1A781FA73A9AE482 /* AppStoreIcon.png */,
+				E260FA5BB79E48EC3479FB35 /* HeadingIcon.psd */,
+				8CD59327F7494FAFF0F836E6 /* Icon-60@2x.png */,
+				4A64B3610BB5730E54A4B603 /* Icon-60@3x.png */,
+				1DE0721586132419E5DCC6FA /* Icon-76.png */,
+				46BC5B0A9BABD9FC105455C1 /* Icon-76@2x.png */,
+				F9976E765530E50E51D84AC0 /* Icon-83.5@2x.png */,
+				C895FD6593A8774770B5D8A0 /* Icon-1024.png */,
+				7451E6607B3ABF4A0C504FAC /* Wayfinder Screenshot.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		D3A380B3B86EB9F5EE6113E3 /* Wayfinder Shared */ = {
+			isa = PBXGroup;
+			children = (
+				501FE9553C604F553D391CB4 /* Headable.swift */,
+				E3BA90D2C3F6EE4DC2BF580E /* HeadingView.swift */,
+				6814C80CFBA82A29FE10DFFD /* HeadingViewController.swift */,
+				564212948817B0C9CB569E53 /* UserLocationManager.swift */,
+			);
+			path = "Wayfinder Shared";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FCC6D4161F27152200E8EA1B /* Wayfinder */ = {
+		3CCD64EFA405A4E4B31C5B9A /* Wayfinder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FCC6D4291F27152200E8EA1B /* Build configuration list for PBXNativeTarget "Wayfinder" */;
+			buildConfigurationList = BC02A163D0EC3342CA09734B /* Build configuration list for PBXNativeTarget "Wayfinder" */;
 			buildPhases = (
-				FCC6D4131F27152200E8EA1B /* Sources */,
-				FCC6D4141F27152200E8EA1B /* Frameworks */,
-				FCC6D4151F27152200E8EA1B /* Resources */,
+				D9BC036FCCD3DF31E6029D4F /* Sources */,
+				1B7138E196FE8BE5D06C8AE9 /* Resources */,
+				F58B4390FEA37E01787767B1 /* Embed Precompiled Frameworks */,
+				77AC0BA6BA825CBF1F244A71 /* Embed Frameworks */,
+				413FE51BB64FEC963FD9E090 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,19 +310,18 @@
 			);
 			name = Wayfinder;
 			productName = Wayfinder;
-			productReference = FCC6D4171F27152200E8EA1B /* Wayfinder.app */;
+			productReference = 9317B56848AAD5576044CFE9 /* Wayfinder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FCC6D42F1F27154100E8EA1B /* Beerfinder */ = {
+		7E879B79C75F4C3602BE3729 /* Beerfinder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FCC6D43F1F27154100E8EA1B /* Build configuration list for PBXNativeTarget "Beerfinder" */;
+			buildConfigurationList = DB18C937DA4954281C978CC5 /* Build configuration list for PBXNativeTarget "Beerfinder" */;
 			buildPhases = (
-				C3881535BDCF887EB31A52B2 /* [CP] Check Pods Manifest.lock */,
-				FCC6D42C1F27154100E8EA1B /* Sources */,
-				FCC6D42D1F27154100E8EA1B /* Frameworks */,
-				FCC6D42E1F27154100E8EA1B /* Resources */,
-				E96D1212E1396636A70E35D1 /* [CP] Embed Pods Frameworks */,
-				65C96C318005FB0B202702B9 /* [CP] Copy Pods Resources */,
+				1815FDD49496A24C080563F3 /* Sources */,
+				524AD842E13730D6E46B9B84 /* Resources */,
+				A462BE64322738CBD9562676 /* Embed Precompiled Frameworks */,
+				3F455488D63ADB59B4750EA0 /* Embed Frameworks */,
+				9D23B03087CE6ED570058B47 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,189 +329,177 @@
 			);
 			name = Beerfinder;
 			productName = Beerfinder;
-			productReference = FCC6D4301F27154100E8EA1B /* Beerfinder.app */;
+			productReference = CC9A0C577A8D0EF59C3198C2 /* Beerfinder.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FCC6D40F1F27152200E8EA1B /* Project object */ = {
+		9499B4BE23B59EED43F9A70F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "Dylan Elliott";
 				TargetAttributes = {
-					FCC6D4161F27152200E8EA1B = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 6CW3378X23;
-						ProvisioningStyle = Manual;
-					};
-					FCC6D42F1F27154100E8EA1B = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 6CW3378X23;
-						ProvisioningStyle = Manual;
-					};
 				};
 			};
-			buildConfigurationList = FCC6D4121F27152200E8EA1B /* Build configuration list for PBXProject "Wayfinder" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 38C1857F17A1D050119316EB /* Build configuration list for PBXProject "Wayfinder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
-			mainGroup = FCC6D40E1F27152200E8EA1B;
-			productRefGroup = FCC6D4181F27152200E8EA1B /* Products */;
+			mainGroup = 776BF138FF362267C0B8D862;
+			productRefGroup = 92BB247E6C7A42A1EA90A8CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FCC6D4161F27152200E8EA1B /* Wayfinder */,
-				FCC6D42F1F27154100E8EA1B /* Beerfinder */,
+				3CCD64EFA405A4E4B31C5B9A /* Wayfinder */,
+				7E879B79C75F4C3602BE3729 /* Beerfinder */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FCC6D4151F27152200E8EA1B /* Resources */ = {
+		1B7138E196FE8BE5D06C8AE9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCC6D4251F27152200E8EA1B /* LaunchScreen.storyboard in Resources */,
-				FCC6D4221F27152200E8EA1B /* Assets.xcassets in Resources */,
-				FCC6D4201F27152200E8EA1B /* Main.storyboard in Resources */,
+				57BC81E6B8DA7603DF731D40 /* Assets.xcassets in Resources */,
+				2F73E9D110293EE8A7ACB3B7 /* LaunchScreen.storyboard in Resources */,
+				E6C05A194AB9AD8843C72DAF /* Main.storyboard in Resources */,
+				271588BC52D422CF6174B6DE /* AppStoreIcon.png in Resources */,
+				0A856F75BDF4477E17F7B61A /* HeadingIcon.psd in Resources */,
+				BF602F84F7486D5F6A776FA3 /* Icon-1024.png in Resources */,
+				47DB9DCA9D26C85E0A1F885B /* Icon-60@2x.png in Resources */,
+				DD971A6450A26655BFAEC0E4 /* Icon-60@3x.png in Resources */,
+				8EEC53EDBED23E99D1AF3AAE /* Icon-76.png in Resources */,
+				1718E4DD9A20F35D4A759C75 /* Icon-76@2x.png in Resources */,
+				13A072BFDD7A1890576845A4 /* Icon-83.5@2x.png in Resources */,
+				ED11187CD115880FDE370F59 /* Wayfinder Screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FCC6D42E1F27154100E8EA1B /* Resources */ = {
+		524AD842E13730D6E46B9B84 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCC6D43D1F27154100E8EA1B /* LaunchScreen.storyboard in Resources */,
-				FCBDD5601F30273D006729A4 /* Credentials.plist in Resources */,
-				FCC6D43A1F27154100E8EA1B /* Assets.xcassets in Resources */,
-				FCC6D4381F27154100E8EA1B /* Main.storyboard in Resources */,
+				47588E3216E6995462325A13 /* Assets.xcassets in Resources */,
+				03A40416B62F6A31AE31A8C8 /* LaunchScreen.storyboard in Resources */,
+				DFE811FCC30136BEDEE6A190 /* Main.storyboard in Resources */,
+				07B1BDCF5B42856173FCF7EC /* AppStoreIcon.png in Resources */,
+				F0B698C23D43EABBF979242B /* BeerBottle.png in Resources */,
+				202C744F117F3D380E9816C4 /* BeerBottle.psd in Resources */,
+				04851ADD17B513B157EDCE99 /* BeerBottle.svg in Resources */,
+				28D197D2C3F232B44DBCCC43 /* Beerfinder Screenshot.png in Resources */,
+				48E6D86C358AB0FFA897FCCE /* BeerfinderIcon.psd in Resources */,
+				19B03F493D3E8958DB9034CB /* Icon-1024.png in Resources */,
+				5D26EEB8E4CB14CD0B48C79C /* Icon-60@2x.png in Resources */,
+				55EB36DD2048A1DB0F24AA7B /* Icon-60@3x.png in Resources */,
+				EE49A724AAF9358CFCE69A37 /* Icon-76.png in Resources */,
+				D26F04B1D4B6F91670EF7B3A /* Icon-76@2x.png in Resources */,
+				0B18830C4FE2A354FE8F4405 /* Icon-83.5@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		65C96C318005FB0B202702B9 /* [CP] Copy Pods Resources */ = {
+		A462BE64322738CBD9562676 /* Embed Precompiled Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "Embed Precompiled Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Beerfinder/Pods-Beerfinder-resources.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "echo \"Skipping, nothing to be embedded.\"";
 		};
-		C3881535BDCF887EB31A52B2 /* [CP] Check Pods Manifest.lock */ = {
+		F58B4390FEA37E01787767B1 /* Embed Precompiled Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "Embed Precompiled Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E96D1212E1396636A70E35D1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Beerfinder/Pods-Beerfinder-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "echo \"Skipping, nothing to be embedded.\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FCC6D4131F27152200E8EA1B /* Sources */ = {
+		1815FDD49496A24C080563F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC0BA2061F27488F00CA2C0F /* Headable.swift in Sources */,
-				FCC6D4581F2730E600E8EA1B /* LocationSearchManager.swift in Sources */,
-				FCC6D4551F2717D400E8EA1B /* HeadingArrowView.swift in Sources */,
-				FCC6D41D1F27152200E8EA1B /* WayfinderViewController.swift in Sources */,
-				FCC6D44D1F27164100E8EA1B /* HeadingViewController.swift in Sources */,
-				FCC6D41B1F27152200E8EA1B /* AppDelegate.swift in Sources */,
-				FCC6D44A1F2715ED00E8EA1B /* UserLocationManager.swift in Sources */,
-				FCC6D4501F27173C00E8EA1B /* LocationSelectionViewController.swift in Sources */,
-				FCC6D4521F27178800E8EA1B /* HeadingView.swift in Sources */,
+				C81B85B87F1E76E0EEE5F010 /* AppDelegate.swift in Sources */,
+				D895AF30B8445BA445FFBD79 /* BeerfinderViewController.swift in Sources */,
+				991FC8358001E79E6B36D83F /* Bottleshop.swift in Sources */,
+				29DEF1E1E60D4C2841092F88 /* BottleshopManager.swift in Sources */,
+				CD458A2AFD89B79F01285CA4 /* Credentials.swift in Sources */,
+				1E648013B42AE9EC38B045CE /* HeadingBottleView.swift in Sources */,
+				698BF09F1A2E55DD98CB1588 /* Headable.swift in Sources */,
+				3D86A527973D6266BD021476 /* HeadingView.swift in Sources */,
+				AEB8371F5756629BF1DDE9E4 /* HeadingViewController.swift in Sources */,
+				6C6CDC426A5105B01F896684 /* UserLocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FCC6D42C1F27154100E8EA1B /* Sources */ = {
+		D9BC036FCCD3DF31E6029D4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCC6D4351F27154100E8EA1B /* BeerfinderViewController.swift in Sources */,
-				FCC6D44E1F27164100E8EA1B /* HeadingViewController.swift in Sources */,
-				FCC6D4531F27178800E8EA1B /* HeadingView.swift in Sources */,
-				FCC6D4591F2730E600E8EA1B /* LocationSearchManager.swift in Sources */,
-				FC0BA2031F2744A300CA2C0F /* HeadingBottleView.swift in Sources */,
-				FCC6D4331F27154100E8EA1B /* AppDelegate.swift in Sources */,
-				FCF0CC571F74E8020077A72D /* Credentials.swift in Sources */,
-				FCC6D44B1F2715ED00E8EA1B /* UserLocationManager.swift in Sources */,
-				FCC6D4561F2717D400E8EA1B /* HeadingArrowView.swift in Sources */,
-				FC0BA2071F27488F00CA2C0F /* Headable.swift in Sources */,
-				FC0BA2021F2744A300CA2C0F /* Bottleshop.swift in Sources */,
-				FC0BA2041F2744A300CA2C0F /* BottleshopManager.swift in Sources */,
+				9EF761755F33E197372594D0 /* Headable.swift in Sources */,
+				989A3DEFF6A191F0F2D0D72C /* HeadingView.swift in Sources */,
+				16A3B2783D5D649DBC7EB923 /* HeadingViewController.swift in Sources */,
+				77CB922481D385625A9021AC /* UserLocationManager.swift in Sources */,
+				9EF76CA60A0ED53F2DA68990 /* AppDelegate.swift in Sources */,
+				110B5337D6F874C8F84106B8 /* HeadingArrowView.swift in Sources */,
+				A40A269683BAC0F5E19FBCC1 /* LocationSearchManager.swift in Sources */,
+				962209345AE4813C784444E8 /* LocationSelectionViewController.swift in Sources */,
+				3093751FDE0285DC41796B7A /* WayfinderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FCC6D41E1F27152200E8EA1B /* Main.storyboard */ = {
+		6D2C240B4A13359D024A8811 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FCC6D41F1F27152200E8EA1B /* Base */,
+				4B526BA9955C37B024ACA70D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		FCC6D4231F27152200E8EA1B /* LaunchScreen.storyboard */ = {
+		9C1AF4EAD6769F8892FAAD79 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FCC6D4241F27152200E8EA1B /* Base */,
+				4B9923FA4A7466796B3772F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6E218C78453E67BF0E2C267 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				426951E54B213EEF2688C64A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		FCC6D4361F27154100E8EA1B /* Main.storyboard */ = {
+		F5A780B3671E1A86984D813C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FCC6D4371F27154100E8EA1B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FCC6D43B1F27154100E8EA1B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FCC6D43C1F27154100E8EA1B /* Base */,
+				3E7A8EC04EF81B51566AF640 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -399,34 +507,43 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FCC6D4271F27152200E8EA1B /* Debug */ = {
+		2141FE02C62DAD1878DD3A4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -440,43 +557,49 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		FCC6D4281F27152200E8EA1B /* Release */ = {
+		4D6753DA8F0325F04DC28533 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -484,109 +607,133 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		FCC6D42A1F27152200E8EA1B /* Debug */ = {
+		84D6F7DB65AE7896A8C8F442 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6CW3378X23;
-				INFOPLIST_FILE = Wayfinder/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dylanelliott.wayfinder;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c7f2a366-f7cf-4b2d-bf4d-c3485a2b8114";
-				PROVISIONING_PROFILE_SPECIFIER = "Wayfinder Development Provisioning Profile";
-				SWIFT_VERSION = 3.0;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Beerfinder/Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dylanelliott.Beerfinder;
+				PRODUCT_NAME = Beerfinder;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		FCC6D42B1F27152200E8EA1B /* Release */ = {
+		E4019F73B8D81F3989A897F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = 6CW3378X23;
-				INFOPLIST_FILE = Wayfinder/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dylanelliott.wayfinder;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b517f0ac-19a5-49e1-b332-270bfc2c2595";
-				PROVISIONING_PROFILE_SPECIFIER = "Wayfinder App Store Provisioning Profile";
-				SWIFT_VERSION = 3.0;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Wayfinder/Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dylanelliott.Wayfinder;
+				PRODUCT_NAME = Wayfinder;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		FCC6D4401F27154100E8EA1B /* Debug */ = {
+		FCA03A260AC3E03113C5AE73 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD4E896A5477F8A85124CC0B /* Pods-Beerfinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6CW3378X23;
-				INFOPLIST_FILE = Beerfinder/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dylanelliott.beerfinder;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2820b994-e6bb-40e7-b886-7427b58e77f3";
-				PROVISIONING_PROFILE_SPECIFIER = "Beerfinder Development Provisioning Profile";
-				SWIFT_VERSION = 3.0;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Beerfinder/Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dylanelliott.Beerfinder;
+				PRODUCT_NAME = Beerfinder;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD59B24DA028A01EF42AD0C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Wayfinder/Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dylanelliott.Wayfinder;
+				PRODUCT_NAME = Wayfinder;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		FCC6D4411F27154100E8EA1B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6921C46C508A29E3D80826C0 /* Pods-Beerfinder.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = 6CW3378X23;
-				INFOPLIST_FILE = Beerfinder/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dylanelliott.beerfinder;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "aad864f5-9600-4bc6-b76b-202d355dac10";
-				PROVISIONING_PROFILE_SPECIFIER = "Beerfinder App Store Provisioning Profile";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FCC6D4121F27152200E8EA1B /* Build configuration list for PBXProject "Wayfinder" */ = {
+		38C1857F17A1D050119316EB /* Build configuration list for PBXProject "Wayfinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FCC6D4271F27152200E8EA1B /* Debug */,
-				FCC6D4281F27152200E8EA1B /* Release */,
+				2141FE02C62DAD1878DD3A4A /* Debug */,
+				4D6753DA8F0325F04DC28533 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FCC6D4291F27152200E8EA1B /* Build configuration list for PBXNativeTarget "Wayfinder" */ = {
+		BC02A163D0EC3342CA09734B /* Build configuration list for PBXNativeTarget "Wayfinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FCC6D42A1F27152200E8EA1B /* Debug */,
-				FCC6D42B1F27152200E8EA1B /* Release */,
+				FD59B24DA028A01EF42AD0C2 /* Debug */,
+				E4019F73B8D81F3989A897F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FCC6D43F1F27154100E8EA1B /* Build configuration list for PBXNativeTarget "Beerfinder" */ = {
+		DB18C937DA4954281C978CC5 /* Build configuration list for PBXNativeTarget "Beerfinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FCC6D4401F27154100E8EA1B /* Debug */,
-				FCC6D4411F27154100E8EA1B /* Release */,
+				84D6F7DB65AE7896A8C8F442 /* Debug */,
+				FCA03A260AC3E03113C5AE73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FCC6D40F1F27152200E8EA1B /* Project object */;
+	rootObject = 9499B4BE23B59EED43F9A70F /* Project object */;
 }
