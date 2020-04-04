@@ -10,7 +10,9 @@ extension Target {
         let targetName = name
         let bundleId = "com.dylanelliott.\(name)"
         
-        var infoPlistExtensions = [String: InfoPlist.Value]()
+        var infoPlistExtensions: [String: InfoPlist.Value] = [
+            "NSLocationWhenInUseUsageDescription": "Location is required to show you to your destinations"
+        ]
         
         if case let .single(identifier) = type {
             infoPlistExtensions["WFPlacesType"] = .string(identifier)
