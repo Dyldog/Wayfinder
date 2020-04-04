@@ -25,7 +25,7 @@ class LocationSearchManager: NSObject {
             lastSearch?.cancel()
         }
         
-        let searchRequest = MKLocalSearchRequest()
+        let searchRequest = MKLocalSearch.Request()
         searchRequest.naturalLanguageQuery = searchText
         
         let search = MKLocalSearch(request: searchRequest)

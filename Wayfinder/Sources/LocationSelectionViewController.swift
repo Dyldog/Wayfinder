@@ -38,8 +38,8 @@ class LocationSelectionViewController: UIViewController, UITextFieldDelegate, Lo
     override func viewWillAppear(_ animated: Bool) {
         
         //TODO: Change to UIKeyboardWillChangeFrame notification
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: .UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -53,17 +53,17 @@ class LocationSelectionViewController: UIViewController, UITextFieldDelegate, Lo
     
     // MARK: - UIControl Methods
     
-    func keyboardWillShow(notification: Notification) {
+    @objc func keyboardWillShow(notification: Notification) {
         
             
         let infoDict = notification.userInfo!
-        let keyboardFrame = (infoDict[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let keyboardFrame = (infoDict[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         let keyboardHeight = keyboardFrame.height
         
         keyboardSpaceConstraint?.constant = keyboardHeight - self.buttonView!.frame.height
     }
     
-    func keyboardWillHide(notification: Notification) {
+    @objc func keyboardWillHide(notification: Notification) {
         keyboardSpaceConstraint?.constant = 0
     }
     
@@ -107,7 +107,7 @@ class LocationSelectionViewController: UIViewController, UITextFieldDelegate, Lo
         var cell = tableView.dequeueReusableCell(withIdentifier: cellId)
         
         if cell == nil {
-            cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: cellId)
+            cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: cellId)
         }
         
         let currentPlace = places[indexPath.row]
