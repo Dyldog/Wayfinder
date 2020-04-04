@@ -28,6 +28,15 @@ class WayfinderTests: XCTestCase {
     }
     
     func testScreenshot() {
+        waitToNotExist(app.staticTexts["Searching..."], timeout: 5.0)
         snapshot("0_Home_Screen")
+    }
+}
+
+extension XCTestCase {
+    func waitToNotExist(_ element: XCUIElement, timeout: Double) {
+        let doesNotExistPredicate = NSPredicate(format: "exists == FALSE")
+        self.expectation(for: doesNotExistPredicate, evaluatedWith: element, handler: nil)
+        self.waitForExpectations(timeout: timeout, handler: nil)
     }
 }
