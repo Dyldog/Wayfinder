@@ -6,3 +6,6 @@ Podfile.lock
 .DS_Store
 Carthage
 xcuserdata
+*.ipa
+*.dSYM.zip
+*.mobileprovision
