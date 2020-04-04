@@ -16,23 +16,45 @@ import CoreLocation
 
 class HeadingViewController: UIViewController, UserLocationManagerDelegate {
     
-    let userLocationManager = UserLocationManager()
+    var userLocationManager: UserLocationManagerType
     var destination : Headable?
     
     @IBOutlet var headingView : HeadingView?
     
     @IBOutlet var bottomView: UIView?
     @IBOutlet var distanceView: UIView?
+    @IBOutlet var distanceTitleLabel : UILabel?
     @IBOutlet var distanceLabel : UILabel?
     
     @IBOutlet var destinationView: UIView?
+    @IBOutlet var destinationTitleLabel : UILabel?
     @IBOutlet var destinationLabel : UILabel?
     
     @IBOutlet var changeLocationButton: UIButton?
+    
+    required init?(coder: NSCoder) {
+        if LaunchArguments.mockLocation.isPresent {
+            userLocationManager = MockUserLocationManager()
+        } else {
+            userLocationManager = UserLocationManager()
+        }
+        super.init(coder: coder)
+    }
         
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        view.backgroundColor = .background
+        destinationView?.backgroundColor = .toolbar
+        bottomView?.backgroundColor = .toolbar
+        
+        destinationTitleLabel?.textColor = .h1
+        destinationLabel?.textColor = .h2
+        
+        distanceTitleLabel?.textColor = .h1
+        distanceLabel?.textColor = .h2
+        
+        changeLocationButton?.setTitleColor(.button, for: .normal)
         
         userLocationManager.delegate = self
         userLocationManager.startLocationEvents()

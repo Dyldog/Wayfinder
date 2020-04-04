@@ -1,7 +1,7 @@
 import ProjectDescription
 
 let version = "1.0"
-let buildNumber = 3
+let buildNumber = 4
 
 enum PlaceType: Equatable {
     case single(_ identifier: String)
@@ -86,6 +86,7 @@ let project = Project(
 	targets: [
         Target.makeFinder("Wayfinder", type: .multi),
         Target.makeFinder("Beerfinder", type: .single("liquor_store")),
-        Target.makeFinder("SupermarketFinder", type: .single("supermarket"))
+        Target.makeFinder("SupermarketFinder", type: .single("supermarket")),
+        Target.makeFinder("GroceryFinder", type: .single("test"))
 	].flatMap { $0 }
 )

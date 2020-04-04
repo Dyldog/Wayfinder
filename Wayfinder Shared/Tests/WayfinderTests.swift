@@ -7,6 +7,7 @@ class WayfinderTests: XCTestCase {
         app = XCUIApplication()
         setupSnapshot(app)
         continueAfterFailure = false
+        app.launchArguments = ["MOCK_LOCATION"]
         app.launch()
         
         addUIInterruptionMonitor(withDescription: "System Dialog") { alert in

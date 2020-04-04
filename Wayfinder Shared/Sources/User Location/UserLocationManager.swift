@@ -58,7 +58,25 @@ extension CLLocation {
     }
 }
 
-class UserLocationManager: NSObject, CLLocationManagerDelegate {
+protocol UserLocationManagerType {
+    var delegate : UserLocationManagerDelegate? { get set }
+    func startLocationEvents()
+    
+    var latestHeading : CLLocationDirection? { get }
+    var latestLocation : CLLocation? { get }
+}
+
+class MockUserLocationManager: UserLocationManagerType {
+    var delegate : UserLocationManagerDelegate?
+    let latestHeading: CLLocationDirection? = 0
+    var latestLocation: CLLocation? = CLLocation(latitude: -37.840935, longitude: 144.946457)
+    
+    func startLocationEvents() {
+        delegate?.userLocationManagerDidUpdate()
+    }
+}
+
+class UserLocationManager: NSObject, UserLocationManagerType, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     
     var delegate : UserLocationManagerDelegate?

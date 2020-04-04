@@ -29,6 +29,12 @@ class LocationSelectionViewController: UIViewController, UITextFieldDelegate, Lo
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.shadowImage = UIImage()
+        
+        view.backgroundColor = .toolbar
+        self.placesTableView?.backgroundColor = .background
+        buttonView?.backgroundColor = .toolbar
+        
         self.locationSearchManager.delegate = self
         
         self.placesTableView!.delegate = self
@@ -109,6 +115,10 @@ class LocationSelectionViewController: UIViewController, UITextFieldDelegate, Lo
         if cell == nil {
             cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: cellId)
         }
+        
+        cell?.backgroundColor = .background
+        cell?.textLabel?.textColor = .h2
+        cell?.detailTextLabel?.textColor = .h1
         
         let currentPlace = places[indexPath.row]
         

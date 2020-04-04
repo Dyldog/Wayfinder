@@ -7,9 +7,15 @@ lane :release do |options|
 	app_name = app_subject + "Finder"
 	bundle_id = "com.dylanelliott." + app_name
 
-	# create_app_online(app_name: app_name, app_identifier: bundle_id)
-	# get_provisioning_profile(app_identifier: bundle_id, force: true)
+	create_app_online(app_name: app_name, app_identifier: bundle_id)
+	get_provisioning_profile(app_identifier: bundle_id, force: true)
     build_app(scheme: app_name)
+
+    snapshot(devices:[
+    	"iPhone 8",
+    	"iPhone 11",
+    ])
+
     upload_to_app_store(
     	submit_for_review: true,
     	subtitle: { "en-US": "Find your own way" },
@@ -58,7 +64,8 @@ lane :release do |options|
 			export_compliance_contains_proprietary_cryptography: false,
 			export_compliance_available_on_french_store: false
 		},
-		app_rating_config_path: "age_rating_config.json"
+		app_rating_config_path: "fastlane/metadata/age_rating_config.json",
+		force: true
     )
   end
 

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kwD-kz-8ra">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -53,7 +54,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yxR-43-vpU" userLabel="Bottom View">
-                                <rect key="frame" x="0.0" y="786" width="414" height="110"/>
+                                <rect key="frame" x="0.0" y="766" width="414" height="130"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kvI-9g-AqR">
                                         <rect key="frame" x="28" y="10" width="358" height="76"/>
@@ -119,11 +120,12 @@
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="9df-kR-UN9" firstAttribute="leading" secondItem="7VO-Ew-3g9" secondAttribute="leadingMargin" constant="20" id="6zK-m9-OAg"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kvI-9g-AqR" secondAttribute="bottom" constant="10" id="9B2-sA-3p2"/>
                             <constraint firstAttribute="trailing" secondItem="aWA-pZ-two" secondAttribute="trailing" id="DgS-5O-4MC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9df-kR-UN9" secondAttribute="trailing" constant="20" id="LFB-J8-hVE"/>
                             <constraint firstItem="9df-kR-UN9" firstAttribute="centerY" secondItem="7VO-Ew-3g9" secondAttribute="centerY" id="SA7-g7-JgP"/>
                             <constraint firstItem="xur-iz-dwb" firstAttribute="top" secondItem="h3P-I2-IHH" secondAttribute="bottom" id="WlJ-f0-i2j"/>
-                            <constraint firstItem="kvI-9g-AqR" firstAttribute="bottom" secondItem="8uZ-c4-fVt" secondAttribute="top" constant="10" id="X2s-tF-2Fo"/>
+                            <constraint firstItem="kvI-9g-AqR" firstAttribute="bottom" secondItem="8uZ-c4-fVt" secondAttribute="top" constant="-10" id="X2s-tF-2Fo"/>
                             <constraint firstAttribute="trailing" secondItem="yxR-43-vpU" secondAttribute="trailing" id="XGE-lN-Qgu"/>
                             <constraint firstAttribute="bottom" secondItem="yxR-43-vpU" secondAttribute="bottom" id="iAi-XX-983"/>
                             <constraint firstItem="aWA-pZ-two" firstAttribute="leading" secondItem="7VO-Ew-3g9" secondAttribute="leading" id="iUI-4E-gZW"/>
@@ -136,8 +138,10 @@
                         <outlet property="bottomView" destination="yxR-43-vpU" id="oji-U7-dBn"/>
                         <outlet property="changeLocationButton" destination="FrR-5n-oFZ" id="CHo-zY-F2p"/>
                         <outlet property="destinationLabel" destination="H3S-n1-egq" id="mUe-uB-cTn"/>
+                        <outlet property="destinationTitleLabel" destination="t2m-oH-m27" id="LiW-iO-1ku"/>
                         <outlet property="destinationView" destination="aWA-pZ-two" id="JUP-tD-5cO"/>
                         <outlet property="distanceLabel" destination="9Hk-8m-Md6" id="hmu-zc-Uom"/>
+                        <outlet property="distanceTitleLabel" destination="QF6-lq-zjS" id="Tcl-Ub-Fxj"/>
                         <outlet property="distanceView" destination="pqQ-xN-rXw" id="Vgf-p5-6LY"/>
                         <outlet property="headingView" destination="9df-kR-UN9" id="2UT-UU-NyA"/>
                         <outlet property="view" destination="7VO-Ew-3g9" id="zMP-M5-6Sq"/>
@@ -168,7 +172,7 @@
                                 </connections>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v05-BS-1pI">
-                                <rect key="frame" x="0.0" y="92" width="414" height="698"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="678"/>
                                 <color key="backgroundColor" red="0.12549019610000001" green="0.20000000000000001" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" name="Background"/>
                                 <prototypes>
@@ -220,7 +224,7 @@
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMU-AL-oxh" userLabel="Button View">
-                                <rect key="frame" x="0.0" y="790" width="414" height="18"/>
+                                <rect key="frame" x="0.0" y="770" width="414" height="38"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crs-xG-5yO">
                                         <rect key="frame" x="153" y="10" width="108" height="18"/>
@@ -248,7 +252,7 @@
                             <constraint firstItem="v05-BS-1pI" firstAttribute="top" secondItem="ald-rh-XL6" secondAttribute="bottom" constant="12" id="B6J-VD-vVr"/>
                             <constraint firstItem="mjD-0M-1Yg" firstAttribute="top" secondItem="OMU-AL-oxh" secondAttribute="bottom" id="BXa-b2-2jz"/>
                             <constraint firstItem="ald-rh-XL6" firstAttribute="leading" secondItem="Of5-Ih-vfA" secondAttribute="leadingMargin" id="GWY-yw-tY5"/>
-                            <constraint firstItem="mjD-0M-1Yg" firstAttribute="top" secondItem="crs-xG-5yO" secondAttribute="bottom" constant="-10" id="IUh-wf-OUJ"/>
+                            <constraint firstItem="mjD-0M-1Yg" firstAttribute="top" secondItem="crs-xG-5yO" secondAttribute="bottom" constant="10" id="IUh-wf-OUJ"/>
                             <constraint firstItem="ald-rh-XL6" firstAttribute="top" secondItem="Tuf-jj-DAB" secondAttribute="bottom" id="Vmq-fp-EwZ"/>
                             <constraint firstItem="Tuf-jj-DAB" firstAttribute="leading" secondItem="Of5-Ih-vfA" secondAttribute="leading" id="gkC-yv-TgL"/>
                             <constraint firstItem="OMU-AL-oxh" firstAttribute="leading" secondItem="Of5-Ih-vfA" secondAttribute="leading" id="hra-rt-slY"/>
@@ -276,10 +280,10 @@
             <color red="0.24300000071525574" green="0.55699998140335083" blue="0.34099999070167542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Button">
-            <color red="0.90600001811981201" green="0.29800000786781311" blue="0.23899999260902405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.90588235294117647" green="0.29803921568627451" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="H1">
-            <color red="0.2630000114440918" green="0.2630000114440918" blue="0.2630000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="H2">
             <color red="0.60399997234344482" green="0.60399997234344482" blue="0.60399997234344482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -288,7 +292,7 @@
             <color red="0.60399997234344482" green="0.60399997234344482" blue="0.60399997234344482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Toolbar">
-            <color red="0.13300000131130219" green="0.42399999499320984" blue="0.22400000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.071000002324581146" green="0.12200000137090683" blue="0.16099999845027924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
