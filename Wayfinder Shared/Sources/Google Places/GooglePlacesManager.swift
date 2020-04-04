@@ -44,7 +44,8 @@ class GooglePlacesManager: NSObject {
         let requestParams = ["location" : locationString,
                              "rankby" : "distance",
                              "type" : placesType,
-                             "key" : googleAPIKey]
+                             "key" : googleAPIKey,
+                             "opennow" : "true"]
         
         currentRequest = AF.request(googlePlacesURL, parameters: requestParams)
         currentRequest!.responseJSON { response in
