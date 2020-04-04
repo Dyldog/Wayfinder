@@ -1,21 +1,19 @@
 //
-//  ViewController.swift
+//  MultiPlaceHeadingViewController.swift
 //  Wayfinder
 //
-//  Created by Dylan Elliott on 25/7/17.
-//  Copyright © 2017 Dylan Elliott. All rights reserved.
+//  Created by Dylan Elliott on 4/4/20.
 //
 
 import UIKit
 import CoreLocation
 
-class MainViewController: HeadingViewController, LocationSelectionViewControllerDelegate {
+class MultiPlaceHeadingViewController: HeadingViewController, LocationSelectionViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        headingView?.headingImage = UIImage(named: "Arrow")
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -53,3 +51,21 @@ class MainViewController: HeadingViewController, LocationSelectionViewController
 
 }
 
+
+func image(with view: UIView) -> UIImage? {
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, false, 0.0)
+    defer { UIGraphicsEndImageContext() }
+    if let context = UIGraphicsGetCurrentContext() {
+        view.layer.render(in: context)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        return image
+    }
+    return nil
+}
+
+private func documentDirectory() -> String {
+    let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory,
+                                                                .userDomainMask,
+                                                                true)
+    return documentDirectory[0]
+}

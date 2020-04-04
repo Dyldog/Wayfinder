@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppHeadingView: HeadingView {
+class ArrowView: HeadingView {
     
     @IBInspectable var arrowWidth: CGFloat = 200.0
     @IBInspectable var arrowHeight: CGFloat = 200.0
@@ -74,8 +74,6 @@ class AppHeadingView: HeadingView {
             arrowPath.lineWidth = strokeWidth
             arrowPath.stroke()
         }
-        
-        
     }
 
 }

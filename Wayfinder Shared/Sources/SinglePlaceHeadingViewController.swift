@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GooglePlacesHeadingViewController: HeadingViewController, GooglePlacesManagerDelegate {
+class SinglePlaceHeadingViewController: HeadingViewController, GooglePlacesManagerDelegate {
     
     let placeManager = GooglePlacesManager()
 
@@ -17,6 +17,7 @@ class GooglePlacesHeadingViewController: HeadingViewController, GooglePlacesMana
         // Do any additional setup after loading the view, typically from a nib.
         
         self.placeManager.delegate = self
+        self.changeLocationButton?.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {

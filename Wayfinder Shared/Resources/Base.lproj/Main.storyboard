@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kwD-kz-8ra">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -21,54 +21,28 @@
                         <viewControllerLayoutGuide type="bottom" id="8uZ-c4-fVt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7VO-Ew-3g9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ref-cI-DL7" userLabel="Button View">
-                                <rect key="frame" x="0.0" y="629" width="375" height="38"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrR-5n-oFZ">
-                                        <rect key="frame" x="125.5" y="10" width="124" height="18"/>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
-                                        <inset key="contentEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Change Location">
-                                            <color key="titleColor" name="Button"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="Egk-8P-eoI" kind="presentation" identifier="LocationSelectionSegue" id="QIt-NG-O0Q"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="Toolbar"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="FrR-5n-oFZ" secondAttribute="bottom" constant="10" id="ORN-4a-NGX"/>
-                                    <constraint firstAttribute="height" constant="38" id="X3c-5t-81U"/>
-                                    <constraint firstItem="FrR-5n-oFZ" firstAttribute="centerX" secondItem="Ref-cI-DL7" secondAttribute="centerX" id="mck-BY-jtb"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWA-pZ-two" userLabel="Top Info View">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="62.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="106.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="xur-iz-dwb">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
+                                        <rect key="frame" x="0.0" y="44" width="414" height="54.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Destination" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2m-oH-m27">
-                                                <rect key="frame" x="140.5" y="0.0" width="94" height="20"/>
+                                                <rect key="frame" x="160" y="0.0" width="94" height="20"/>
                                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                                                 <color key="textColor" name="H1"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="North" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3S-n1-egq">
-                                                <rect key="frame" x="10" y="22" width="355" height="32.5"/>
+                                                <rect key="frame" x="168" y="22" width="78" height="32.5"/>
                                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="28"/>
                                                 <color key="textColor" name="H2"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="H3S-n1-egq" secondAttribute="trailing" constant="10" id="CCR-Gl-TJ0"/>
-                                            <constraint firstItem="H3S-n1-egq" firstAttribute="leading" secondItem="xur-iz-dwb" secondAttribute="leading" constant="10" id="DKE-lf-eaR"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" name="Toolbar"/>
@@ -78,83 +52,89 @@
                                     <constraint firstItem="xur-iz-dwb" firstAttribute="leading" secondItem="aWA-pZ-two" secondAttribute="leading" id="kXb-3p-mfw"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pqQ-xN-rXw" userLabel="Bottom Info View">
-                                <rect key="frame" x="0.0" y="584" width="375" height="53"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yxR-43-vpU" userLabel="Bottom View">
+                                <rect key="frame" x="0.0" y="786" width="414" height="110"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="voU-JH-T4D">
-                                        <rect key="frame" x="0.0" y="7.5" width="375" height="43.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kvI-9g-AqR">
+                                        <rect key="frame" x="28" y="10" width="358" height="76"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QF6-lq-zjS">
-                                                <rect key="frame" x="151" y="0.0" width="73" height="20"/>
-                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
-                                                <color key="textColor" name="H1"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hk-8m-Md6">
-                                                <rect key="frame" x="164.5" y="20" width="46.5" height="23.5"/>
-                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
-                                                <color key="textColor" name="H2"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pqQ-xN-rXw" userLabel="Bottom Info View">
+                                                <rect key="frame" x="0.0" y="0.0" width="358" height="53"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="voU-JH-T4D" userLabel="Info Stack View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="53"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QF6-lq-zjS">
+                                                                <rect key="frame" x="142.5" y="0.0" width="73" height="29.5"/>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                                <color key="textColor" name="H1"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0 km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hk-8m-Md6">
+                                                                <rect key="frame" x="156" y="29.5" width="46.5" height="23.5"/>
+                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                                                <color key="textColor" name="H2"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="voU-JH-T4D" secondAttribute="trailing" id="KdJ-mH-U8L"/>
+                                                    <constraint firstAttribute="bottom" secondItem="voU-JH-T4D" secondAttribute="bottom" id="PyM-Hh-w1j"/>
+                                                    <constraint firstItem="voU-JH-T4D" firstAttribute="top" secondItem="pqQ-xN-rXw" secondAttribute="top" id="Yga-cS-k5t"/>
+                                                    <constraint firstItem="voU-JH-T4D" firstAttribute="leading" secondItem="pqQ-xN-rXw" secondAttribute="leading" id="ZJB-fC-HKZ"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrR-5n-oFZ">
+                                                <rect key="frame" x="0.0" y="58" width="358" height="18"/>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                                <inset key="contentEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Change Location">
+                                                    <color key="titleColor" name="Button"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Egk-8P-eoI" kind="presentation" identifier="LocationSelectionSegue" id="QIt-NG-O0Q"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" name="Toolbar"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="voU-JH-T4D" secondAttribute="bottom" constant="2" id="G6r-5b-RZb"/>
-                                    <constraint firstAttribute="trailing" secondItem="voU-JH-T4D" secondAttribute="trailing" id="RlA-4b-Cro"/>
-                                    <constraint firstItem="voU-JH-T4D" firstAttribute="leading" secondItem="pqQ-xN-rXw" secondAttribute="leading" id="Uwh-y4-xKq"/>
-                                    <constraint firstAttribute="height" constant="53" id="WwK-wv-2Nu"/>
+                                    <constraint firstItem="kvI-9g-AqR" firstAttribute="leading" secondItem="yxR-43-vpU" secondAttribute="leadingMargin" constant="20" id="DUu-QH-w7t"/>
+                                    <constraint firstItem="kvI-9g-AqR" firstAttribute="top" secondItem="yxR-43-vpU" secondAttribute="top" constant="10" id="FcH-Ch-jIh"/>
+                                    <constraint firstItem="kvI-9g-AqR" firstAttribute="bottom" secondItem="yxR-43-vpU" secondAttribute="bottom" priority="750" constant="10" id="VoQ-Q9-jlD"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="kvI-9g-AqR" secondAttribute="trailing" constant="20" id="pdp-xj-7OU"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9df-kR-UN9" customClass="AppHeadingView" customModule="Beerfinder" customModuleProvider="target">
-                                <rect key="frame" x="76" y="222" width="223" height="223"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9df-kR-UN9" customClass="HeadingView" customModule="Beerfinder" customModuleProvider="target">
+                                <rect key="frame" x="40" y="281" width="334" height="334"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="arrowWidth">
-                                        <real key="value" value="150"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="arrowHeight">
-                                        <real key="value" value="200"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="arrowDipHeight">
-                                        <real key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
-                                        <real key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="leftStrokeColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="rightStrokeColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="leftFillColor">
-                                        <color key="value" red="0.90588235289999997" green="0.29803921570000003" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="rightFillColor">
-                                        <color key="value" red="0.67843137249999996" green="0.25490196079999999" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9df-kR-UN9" secondAttribute="height" multiplier="1:1" id="Ddo-LD-50x"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Ref-cI-DL7" secondAttribute="trailing" id="0u0-vZ-6rT"/>
+                            <constraint firstItem="9df-kR-UN9" firstAttribute="leading" secondItem="7VO-Ew-3g9" secondAttribute="leadingMargin" constant="20" id="6zK-m9-OAg"/>
                             <constraint firstAttribute="trailing" secondItem="aWA-pZ-two" secondAttribute="trailing" id="DgS-5O-4MC"/>
-                            <constraint firstItem="8uZ-c4-fVt" firstAttribute="top" secondItem="Ref-cI-DL7" secondAttribute="bottom" id="KNs-2n-Xir"/>
-                            <constraint firstItem="pqQ-xN-rXw" firstAttribute="leading" secondItem="7VO-Ew-3g9" secondAttribute="leading" id="WOl-q8-06u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9df-kR-UN9" secondAttribute="trailing" constant="20" id="LFB-J8-hVE"/>
+                            <constraint firstItem="9df-kR-UN9" firstAttribute="centerY" secondItem="7VO-Ew-3g9" secondAttribute="centerY" id="SA7-g7-JgP"/>
                             <constraint firstItem="xur-iz-dwb" firstAttribute="top" secondItem="h3P-I2-IHH" secondAttribute="bottom" id="WlJ-f0-i2j"/>
-                            <constraint firstItem="Ref-cI-DL7" firstAttribute="leading" secondItem="7VO-Ew-3g9" secondAttribute="leading" id="XhN-aC-2zE"/>
-                            <constraint firstItem="Ref-cI-DL7" firstAttribute="top" secondItem="pqQ-xN-rXw" secondAttribute="bottom" constant="-8" id="agF-1P-epN"/>
+                            <constraint firstItem="kvI-9g-AqR" firstAttribute="bottom" secondItem="8uZ-c4-fVt" secondAttribute="top" constant="10" id="X2s-tF-2Fo"/>
+                            <constraint firstAttribute="trailing" secondItem="yxR-43-vpU" secondAttribute="trailing" id="XGE-lN-Qgu"/>
+                            <constraint firstAttribute="bottom" secondItem="yxR-43-vpU" secondAttribute="bottom" id="iAi-XX-983"/>
                             <constraint firstItem="aWA-pZ-two" firstAttribute="leading" secondItem="7VO-Ew-3g9" secondAttribute="leading" id="iUI-4E-gZW"/>
                             <constraint firstItem="aWA-pZ-two" firstAttribute="top" secondItem="7VO-Ew-3g9" secondAttribute="top" id="kQW-Ti-E3s"/>
-                            <constraint firstAttribute="trailing" secondItem="pqQ-xN-rXw" secondAttribute="trailing" id="nqI-Mv-lqZ"/>
+                            <constraint firstItem="yxR-43-vpU" firstAttribute="leading" secondItem="7VO-Ew-3g9" secondAttribute="leading" id="l7p-v5-oYD"/>
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
+                        <outlet property="bottomView" destination="yxR-43-vpU" id="oji-U7-dBn"/>
+                        <outlet property="changeLocationButton" destination="FrR-5n-oFZ" id="CHo-zY-F2p"/>
                         <outlet property="destinationLabel" destination="H3S-n1-egq" id="mUe-uB-cTn"/>
                         <outlet property="destinationView" destination="aWA-pZ-two" id="JUP-tD-5cO"/>
                         <outlet property="distanceLabel" destination="9Hk-8m-Md6" id="hmu-zc-Uom"/>
@@ -176,11 +156,11 @@
                         <viewControllerLayoutGuide type="bottom" id="mjD-0M-1Yg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Of5-Ih-vfA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ald-rh-XL6">
-                                <rect key="frame" x="16" y="46" width="343" height="34"/>
+                                <rect key="frame" x="20" y="46" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
@@ -188,26 +168,26 @@
                                 </connections>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v05-BS-1pI">
-                                <rect key="frame" x="0.0" y="92" width="375" height="517"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="698"/>
                                 <color key="backgroundColor" red="0.12549019610000001" green="0.20000000000000001" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="separatorColor" red="0.12549019610000001" green="0.20000000000000001" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" name="Background"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationCell" textLabel="wtX-F4-07i" detailTextLabel="YKg-Fn-LSc" style="IBUITableViewCellStyleSubtitle" id="heD-2B-Hwq">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="heD-2B-Hwq" id="apT-hu-ZQf">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wtX-F4-07i">
-                                                    <rect key="frame" x="15" y="5" width="36" height="20"/>
+                                                    <rect key="frame" x="20" y="5" width="36" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="highlightedColor" name="H2"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YKg-Fn-LSc">
-                                                    <rect key="frame" x="15" y="25" width="45" height="14"/>
+                                                    <rect key="frame" x="20" y="25" width="45" height="14"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
                                                     <color key="textColor" name="H1"/>
@@ -222,7 +202,7 @@
                                 <sections/>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tuf-jj-DAB">
-                                <rect key="frame" x="0.0" y="-10" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="-10" width="414" height="56"/>
                                 <color key="barTintColor" name="Toolbar"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
@@ -240,10 +220,10 @@
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMU-AL-oxh" userLabel="Button View">
-                                <rect key="frame" x="0.0" y="609" width="375" height="38"/>
+                                <rect key="frame" x="0.0" y="790" width="414" height="18"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crs-xG-5yO">
-                                        <rect key="frame" x="133.5" y="10" width="108" height="18"/>
+                                        <rect key="frame" x="153" y="10" width="108" height="18"/>
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
                                         <inset key="contentEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Clear Location">
@@ -256,9 +236,8 @@
                                 </subviews>
                                 <color key="backgroundColor" name="Toolbar"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="IoH-6F-mUG"/>
-                                    <constraint firstAttribute="bottom" secondItem="crs-xG-5yO" secondAttribute="bottom" constant="10" id="MWh-96-M0S"/>
                                     <constraint firstItem="crs-xG-5yO" firstAttribute="centerX" secondItem="OMU-AL-oxh" secondAttribute="centerX" id="bdA-8J-asx"/>
+                                    <constraint firstItem="crs-xG-5yO" firstAttribute="top" secondItem="OMU-AL-oxh" secondAttribute="top" constant="10" id="wxC-Nw-SbC"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -269,6 +248,7 @@
                             <constraint firstItem="v05-BS-1pI" firstAttribute="top" secondItem="ald-rh-XL6" secondAttribute="bottom" constant="12" id="B6J-VD-vVr"/>
                             <constraint firstItem="mjD-0M-1Yg" firstAttribute="top" secondItem="OMU-AL-oxh" secondAttribute="bottom" id="BXa-b2-2jz"/>
                             <constraint firstItem="ald-rh-XL6" firstAttribute="leading" secondItem="Of5-Ih-vfA" secondAttribute="leadingMargin" id="GWY-yw-tY5"/>
+                            <constraint firstItem="mjD-0M-1Yg" firstAttribute="top" secondItem="crs-xG-5yO" secondAttribute="bottom" constant="-10" id="IUh-wf-OUJ"/>
                             <constraint firstItem="ald-rh-XL6" firstAttribute="top" secondItem="Tuf-jj-DAB" secondAttribute="bottom" id="Vmq-fp-EwZ"/>
                             <constraint firstItem="Tuf-jj-DAB" firstAttribute="leading" secondItem="Of5-Ih-vfA" secondAttribute="leading" id="gkC-yv-TgL"/>
                             <constraint firstItem="OMU-AL-oxh" firstAttribute="leading" secondItem="Of5-Ih-vfA" secondAttribute="leading" id="hra-rt-slY"/>
@@ -302,10 +282,10 @@
             <color red="0.2630000114440918" green="0.2630000114440918" blue="0.2630000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="H2">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.60399997234344482" green="0.60399997234344482" blue="0.60399997234344482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="H2">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.60399997234344482" green="0.60399997234344482" blue="0.60399997234344482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Toolbar">
             <color red="0.13300000131130219" green="0.42399999499320984" blue="0.22400000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -1,7 +1,7 @@
 import ProjectDescription
 
 extension Target {
-    static func makeFinder(_ name: String) -> Target {
+    static func makeFinder(_ name: String, multiplace: Bool) -> Target {
         let targetName = name
         let bundleId = "com.dylanelliott.\(name)"
 
@@ -20,7 +20,15 @@ extension Target {
             ],
             dependencies: [
                 .framework(path: "Carthage/Build/iOS/Alamofire.framework")
-            ]
+            ],
+            settings: Settings(
+                base: [
+                    "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : (multiplace ? "MULTIPLACE" : "")
+                ], 
+                debug: Configuration(settings: [
+                    "SWIFT_ACTIVE_COMPILATION_CONDITIONS": "$(inherited) DEBUG"
+                ])
+        )
         )
 
     }
@@ -30,7 +38,7 @@ extension Target {
 let project = Project(
 	name: "Wayfinder",
 	targets: [
-        .makeFinder("Wayfinder"),
-		.makeFinder("Beerfinder")
+        .makeFinder("Wayfinder", multiplace: true),
+        .makeFinder("Beerfinder", multiplace: false)
 	]
 )

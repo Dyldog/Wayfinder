@@ -20,12 +20,16 @@ class HeadingViewController: UIViewController, UserLocationManagerDelegate {
     var destination : Headable?
     
     @IBOutlet var headingView : HeadingView?
+    
+    @IBOutlet var bottomView: UIView?
     @IBOutlet var distanceView: UIView?
     @IBOutlet var distanceLabel : UILabel?
     
     @IBOutlet var destinationView: UIView?
     @IBOutlet var destinationLabel : UILabel?
     
+    @IBOutlet var changeLocationButton: UIButton?
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -51,13 +55,7 @@ class HeadingViewController: UIViewController, UserLocationManagerDelegate {
     
     func updateArrowViewPosition() {
         let topMargin : CGFloat = self.destinationView!.frame.maxY
-        let bottomMargin : CGFloat = {
-            if self.destination == nil {
-                return self.distanceView!.frame.maxY
-            } else {
-                return self.distanceView!.frame.minY
-            }
-        }()
+        let bottomMargin : CGFloat = self.bottomView!.frame.minY
         
         self.headingView!.frame.origin.x = self.view.frame.width / 2 - self.headingView!.frame.width / 2
         self.headingView!.frame.origin.y = topMargin + (bottomMargin - topMargin) / 2 - self.headingView!.frame.height / 2
