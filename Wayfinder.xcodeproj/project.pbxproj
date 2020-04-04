@@ -7,52 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03A40416B62F6A31AE31A8C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E218C78453E67BF0E2C267 /* LaunchScreen.storyboard */; };
+		01EC4F6F63D058734A3CCFAA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3691D1D9F0DD8B9FBFF79B9 /* MainViewController.swift */; };
 		04851ADD17B513B157EDCE99 /* BeerBottle.svg in Resources */ = {isa = PBXBuildFile; fileRef = DE0C8D3C4993410EB67F9E8E /* BeerBottle.svg */; };
 		07B1BDCF5B42856173FCF7EC /* AppStoreIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 978D8F2B55228D89BC557AD8 /* AppStoreIcon.png */; };
 		0A856F75BDF4477E17F7B61A /* HeadingIcon.psd in Resources */ = {isa = PBXBuildFile; fileRef = E260FA5BB79E48EC3479FB35 /* HeadingIcon.psd */; };
 		0B18830C4FE2A354FE8F4405 /* Icon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 800DE97F5EDF2D7EFF45E8F0 /* Icon-83.5@2x.png */; };
-		110B5337D6F874C8F84106B8 /* HeadingArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E4A36841A36FEF20AD429F /* HeadingArrowView.swift */; };
+		127F383474ABDD2FD6B7CCA1 /* AppHeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DFC152198074208F8B56D2 /* AppHeadingView.swift */; };
 		13A072BFDD7A1890576845A4 /* Icon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F9976E765530E50E51D84AC0 /* Icon-83.5@2x.png */; };
-		16A3B2783D5D649DBC7EB923 /* HeadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6814C80CFBA82A29FE10DFFD /* HeadingViewController.swift */; };
 		1718E4DD9A20F35D4A759C75 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BC5B0A9BABD9FC105455C1 /* Icon-76@2x.png */; };
+		17E28DFDBF7B77385B08D7BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8FDD196D9008C489267BC4 /* AppDelegate.swift */; };
 		19B03F493D3E8958DB9034CB /* Icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C4D6CDD1BDE293C34531B0B /* Icon-1024.png */; };
-		1E648013B42AE9EC38B045CE /* HeadingBottleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB98FABA9867434E252DA8 /* HeadingBottleView.swift */; };
 		202C744F117F3D380E9816C4 /* BeerBottle.psd in Resources */ = {isa = PBXBuildFile; fileRef = 38BF93D7CC4ADB4146FE562C /* BeerBottle.psd */; };
 		271588BC52D422CF6174B6DE /* AppStoreIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A19B761B1A781FA73A9AE482 /* AppStoreIcon.png */; };
 		28D197D2C3F232B44DBCCC43 /* Beerfinder Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 85243BCCD2B9BF64DF5246FA /* Beerfinder Screenshot.png */; };
 		29DEF1E1E60D4C2841092F88 /* BottleshopManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C44766533FD7C5650121FE5 /* BottleshopManager.swift */; };
-		2F73E9D110293EE8A7ACB3B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A780B3671E1A86984D813C /* LaunchScreen.storyboard */; };
-		3093751FDE0285DC41796B7A /* WayfinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04114577391E841D6D045C80 /* WayfinderViewController.swift */; };
-		37F62DFC4241F01B7F25C3C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A02507C28BC202EB0DB007 /* AppDelegate.swift */; };
-		3D86A527973D6266BD021476 /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BA90D2C3F6EE4DC2BF580E /* HeadingView.swift */; };
+		326862934FFF11CA74DB05FD /* HeadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB61391E5059F3C974B4BF /* HeadingViewController.swift */; };
 		47588E3216E6995462325A13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AC02015C39898C4B36CA69 /* Assets.xcassets */; };
 		47DB9DCA9D26C85E0A1F885B /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD59327F7494FAFF0F836E6 /* Icon-60@2x.png */; };
 		48E6D86C358AB0FFA897FCCE /* BeerfinderIcon.psd in Resources */ = {isa = PBXBuildFile; fileRef = A2D09DA17447473E6FD871BB /* BeerfinderIcon.psd */; };
+		4A2C6C6CB4C575E45D0E7A6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BBEC821DE61C6980B85CAE /* LaunchScreen.storyboard */; };
+		4F0A44C4F09A6038EE133909 /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CEB75B366636025F53F456 /* HeadingView.swift */; };
 		55EB36DD2048A1DB0F24AA7B /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3FE8C91B4985C435303275 /* Icon-60@3x.png */; };
 		57BC81E6B8DA7603DF731D40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C93DC3D8049FEBF69E77681 /* Assets.xcassets */; };
 		5D26EEB8E4CB14CD0B48C79C /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D4CC0B08D6C6580617A141 /* Icon-60@2x.png */; };
-		698BF09F1A2E55DD98CB1588 /* Headable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501FE9553C604F553D391CB4 /* Headable.swift */; };
-		6C6CDC426A5105B01F896684 /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564212948817B0C9CB569E53 /* UserLocationManager.swift */; };
-		77CB922481D385625A9021AC /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564212948817B0C9CB569E53 /* UserLocationManager.swift */; };
+		6336805EA368D488DE400D83 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D94BEF21E6C0BB3E81FC942 /* Alamofire.framework */; };
+		6567E55267F0715912015C7F /* LocationSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D307BAD66A44F226D8EAE3D0 /* LocationSelectionViewController.swift */; };
+		6E54FFD6BFFF7CE445902DBC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43A18671B0B386D9F68EF52 /* MainViewController.swift */; };
+		745561C79231B4C87EE1733B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7BBEC821DE61C6980B85CAE /* LaunchScreen.storyboard */; };
+		7E33A9381D3E2EA5E5B1CCC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8FDD196D9008C489267BC4 /* AppDelegate.swift */; };
+		8045AB8B22B60EE117CA5292 /* Headable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37A0FE530C0CCE6EFF20671 /* Headable.swift */; };
+		830C934FF43E680BB17750D0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D94BEF21E6C0BB3E81FC942 /* Alamofire.framework */; };
+		8E3409CA1810C95A064C1632 /* LocationSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D307BAD66A44F226D8EAE3D0 /* LocationSelectionViewController.swift */; };
 		8EEC53EDBED23E99D1AF3AAE /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0721586132419E5DCC6FA /* Icon-76.png */; };
-		962209345AE4813C784444E8 /* LocationSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F90C00EFF8E4961BD3F6E8 /* LocationSelectionViewController.swift */; };
-		989A3DEFF6A191F0F2D0D72C /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BA90D2C3F6EE4DC2BF580E /* HeadingView.swift */; };
+		904176F2B8F8AB6BA2D29863 /* LocationSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A16449C40DC67B1FF4F5B8 /* LocationSearchManager.swift */; };
+		988A5DAEBAA58F46E8D25857 /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E436F24573AE07D7A9801C /* UserLocationManager.swift */; };
 		991FC8358001E79E6B36D83F /* Bottleshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEB562DC89B438549586ED2 /* Bottleshop.swift */; };
-		9EF761755F33E197372594D0 /* Headable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501FE9553C604F553D391CB4 /* Headable.swift */; };
-		A40A269683BAC0F5E19FBCC1 /* LocationSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234343480A678B67D5FDA197 /* LocationSearchManager.swift */; };
-		AEB8371F5756629BF1DDE9E4 /* HeadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6814C80CFBA82A29FE10DFFD /* HeadingViewController.swift */; };
+		9B7A4455AD089A9C70272018 /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CEB75B366636025F53F456 /* HeadingView.swift */; };
+		B567B37EC5B134D54E5372D2 /* LocationSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A16449C40DC67B1FF4F5B8 /* LocationSearchManager.swift */; };
+		BE3E8C1BA0EE49C36394520D /* HeadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB61391E5059F3C974B4BF /* HeadingViewController.swift */; };
 		BF602F84F7486D5F6A776FA3 /* Icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = C895FD6593A8774770B5D8A0 /* Icon-1024.png */; };
 		CD458A2AFD89B79F01285CA4 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD83560843A3FA614F31D74 /* Credentials.swift */; };
 		D26F04B1D4B6F91670EF7B3A /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CE5DD3BF418DC919B951E8B /* Icon-76@2x.png */; };
-		D895AF30B8445BA445FFBD79 /* BeerfinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15103BB562110F6342B9FE3D /* BeerfinderViewController.swift */; };
 		DD971A6450A26655BFAEC0E4 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A64B3610BB5730E54A4B603 /* Icon-60@3x.png */; };
-		DFE811FCC30136BEDEE6A190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1AF4EAD6769F8892FAAD79 /* Main.storyboard */; };
-		E092BD795DB58388D4CC0879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A02507C28BC202EB0DB007 /* AppDelegate.swift */; };
-		E6C05A194AB9AD8843C72DAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D2C240B4A13359D024A8811 /* Main.storyboard */; };
+		E41D9FC899A362ACD6836621 /* Headable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37A0FE530C0CCE6EFF20671 /* Headable.swift */; };
+		E5C6CBC60C725175F2705EC7 /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E436F24573AE07D7A9801C /* UserLocationManager.swift */; };
+		EABAAF9430B1C64F950A64DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4790F713DD5BF885395F4E6F /* Main.storyboard */; };
 		ED11187CD115880FDE370F59 /* Wayfinder Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 7451E6607B3ABF4A0C504FAC /* Wayfinder Screenshot.png */; };
 		EE49A724AAF9358CFCE69A37 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 113E3209A7B9D90DD082148B /* Icon-76.png */; };
 		F0B698C23D43EABBF979242B /* BeerBottle.png in Resources */ = {isa = PBXBuildFile; fileRef = C10597A41A99124131BC855A /* BeerBottle.png */; };
+		F9E189910FB71934C4CC52C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4790F713DD5BF885395F4E6F /* Main.storyboard */; };
+		FD1EB9FBD3A7A6C925765A2A /* AppHeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E647307DE665BAD370F1497 /* AppHeadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,51 +81,50 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		04114577391E841D6D045C80 /* WayfinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayfinderViewController.swift; sourceTree = "<group>"; };
+		0E2F5431C6315E716CF764F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		113E3209A7B9D90DD082148B /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
-		15103BB562110F6342B9FE3D /* BeerfinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerfinderViewController.swift; sourceTree = "<group>"; };
+		15E436F24573AE07D7A9801C /* UserLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationManager.swift; sourceTree = "<group>"; };
 		1DE0721586132419E5DCC6FA /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
-		234343480A678B67D5FDA197 /* LocationSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchManager.swift; sourceTree = "<group>"; };
-		23E4A36841A36FEF20AD429F /* HeadingArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingArrowView.swift; sourceTree = "<group>"; };
 		2C44766533FD7C5650121FE5 /* BottleshopManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleshopManager.swift; sourceTree = "<group>"; };
 		2CE5DD3BF418DC919B951E8B /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		2E647307DE665BAD370F1497 /* AppHeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHeadingView.swift; sourceTree = "<group>"; };
 		31A951B0AE3D7453863A8652 /* Wayfinder.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Wayfinder.plist; sourceTree = "<group>"; };
-		34A02507C28BC202EB0DB007 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32CEB75B366636025F53F456 /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		38BF93D7CC4ADB4146FE562C /* BeerBottle.psd */ = {isa = PBXFileReference; path = BeerBottle.psd; sourceTree = "<group>"; };
 		3C93DC3D8049FEBF69E77681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3E7A8EC04EF81B51566AF640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		426951E54B213EEF2688C64A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46BC5B0A9BABD9FC105455C1 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
-		46F90C00EFF8E4961BD3F6E8 /* LocationSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectionViewController.swift; sourceTree = "<group>"; };
 		4A64B3610BB5730E54A4B603 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
-		4B526BA9955C37B024ACA70D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4B9923FA4A7466796B3772F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		501FE9553C604F553D391CB4 /* Headable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headable.swift; sourceTree = "<group>"; };
-		564212948817B0C9CB569E53 /* UserLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationManager.swift; sourceTree = "<group>"; };
 		5AEB562DC89B438549586ED2 /* Bottleshop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bottleshop.swift; sourceTree = "<group>"; };
-		6814C80CFBA82A29FE10DFFD /* HeadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingViewController.swift; sourceTree = "<group>"; };
 		6E3FE8C91B4985C435303275 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
 		7451E6607B3ABF4A0C504FAC /* Wayfinder Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wayfinder Screenshot.png"; sourceTree = "<group>"; };
 		7C4D6CDD1BDE293C34531B0B /* Icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-1024.png"; sourceTree = "<group>"; };
+		7D94BEF21E6C0BB3E81FC942 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		800DE97F5EDF2D7EFF45E8F0 /* Icon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-83.5@2x.png"; sourceTree = "<group>"; };
 		85243BCCD2B9BF64DF5246FA /* Beerfinder Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Beerfinder Screenshot.png"; sourceTree = "<group>"; };
 		8CD59327F7494FAFF0F836E6 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
-		8FBB98FABA9867434E252DA8 /* HeadingBottleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingBottleView.swift; sourceTree = "<group>"; };
 		9317B56848AAD5576044CFE9 /* Wayfinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wayfinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		978D8F2B55228D89BC557AD8 /* AppStoreIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppStoreIcon.png; sourceTree = "<group>"; };
 		9CDF7B242B967CF26A9D205D /* Beerfinder.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Beerfinder.plist; sourceTree = "<group>"; };
+		9D1FA2762EB8D3CB249C457B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DD83560843A3FA614F31D74 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		A19B761B1A781FA73A9AE482 /* AppStoreIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppStoreIcon.png; sourceTree = "<group>"; };
 		A2D09DA17447473E6FD871BB /* BeerfinderIcon.psd */ = {isa = PBXFileReference; path = BeerfinderIcon.psd; sourceTree = "<group>"; };
+		A37A0FE530C0CCE6EFF20671 /* Headable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headable.swift; sourceTree = "<group>"; };
 		B6AC02015C39898C4B36CA69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C10597A41A99124131BC855A /* BeerBottle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BeerBottle.png; sourceTree = "<group>"; };
 		C7D4CC0B08D6C6580617A141 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		C895FD6593A8774770B5D8A0 /* Icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-1024.png"; sourceTree = "<group>"; };
 		CC9A0C577A8D0EF59C3198C2 /* Beerfinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beerfinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0DFC152198074208F8B56D2 /* AppHeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHeadingView.swift; sourceTree = "<group>"; };
+		D307BAD66A44F226D8EAE3D0 /* LocationSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectionViewController.swift; sourceTree = "<group>"; };
+		D3691D1D9F0DD8B9FBFF79B9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D43A18671B0B386D9F68EF52 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DE0C8D3C4993410EB67F9E8E /* BeerBottle.svg */ = {isa = PBXFileReference; path = BeerBottle.svg; sourceTree = "<group>"; };
+		DF8FDD196D9008C489267BC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E260FA5BB79E48EC3479FB35 /* HeadingIcon.psd */ = {isa = PBXFileReference; path = HeadingIcon.psd; sourceTree = "<group>"; };
-		E3BA90D2C3F6EE4DC2BF580E /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
+		E3A16449C40DC67B1FF4F5B8 /* LocationSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchManager.swift; sourceTree = "<group>"; };
 		F9976E765530E50E51D84AC0 /* Icon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-83.5@2x.png"; sourceTree = "<group>"; };
+		FCBB61391E5059F3C974B4BF /* HeadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6336805EA368D488DE400D83 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,18 +140,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830C934FF43E680BB17750D0 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		013A84A600619595E9A803EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7BBEC821DE61C6980B85CAE /* LaunchScreen.storyboard */,
+				4790F713DD5BF885395F4E6F /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		1A5A1A60F88BA3BD43EAF7AC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				2719C362D795287C858D6830 /* Images */,
-				B6E218C78453E67BF0E2C267 /* LaunchScreen.storyboard */,
-				9C1AF4EAD6769F8892FAAD79 /* Main.storyboard */,
 				B6AC02015C39898C4B36CA69 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -176,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				72B707B9A063962B89C84D03 /* Beerfinder */,
+				E3674C306C932BDD18846C8E /* Carthage */,
 				C64B477621FDB28781C415F6 /* Derived */,
 				5DA63654B3D5E33FB4B9F509 /* Wayfinder */,
 				D3A380B3B86EB9F5EE6113E3 /* Wayfinder Shared */,
@@ -202,11 +215,11 @@
 		5DF5CF8CDBF411583AAF6C44 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				15103BB562110F6342B9FE3D /* BeerfinderViewController.swift */,
+				2E647307DE665BAD370F1497 /* AppHeadingView.swift */,
 				5AEB562DC89B438549586ED2 /* Bottleshop.swift */,
 				2C44766533FD7C5650121FE5 /* BottleshopManager.swift */,
 				9DD83560843A3FA614F31D74 /* Credentials.swift */,
-				8FBB98FABA9867434E252DA8 /* HeadingBottleView.swift */,
+				D3691D1D9F0DD8B9FBFF79B9 /* MainViewController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -229,13 +242,19 @@
 			);
 			sourceTree = "<group>";
 		};
+		87F12A064F22E1D55EDA17E5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7D94BEF21E6C0BB3E81FC942 /* Alamofire.framework */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 		890E9B063148A299CA61E5C8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				23E4A36841A36FEF20AD429F /* HeadingArrowView.swift */,
-				234343480A678B67D5FDA197 /* LocationSearchManager.swift */,
-				46F90C00EFF8E4961BD3F6E8 /* LocationSelectionViewController.swift */,
-				04114577391E841D6D045C80 /* WayfinderViewController.swift */,
+				D0DFC152198074208F8B56D2 /* AppHeadingView.swift */,
+				D43A18671B0B386D9F68EF52 /* MainViewController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -253,11 +272,17 @@
 			isa = PBXGroup;
 			children = (
 				BDF17453946D0691B08D386E /* Images */,
-				F5A780B3671E1A86984D813C /* LaunchScreen.storyboard */,
-				6D2C240B4A13359D024A8811 /* Main.storyboard */,
 				3C93DC3D8049FEBF69E77681 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B89B21228733704959FB5F43 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				87F12A064F22E1D55EDA17E5 /* iOS */,
+			);
+			path = Build;
 			sourceTree = "<group>";
 		};
 		BDF17453946D0691B08D386E /* Images */ = {
@@ -296,13 +321,32 @@
 		D3A380B3B86EB9F5EE6113E3 /* Wayfinder Shared */ = {
 			isa = PBXGroup;
 			children = (
-				34A02507C28BC202EB0DB007 /* AppDelegate.swift */,
-				501FE9553C604F553D391CB4 /* Headable.swift */,
-				E3BA90D2C3F6EE4DC2BF580E /* HeadingView.swift */,
-				6814C80CFBA82A29FE10DFFD /* HeadingViewController.swift */,
-				564212948817B0C9CB569E53 /* UserLocationManager.swift */,
+				013A84A600619595E9A803EB /* Resources */,
+				DC478C8A5ADD3AB7734983C7 /* Sources */,
 			);
 			path = "Wayfinder Shared";
+			sourceTree = "<group>";
+		};
+		DC478C8A5ADD3AB7734983C7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DF8FDD196D9008C489267BC4 /* AppDelegate.swift */,
+				A37A0FE530C0CCE6EFF20671 /* Headable.swift */,
+				32CEB75B366636025F53F456 /* HeadingView.swift */,
+				FCBB61391E5059F3C974B4BF /* HeadingViewController.swift */,
+				E3A16449C40DC67B1FF4F5B8 /* LocationSearchManager.swift */,
+				D307BAD66A44F226D8EAE3D0 /* LocationSelectionViewController.swift */,
+				15E436F24573AE07D7A9801C /* UserLocationManager.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E3674C306C932BDD18846C8E /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				B89B21228733704959FB5F43 /* Build */,
+			);
+			path = Carthage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,9 +423,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745561C79231B4C87EE1733B /* LaunchScreen.storyboard in Resources */,
+				F9E189910FB71934C4CC52C8 /* Main.storyboard in Resources */,
 				57BC81E6B8DA7603DF731D40 /* Assets.xcassets in Resources */,
-				2F73E9D110293EE8A7ACB3B7 /* LaunchScreen.storyboard in Resources */,
-				E6C05A194AB9AD8843C72DAF /* Main.storyboard in Resources */,
 				271588BC52D422CF6174B6DE /* AppStoreIcon.png in Resources */,
 				0A856F75BDF4477E17F7B61A /* HeadingIcon.psd in Resources */,
 				BF602F84F7486D5F6A776FA3 /* Icon-1024.png in Resources */,
@@ -399,8 +443,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				47588E3216E6995462325A13 /* Assets.xcassets in Resources */,
-				03A40416B62F6A31AE31A8C8 /* LaunchScreen.storyboard in Resources */,
-				DFE811FCC30136BEDEE6A190 /* Main.storyboard in Resources */,
 				07B1BDCF5B42856173FCF7EC /* AppStoreIcon.png in Resources */,
 				F0B698C23D43EABBF979242B /* BeerBottle.png in Resources */,
 				202C744F117F3D380E9816C4 /* BeerBottle.psd in Resources */,
@@ -413,6 +455,8 @@
 				EE49A724AAF9358CFCE69A37 /* Icon-76.png in Resources */,
 				D26F04B1D4B6F91670EF7B3A /* Icon-76@2x.png in Resources */,
 				0B18830C4FE2A354FE8F4405 /* Icon-83.5@2x.png in Resources */,
+				4A2C6C6CB4C575E45D0E7A6C /* LaunchScreen.storyboard in Resources */,
+				EABAAF9430B1C64F950A64DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,13 +469,21 @@
 			files = (
 			);
 			inputPaths = (
+				Carthage/Build/iOS/Alamofire.framework,
+				Carthage/Build/iOS/Alamofire.framework.dSYM,
+				"Carthage/Build/iOS/806FA142-F936-3115-A2E8-DF883CB032F2.bcsymbolmap",
+				"Carthage/Build/iOS/B6F52354-4805-377A-A0B0-CDE5F0984373.bcsymbolmap",
 			);
 			name = "Embed Precompiled Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Alamofire.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/806FA142-F936-3115-A2E8-DF883CB032F2.bcsymbolmap",
+				"${BUILT_PRODUCTS_DIR}/B6F52354-4805-377A-A0B0-CDE5F0984373.bcsymbolmap",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Skipping, nothing to be embedded.\"";
+			shellScript = "#!/bin/sh\nset -e\nset -u\nset -o pipefail\n\nfunction on_error {\n  echo \"$(realpath -mq \"${0}\"):$1: error: Unexpected failure\"\n}\ntrap 'on_error $LINENO' ERR\n\nif [ -z ${FRAMEWORKS_FOLDER_PATH+x} ]; then\n  # If FRAMEWORKS_FOLDER_PATH is not set, then there's nowhere for us to copy\n  # frameworks to, so exit 0 (signalling the script phase was successful).\n  exit 0\nfi\n\necho \"mkdir -p ${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\nmkdir -p \"${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\n\nSWIFT_STDLIB_PATH=\"${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"\n# Used as a return value for each invocation of `strip_invalid_archs` function.\nSTRIP_BINARY_RETVAL=0\n# This protects against multiple targets copying the same framework dependency at the same time. The solution\n# was originally proposed here: https://lists.samba.org/archive/rsync/2008-February/020158.html\nRSYNC_PROTECT_TMP_FILES=(--filter \"P .*.??????\")\n# Copies and strips a vendored framework\ninstall_framework()\n{\n  if [ -r \"${BUILT_PRODUCTS_DIR}/$1\" ]; then\n    local source=\"${BUILT_PRODUCTS_DIR}/$1\"\n  elif [ -r \"${BUILT_PRODUCTS_DIR}/$(basename \"$1\")\" ]; then\n    local source=\"${BUILT_PRODUCTS_DIR}/$(basename \"$1\")\"\n  elif [ -r \"$1\" ]; then\n    local source=\"$1\"\n  fi\n  local destination=\"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\n  if [ -L \"${source}\" ]; then\n    echo \"Symlinked...\"\n    source=\"$(readlink \"${source}\")\"\n  fi\n  # Use filter instead of exclude so missing patterns don't throw errors.\n  echo \"rsync --delete -av \"${RSYNC_PROTECT_TMP_FILES[@]}\" --filter \\\"- CVS/\\\" --filter \\\"- .svn/\\\" --filter \\\"- .git/\\\" --filter \\\"- .hg/\\\" --filter \\\"- Headers\\\" --filter \\\"- PrivateHeaders\\\" --filter \\\"- Modules\\\" \\\"${source}\\\" \\\"${destination}\\\"\"\n  rsync --delete -av \"${RSYNC_PROTECT_TMP_FILES[@]}\" --filter \"- CVS/\" --filter \"- .svn/\" --filter \"- .git/\" --filter \"- .hg/\" --filter \"- Headers\" --filter \"- PrivateHeaders\" --filter \"- Modules\" \"${source}\" \"${destination}\"\n  local basename\n  basename=\"$(basename -s .framework \"$1\")\"\n  binary=\"${destination}/${basename}.framework/${basename}\"\n  if ! [ -r \"$binary\" ]; then\n    binary=\"${destination}/${basename}\"\n  elif [ -L \"${binary}\" ]; then\n    echo \"Destination binary is symlinked...\"\n    dirname=\"$(dirname \"${binary}\")\"\n    binary=\"${dirname}/$(readlink \"${binary}\")\"\n  fi\n  # Strip invalid architectures so \"fat\" simulator / device frameworks work on device\n  if [[ \"$(file \"$binary\")\" == *\"dynamically linked shared library\"* ]]; then\n    strip_invalid_archs \"$binary\"\n  fi\n  # Resign the code if required by the build settings to avoid unstable apps\n  code_sign_if_enabled \"${destination}/$(basename \"$1\")\"\n}\n\n\n# Copies and strips a vendored dSYM\ninstall_dsym() {\n  local source=\"$1\"\n  if [ -r \"$source\" ]; then\n    \n    # Copy the dSYM into a the targets temp dir.\n    echo \"rsync --delete -av \"${RSYNC_PROTECT_TMP_FILES[@]}\" --filter \\\"- CVS/\\\" --filter \\\"- .svn/\\\" --filter \\\"- .git/\\\" --filter \\\"- .hg/\\\" --filter \\\"- Headers\\\" --filter \\\"- PrivateHeaders\\\" --filter \\\"- Modules\\\" \\\"${source}\\\" \\\"${DERIVED_FILES_DIR}\\\"\"\n    rsync --delete -av \"${RSYNC_PROTECT_TMP_FILES[@]}\" --filter \"- CVS/\" --filter \"- .svn/\" --filter \"- .git/\" --filter \"- .hg/\" --filter \"- Headers\" --filter \"- PrivateHeaders\" --filter \"- Modules\" \"${source}\" \"${DERIVED_FILES_DIR}\"\n    \n    local basename\n    basename=\"$(basename -s .framework.dSYM \"$source\")\"\n    binary=\"${DERIVED_FILES_DIR}/${basename}.framework.dSYM/Contents/Resources/DWARF/${basename}\"\n    \n    # Strip invalid architectures so \"fat\" simulator / device frameworks work on device\n    if [[ \"$(file \"$binary\")\" == *\"Mach-O \"*\"dSYM companion\"* ]]; then\n      strip_invalid_archs \"$binary\"\n    fi\n    if [[ $STRIP_BINARY_RETVAL == 1 ]]; then\n      # Move the stripped file into its final destination.\n      echo \"rsync --delete -av \"${RSYNC_PROTECT_TMP_FILES[@]}\" --filter \\\"- CVS/\\\" --filter \\\"- .svn/\\\" --filter \\\"- .git/\\\" --filter \\\"- .hg/\\\" --filter \\\"- Headers\\\" --filter \\\"- PrivateHeaders\\\" --filter \\\"- Modules\\\" \\\"${DERIVED_FILES_DIR}/${basename}.framework.dSYM\\\" \\\"${DWARF_DSYM_FOLDER_PATH}\\\"\"\n      rsync --delete -av \"${RSYNC_PROTECT_TMP_FILES[@]}\" --filter \"- CVS/\" --filter \"- .svn/\" --filter \"- .git/\" --filter \"- .hg/\" --filter \"- Headers\" --filter \"- PrivateHeaders\" --filter \"- Modules\" \"${DERIVED_FILES_DIR}/${basename}.framework.dSYM\" \"${DWARF_DSYM_FOLDER_PATH}\"\n    else\n      # The dSYM was not stripped at all, in this case touch a fake folder so the input/output paths from Xcode do not reexecute this script because the file is missing.\n      touch \"${DWARF_DSYM_FOLDER_PATH}/${basename}.framework.dSYM\"\n    fi\n\n  fi\n}\n\n\n# Copies the bcsymbolmap files of a vendored framework\ninstall_bcsymbolmap() {\n    local bcsymbolmap_path=\"$1\"\n    local destination=\"${BUILT_PRODUCTS_DIR}\"\n    echo \"rsync --delete -av \"${RSYNC_PROTECT_TMP_FILES[@]}\" --filter \"- CVS/\" --filter \"- .svn/\" --filter \"- .git/\" --filter \"- .hg/\" --filter \"- Headers\" --filter \"- PrivateHeaders\" --filter \"- Modules\" \"${bcsymbolmap_path}\" \"${destination}\"\"\n    rsync --delete -av \"${RSYNC_PROTECT_TMP_FILES[@]}\" --filter \"- CVS/\" --filter \"- .svn/\" --filter \"- .git/\" --filter \"- .hg/\" --filter \"- Headers\" --filter \"- PrivateHeaders\" --filter \"- Modules\" \"${bcsymbolmap_path}\" \"${destination}\"\n}\n\n\n# Signs a framework with the provided identity\ncode_sign_if_enabled() {\n  if [ -n \"${EXPANDED_CODE_SIGN_IDENTITY:-}\" -a \"${CODE_SIGNING_REQUIRED:-}\" != \"NO\" -a \"${CODE_SIGNING_ALLOWED}\" != \"NO\" ]; then\n    # Use the current code_sign_identity\n    echo \"Code Signing $1 with Identity ${EXPANDED_CODE_SIGN_IDENTITY_NAME}\"\n    local code_sign_cmd=\"/usr/bin/codesign --force --sign ${EXPANDED_CODE_SIGN_IDENTITY} ${OTHER_CODE_SIGN_FLAGS:-} --preserve-metadata=identifier,entitlements '$1'\"\n    code_sign_cmd=\"$code_sign_cmd &\"\n    echo \"$code_sign_cmd\"\n    eval \"$code_sign_cmd\"\n  fi\n}\n\n\n# Strip invalid architectures\nstrip_invalid_archs() {\n  binary=\"$1\"\n  # Get architectures for current target binary\n  binary_archs=\"$(lipo -info \"$binary\" | rev | cut -d ':' -f1 | awk '{$1=$1;print}' | rev)\"\n  # Intersect them with the architectures we are building for\n  intersected_archs=\"$(echo ${ARCHS[@]} ${binary_archs[@]} | tr ' ' '\\n' | sort | uniq -d)\"\n  # If there are no archs supported by this binary then warn the user\n  if [[ -z \"$intersected_archs\" ]]; then\n    echo \"warning: [CP] Vendored binary '$binary' contains architectures ($binary_archs) none of which match the current build architectures ($ARCHS).\"\n    STRIP_BINARY_RETVAL=0\n    return\n  fi\n  stripped=\"\"\n  for arch in $binary_archs; do\n    if ! [[ \"${ARCHS}\" == *\"$arch\"* ]]; then\n      # Strip non-valid architectures in-place\n      lipo -remove \"$arch\" -output \"$binary\" \"$binary\"\n      stripped=\"$stripped $arch\"\n    fi\n  done\n  if [[ \"$stripped\" ]]; then\n    echo \"Stripped $binary of architectures:$stripped\"\n  fi\n  STRIP_BINARY_RETVAL=1\n}\ninstall_framework \"Carthage/Build/iOS/Alamofire.framework\"\ninstall_dsym \"Carthage/Build/iOS/Alamofire.framework.dSYM\"\ninstall_bcsymbolmap \"Carthage/Build/iOS/806FA142-F936-3115-A2E8-DF883CB032F2.bcsymbolmap\"\ninstall_bcsymbolmap \"Carthage/Build/iOS/B6F52354-4805-377A-A0B0-CDE5F0984373.bcsymbolmap\"\n";
 		};
 		F58B4390FEA37E01787767B1 /* Embed Precompiled Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -439,13 +491,21 @@
 			files = (
 			);
 			inputPaths = (
+				Carthage/Build/iOS/Alamofire.framework,
+				Carthage/Build/iOS/Alamofire.framework.dSYM,
+				"Carthage/Build/iOS/806FA142-F936-3115-A2E8-DF883CB032F2.bcsymbolmap",
+				"Carthage/Build/iOS/B6F52354-4805-377A-A0B0-CDE5F0984373.bcsymbolmap",
 			);
 			name = "Embed Precompiled Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Alamofire.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/806FA142-F936-3115-A2E8-DF883CB032F2.bcsymbolmap",
+				"${BUILT_PRODUCTS_DIR}/B6F52354-4805-377A-A0B0-CDE5F0984373.bcsymbolmap",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Skipping, nothing to be embedded.\"";
+			shellScript = "#!/bin/sh\nset -e\nset -u\nset -o pipefail\n\nfunction on_error {\n  echo \"$(realpath -mq \"${0}\"):$1: error: Unexpected failure\"\n}\ntrap 'on_error $LINENO' ERR\n\nif [ -z ${FRAMEWORKS_FOLDER_PATH+x} ]; then\n  # If FRAMEWORKS_FOLDER_PATH is not set, then there's nowhere for us to copy\n  # frameworks to, so exit 0 (signalling the script phase was successful).\n  exit 0\nfi\n\necho \"mkdir -p ${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\nmkdir -p \"${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\n\nSWIFT_STDLIB_PATH=\"${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"\n# Used as a return value for each invocation of `strip_invalid_archs` function.\nSTRIP_BINARY_RETVAL=0\n# This protects against multiple targets copying the same framework dependency at the same time. The solution\n# was originally proposed here: https://lists.samba.org/archive/rsync/2008-February/020158.html\nRSYNC_PROTECT_TMP_FILES=(--filter \"P .*.??????\")\n# Copies and strips a vendored framework\ninstall_framework()\n{\n  if [ -r \"${BUILT_PRODUCTS_DIR}/$1\" ]; then\n    local source=\"${BUILT_PRODUCTS_DIR}/$1\"\n  elif [ -r \"${BUILT_PRODUCTS_DIR}/$(basename \"$1\")\" ]; then\n    local source=\"${BUILT_PRODUCTS_DIR}/$(basename \"$1\")\"\n  elif [ -r \"$1\" ]; then\n    local source=\"$1\"\n  fi\n  local destination=\"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\n  if [ -L \"${source}\" ]; then\n    echo \"Symlinked...\"\n    source=\"$(readlink \"${source}\")\"\n  fi\n  # Use filter instead of exclude so missing patterns don't throw errors.\n  echo \"rsync --delete -av \"${RSYNC_PROTECT_TMP_FILES[@]}\" --filter \\\"- CVS/\\\" --filter \\\"- .svn/\\\" --filter \\\"- .git/\\\" --filter \\\"- .hg/\\\" --filter \\\"- Headers\\\" --filter \\\"- PrivateHeaders\\\" --filter \\\"- Modules\\\" \\\"${source}\\\" \\\"${destination}\\\"\"\n  rsync --delete -av \"${RSYNC_PROTECT_TMP_FILES[@]}\" --filter \"- CVS/\" --filter \"- .svn/\" --filter \"- .git/\" --filter \"- .hg/\" --filter \"- Headers\" --filter \"- PrivateHeaders\" --filter \"- Modules\" \"${source}\" \"${destination}\"\n  local basename\n  basename=\"$(basename -s .framework \"$1\")\"\n  binary=\"${destination}/${basename}.framework/${basename}\"\n  if ! [ -r \"$binary\" ]; then\n    binary=\"${destination}/${basename}\"\n  elif [ -L \"${binary}\" ]; then\n    echo \"Destination binary is symlinked...\"\n    dirname=\"$(dirname \"${binary}\")\"\n    binary=\"${dirname}/$(readlink \"${binary}\")\"\n  fi\n  # Strip invalid architectures so \"fat\" simulator / device frameworks work on device\n  if [[ \"$(file \"$binary\")\" == *\"dynamically linked shared library\"* ]]; then\n    strip_invalid_archs \"$binary\"\n  fi\n  # Resign the code if required by the build settings to avoid unstable apps\n  code_sign_if_enabled \"${destination}/$(basename \"$1\")\"\n}\n\n\n# Copies and strips a vendored dSYM\ninstall_dsym() {\n  local source=\"$1\"\n  if [ -r \"$source\" ]; then\n    \n    # Copy the dSYM into a the targets temp dir.\n    echo \"rsync --delete -av \"${RSYNC_PROTECT_TMP_FILES[@]}\" --filter \\\"- CVS/\\\" --filter \\\"- .svn/\\\" --filter \\\"- .git/\\\" --filter \\\"- .hg/\\\" --filter \\\"- Headers\\\" --filter \\\"- PrivateHeaders\\\" --filter \\\"- Modules\\\" \\\"${source}\\\" \\\"${DERIVED_FILES_DIR}\\\"\"\n    rsync --delete -av \"${RSYNC_PROTECT_TMP_FILES[@]}\" --filter \"- CVS/\" --filter \"- .svn/\" --filter \"- .git/\" --filter \"- .hg/\" --filter \"- Headers\" --filter \"- PrivateHeaders\" --filter \"- Modules\" \"${source}\" \"${DERIVED_FILES_DIR}\"\n    \n    local basename\n    basename=\"$(basename -s .framework.dSYM \"$source\")\"\n    binary=\"${DERIVED_FILES_DIR}/${basename}.framework.dSYM/Contents/Resources/DWARF/${basename}\"\n    \n    # Strip invalid architectures so \"fat\" simulator / device frameworks work on device\n    if [[ \"$(file \"$binary\")\" == *\"Mach-O \"*\"dSYM companion\"* ]]; then\n      strip_invalid_archs \"$binary\"\n    fi\n    if [[ $STRIP_BINARY_RETVAL == 1 ]]; then\n      # Move the stripped file into its final destination.\n      echo \"rsync --delete -av \"${RSYNC_PROTECT_TMP_FILES[@]}\" --filter \\\"- CVS/\\\" --filter \\\"- .svn/\\\" --filter \\\"- .git/\\\" --filter \\\"- .hg/\\\" --filter \\\"- Headers\\\" --filter \\\"- PrivateHeaders\\\" --filter \\\"- Modules\\\" \\\"${DERIVED_FILES_DIR}/${basename}.framework.dSYM\\\" \\\"${DWARF_DSYM_FOLDER_PATH}\\\"\"\n      rsync --delete -av \"${RSYNC_PROTECT_TMP_FILES[@]}\" --filter \"- CVS/\" --filter \"- .svn/\" --filter \"- .git/\" --filter \"- .hg/\" --filter \"- Headers\" --filter \"- PrivateHeaders\" --filter \"- Modules\" \"${DERIVED_FILES_DIR}/${basename}.framework.dSYM\" \"${DWARF_DSYM_FOLDER_PATH}\"\n    else\n      # The dSYM was not stripped at all, in this case touch a fake folder so the input/output paths from Xcode do not reexecute this script because the file is missing.\n      touch \"${DWARF_DSYM_FOLDER_PATH}/${basename}.framework.dSYM\"\n    fi\n\n  fi\n}\n\n\n# Copies the bcsymbolmap files of a vendored framework\ninstall_bcsymbolmap() {\n    local bcsymbolmap_path=\"$1\"\n    local destination=\"${BUILT_PRODUCTS_DIR}\"\n    echo \"rsync --delete -av \"${RSYNC_PROTECT_TMP_FILES[@]}\" --filter \"- CVS/\" --filter \"- .svn/\" --filter \"- .git/\" --filter \"- .hg/\" --filter \"- Headers\" --filter \"- PrivateHeaders\" --filter \"- Modules\" \"${bcsymbolmap_path}\" \"${destination}\"\"\n    rsync --delete -av \"${RSYNC_PROTECT_TMP_FILES[@]}\" --filter \"- CVS/\" --filter \"- .svn/\" --filter \"- .git/\" --filter \"- .hg/\" --filter \"- Headers\" --filter \"- PrivateHeaders\" --filter \"- Modules\" \"${bcsymbolmap_path}\" \"${destination}\"\n}\n\n\n# Signs a framework with the provided identity\ncode_sign_if_enabled() {\n  if [ -n \"${EXPANDED_CODE_SIGN_IDENTITY:-}\" -a \"${CODE_SIGNING_REQUIRED:-}\" != \"NO\" -a \"${CODE_SIGNING_ALLOWED}\" != \"NO\" ]; then\n    # Use the current code_sign_identity\n    echo \"Code Signing $1 with Identity ${EXPANDED_CODE_SIGN_IDENTITY_NAME}\"\n    local code_sign_cmd=\"/usr/bin/codesign --force --sign ${EXPANDED_CODE_SIGN_IDENTITY} ${OTHER_CODE_SIGN_FLAGS:-} --preserve-metadata=identifier,entitlements '$1'\"\n    code_sign_cmd=\"$code_sign_cmd &\"\n    echo \"$code_sign_cmd\"\n    eval \"$code_sign_cmd\"\n  fi\n}\n\n\n# Strip invalid architectures\nstrip_invalid_archs() {\n  binary=\"$1\"\n  # Get architectures for current target binary\n  binary_archs=\"$(lipo -info \"$binary\" | rev | cut -d ':' -f1 | awk '{$1=$1;print}' | rev)\"\n  # Intersect them with the architectures we are building for\n  intersected_archs=\"$(echo ${ARCHS[@]} ${binary_archs[@]} | tr ' ' '\\n' | sort | uniq -d)\"\n  # If there are no archs supported by this binary then warn the user\n  if [[ -z \"$intersected_archs\" ]]; then\n    echo \"warning: [CP] Vendored binary '$binary' contains architectures ($binary_archs) none of which match the current build architectures ($ARCHS).\"\n    STRIP_BINARY_RETVAL=0\n    return\n  fi\n  stripped=\"\"\n  for arch in $binary_archs; do\n    if ! [[ \"${ARCHS}\" == *\"$arch\"* ]]; then\n      # Strip non-valid architectures in-place\n      lipo -remove \"$arch\" -output \"$binary\" \"$binary\"\n      stripped=\"$stripped $arch\"\n    fi\n  done\n  if [[ \"$stripped\" ]]; then\n    echo \"Stripped $binary of architectures:$stripped\"\n  fi\n  STRIP_BINARY_RETVAL=1\n}\ninstall_framework \"Carthage/Build/iOS/Alamofire.framework\"\ninstall_dsym \"Carthage/Build/iOS/Alamofire.framework.dSYM\"\ninstall_bcsymbolmap \"Carthage/Build/iOS/806FA142-F936-3115-A2E8-DF883CB032F2.bcsymbolmap\"\ninstall_bcsymbolmap \"Carthage/Build/iOS/B6F52354-4805-377A-A0B0-CDE5F0984373.bcsymbolmap\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -454,16 +514,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D895AF30B8445BA445FFBD79 /* BeerfinderViewController.swift in Sources */,
+				FD1EB9FBD3A7A6C925765A2A /* AppHeadingView.swift in Sources */,
 				991FC8358001E79E6B36D83F /* Bottleshop.swift in Sources */,
 				29DEF1E1E60D4C2841092F88 /* BottleshopManager.swift in Sources */,
 				CD458A2AFD89B79F01285CA4 /* Credentials.swift in Sources */,
-				1E648013B42AE9EC38B045CE /* HeadingBottleView.swift in Sources */,
-				37F62DFC4241F01B7F25C3C5 /* AppDelegate.swift in Sources */,
-				698BF09F1A2E55DD98CB1588 /* Headable.swift in Sources */,
-				3D86A527973D6266BD021476 /* HeadingView.swift in Sources */,
-				AEB8371F5756629BF1DDE9E4 /* HeadingViewController.swift in Sources */,
-				6C6CDC426A5105B01F896684 /* UserLocationManager.swift in Sources */,
+				01EC4F6F63D058734A3CCFAA /* MainViewController.swift in Sources */,
+				7E33A9381D3E2EA5E5B1CCC8 /* AppDelegate.swift in Sources */,
+				E41D9FC899A362ACD6836621 /* Headable.swift in Sources */,
+				4F0A44C4F09A6038EE133909 /* HeadingView.swift in Sources */,
+				326862934FFF11CA74DB05FD /* HeadingViewController.swift in Sources */,
+				B567B37EC5B134D54E5372D2 /* LocationSearchManager.swift in Sources */,
+				6567E55267F0715912015C7F /* LocationSelectionViewController.swift in Sources */,
+				988A5DAEBAA58F46E8D25857 /* UserLocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,49 +533,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E092BD795DB58388D4CC0879 /* AppDelegate.swift in Sources */,
-				9EF761755F33E197372594D0 /* Headable.swift in Sources */,
-				989A3DEFF6A191F0F2D0D72C /* HeadingView.swift in Sources */,
-				16A3B2783D5D649DBC7EB923 /* HeadingViewController.swift in Sources */,
-				77CB922481D385625A9021AC /* UserLocationManager.swift in Sources */,
-				110B5337D6F874C8F84106B8 /* HeadingArrowView.swift in Sources */,
-				A40A269683BAC0F5E19FBCC1 /* LocationSearchManager.swift in Sources */,
-				962209345AE4813C784444E8 /* LocationSelectionViewController.swift in Sources */,
-				3093751FDE0285DC41796B7A /* WayfinderViewController.swift in Sources */,
+				17E28DFDBF7B77385B08D7BC /* AppDelegate.swift in Sources */,
+				8045AB8B22B60EE117CA5292 /* Headable.swift in Sources */,
+				9B7A4455AD089A9C70272018 /* HeadingView.swift in Sources */,
+				BE3E8C1BA0EE49C36394520D /* HeadingViewController.swift in Sources */,
+				904176F2B8F8AB6BA2D29863 /* LocationSearchManager.swift in Sources */,
+				8E3409CA1810C95A064C1632 /* LocationSelectionViewController.swift in Sources */,
+				E5C6CBC60C725175F2705EC7 /* UserLocationManager.swift in Sources */,
+				127F383474ABDD2FD6B7CCA1 /* AppHeadingView.swift in Sources */,
+				6E54FFD6BFFF7CE445902DBC /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6D2C240B4A13359D024A8811 /* Main.storyboard */ = {
+		4790F713DD5BF885395F4E6F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4B526BA9955C37B024ACA70D /* Base */,
+				9D1FA2762EB8D3CB249C457B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		9C1AF4EAD6769F8892FAAD79 /* Main.storyboard */ = {
+		F7BBEC821DE61C6980B85CAE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4B9923FA4A7466796B3772F2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B6E218C78453E67BF0E2C267 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				426951E54B213EEF2688C64A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		F5A780B3671E1A86984D813C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3E7A8EC04EF81B51566AF640 /* Base */,
+				0E2F5431C6315E716CF764F9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -633,6 +679,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/Beerfinder.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -656,6 +706,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/Wayfinder.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -678,6 +732,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/Beerfinder.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -700,6 +758,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Derived/InfoPlists/Wayfinder.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

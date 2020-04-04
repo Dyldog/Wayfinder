@@ -38,9 +38,10 @@ class BottleshopManager: NSObject {
                              "type" : "liquor_store",
                              "key" : googleAPIKey]
         
-        currentRequest = Alamofire.request(googlePlacesURL, parameters: requestParams)
+        currentRequest = AF.request(googlePlacesURL, parameters: requestParams)
         currentRequest!.responseJSON { response in
-            if let responseJSON = response.result.value as? [String : Any] {
+            switch response.result {
+            case .success(let responseJSON as [String: Any]):
                 var bottleshops = [Bottleshop]()
                 
                 for bottleshopDict in responseJSON["results"] as! [[String : Any]] {
@@ -51,6 +52,10 @@ class BottleshopManager: NSObject {
                 self.delegate?.didFindBottleshops(bottleshops)
                 
                 self.currentRequest = nil
+            case .success:
+                break
+            case .failure(let error):
+                break
             }
         }
     }

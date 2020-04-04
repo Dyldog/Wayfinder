@@ -4,3 +4,4 @@
 Podfile.lock
 
 .DS_Store
+Carthage

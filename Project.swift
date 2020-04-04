@@ -12,9 +12,15 @@ extension Target {
             infoPlist: .extendingDefault(with: [:]),
             sources: [
                     "\(name)/Sources/**",
-                    "Wayfinder Shared/**"
+                    "Wayfinder Shared/Sources/**"
             ],
-            resources: ["\(name)/Resources/**"]
+            resources: [
+                "\(name)/Resources/**",
+                "Wayfinder Shared/Resources/**"
+            ],
+            dependencies: [
+                .framework(path: "Carthage/Build/iOS/Alamofire.framework")
+            ]
         )
 
     }
