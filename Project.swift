@@ -11,7 +11,8 @@ extension Target {
         let bundleId = "com.dylanelliott.\(name)"
         
         var infoPlistExtensions: [String: InfoPlist.Value] = [
-            "NSLocationWhenInUseUsageDescription": "Location is required to show you to your destinations"
+            "NSLocationWhenInUseUsageDescription": "Location is required to show you to your destinations",
+            "UISupportedInterfaceOrientations": .array(["UIInterfaceOrientationPortrait"])
         ]
         
         if case let .single(identifier) = type {
@@ -22,6 +23,7 @@ extension Target {
             platform: .iOS,
             product: .app,
             bundleId: bundleId,
+            deploymentTarget: .iOS(targetVersion: "12.0", devices: [.iphone]),
             infoPlist: .extendingDefault(with: infoPlistExtensions),
             sources: [
                     "\(name)/Sources/**",
@@ -40,8 +42,13 @@ extension Target {
                 ], 
                 debug: Configuration(settings: [
                     "SWIFT_ACTIVE_COMPILATION_CONDITIONS": "$(inherited) DEBUG"
+                ]),
+                release: Configuration(settings: [
+                    "DEVELOPMENT_TEAM": "6CW3378X23",
+                    "CODE_SIGN_IDENTITY": "iPhone Distribution: Dylan Elliott (6CW3378X23)",
+                    "PROVISIONING_PROFILE_SPECIFIER": "com.dylanelliott.\(targetName) AppStore"
                 ])
-        )
+            )
         )
 
     }

@@ -1,0 +1,16 @@
+
+lane :release do |options|
+	tuist 
+
+	app_name = options[:app]
+	bundle_id = "com.dylanelliott." + app_name
+
+	# create_app_online(app_name: app_name, app_identifier: bundle_id)
+	get_provisioning_profile(app_identifier: bundle_id, force: true)
+    build_app(scheme: app_name)
+    upload_to_app_store(skip_metadata: true, skip_screenshots: true)
+  end
+
+lane :tuist do
+	sh("tuist generate -p .. --project-only")
+end
