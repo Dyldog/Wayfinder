@@ -14,10 +14,18 @@ protocol GooglePlacesManagerDelegate {
     func didFindPlaces(_ places: [GooglePlace])
 }
 
+protocol WayfinderConfiguration {
+    static var placeType: String { get }
+}
+
 class GooglePlacesManager: NSObject {
     
     var currentRequest : DataRequest?
     var delegate : GooglePlacesManagerDelegate?
+    
+    var placesType: String {
+        return Bundle.main.infoDictionary!["WFPlacesType"] as! String
+    }
     
     let googlePlacesURL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     
@@ -35,7 +43,7 @@ class GooglePlacesManager: NSObject {
         let locationString = "\(searchLocation.coordinate.latitude),\(searchLocation.coordinate.longitude)"
         let requestParams = ["location" : locationString,
                              "rankby" : "distance",
-                             "type" : "liquor_store",
+                             "type" : placesType,
                              "key" : googleAPIKey]
         
         currentRequest = AF.request(googlePlacesURL, parameters: requestParams)

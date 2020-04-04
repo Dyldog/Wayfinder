@@ -100,7 +100,7 @@
 		20A62A86B87D27B1D5F3903D /* LocationSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchManager.swift; sourceTree = "<group>"; };
 		2CE5DD3BF418DC919B951E8B /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
 		31A951B0AE3D7453863A8652 /* Wayfinder.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Wayfinder.plist; sourceTree = "<group>"; };
-		38BF93D7CC4ADB4146FE562C /* BeerBottle.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = BeerBottle.psd; sourceTree = "<group>"; };
+		38BF93D7CC4ADB4146FE562C /* BeerBottle.psd */ = {isa = PBXFileReference; path = BeerBottle.psd; sourceTree = "<group>"; };
 		3C93DC3D8049FEBF69E77681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46BC5B0A9BABD9FC105455C1 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
 		4A64B3610BB5730E54A4B603 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 		9CDF7B242B967CF26A9D205D /* Beerfinder.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Beerfinder.plist; sourceTree = "<group>"; };
 		9D1FA2762EB8D3CB249C457B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A19B761B1A781FA73A9AE482 /* AppStoreIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppStoreIcon.png; sourceTree = "<group>"; };
-		A2D09DA17447473E6FD871BB /* BeerfinderIcon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = BeerfinderIcon.psd; sourceTree = "<group>"; };
+		A2D09DA17447473E6FD871BB /* BeerfinderIcon.psd */ = {isa = PBXFileReference; path = BeerfinderIcon.psd; sourceTree = "<group>"; };
 		A83ECF2E93237D944407A724 /* MultiPlaceHeadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPlaceHeadingViewController.swift; sourceTree = "<group>"; };
 		B6AC02015C39898C4B36CA69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C10597A41A99124131BC855A /* BeerBottle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BeerBottle.png; sourceTree = "<group>"; };
@@ -127,9 +127,9 @@
 		C895FD6593A8774770B5D8A0 /* Icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-1024.png"; sourceTree = "<group>"; };
 		CC9A0C577A8D0EF59C3198C2 /* Beerfinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beerfinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB43C17B9978623065BA5922 /* SinglePlaceHeadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlaceHeadingViewController.swift; sourceTree = "<group>"; };
-		DE0C8D3C4993410EB67F9E8E /* BeerBottle.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = BeerBottle.svg; sourceTree = "<group>"; };
+		DE0C8D3C4993410EB67F9E8E /* BeerBottle.svg */ = {isa = PBXFileReference; path = BeerBottle.svg; sourceTree = "<group>"; };
 		DF8FDD196D9008C489267BC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E260FA5BB79E48EC3479FB35 /* HeadingIcon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = HeadingIcon.psd; sourceTree = "<group>"; };
+		E260FA5BB79E48EC3479FB35 /* HeadingIcon.psd */ = {isa = PBXFileReference; path = HeadingIcon.psd; sourceTree = "<group>"; };
 		EBA01BC163130DA97FEA8844 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F9976E765530E50E51D84AC0 /* Icon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-83.5@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -252,18 +252,10 @@
 			path = "Location Selection";
 			sourceTree = "<group>";
 		};
-		5DF5CF8CDBF411583AAF6C44 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
 		72B707B9A063962B89C84D03 /* Beerfinder */ = {
 			isa = PBXGroup;
 			children = (
 				1A5A1A60F88BA3BD43EAF7AC /* Resources */,
-				5DF5CF8CDBF411583AAF6C44 /* Sources */,
 			);
 			path = Beerfinder;
 			sourceTree = "<group>";
@@ -435,6 +427,8 @@
 		9499B4BE23B59EED43F9A70F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = 38C1857F17A1D050119316EB /* Build configuration list for PBXProject "Wayfinder" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -736,7 +730,10 @@
 				PRODUCT_NAME = Beerfinder;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = " $(inherited) DEBUG";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"",
+					"$(inherited) DEBUG",
+				);
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.2;
@@ -817,7 +814,10 @@
 				PRODUCT_NAME = Wayfinder;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG MULTIPLACE";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited) DEBUG",
+					MULTIPLACE,
+				);
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.2;
