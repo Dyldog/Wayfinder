@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0830"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FCC6D42F1F27154100E8EA1B"
-               BuildableName = "Beerfinder.app"
-               BlueprintName = "Beerfinder"
+               BlueprintIdentifier = "263043C13EF1B0C64BB7F227"
+               BuildableName = "SupermarketFinder.app"
+               BlueprintName = "SupermarketFinder"
                ReferencedContainer = "container:Wayfinder.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,17 +29,10 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FCC6D42F1F27154100E8EA1B"
-            BuildableName = "Beerfinder.app"
-            BlueprintName = "Beerfinder"
-            ReferencedContainer = "container:Wayfinder.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
+      <CodeCoverageTargets>
+      </CodeCoverageTargets>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -55,12 +48,16 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FCC6D42F1F27154100E8EA1B"
-            BuildableName = "Beerfinder.app"
-            BlueprintName = "Beerfinder"
+            BlueprintIdentifier = "263043C13EF1B0C64BB7F227"
+            BuildableName = "SupermarketFinder.app"
+            BlueprintName = "SupermarketFinder"
             ReferencedContainer = "container:Wayfinder.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+      </CommandLineArguments>
+      <EnvironmentVariables>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -74,12 +71,16 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FCC6D42F1F27154100E8EA1B"
-            BuildableName = "Beerfinder.app"
-            BlueprintName = "Beerfinder"
+            BlueprintIdentifier = "263043C13EF1B0C64BB7F227"
+            BuildableName = "SupermarketFinder.app"
+            BlueprintName = "SupermarketFinder"
             ReferencedContainer = "container:Wayfinder.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+      </CommandLineArguments>
+      <EnvironmentVariables>
+      </EnvironmentVariables>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
