@@ -19,7 +19,7 @@ class HeadingView: UIView {
     
     var imageToViewScale: CGFloat! {
         let imageSize = headingImage!.size
-        let longestLength = max(imageSize.width, imageSize.height)
+        let longestLength = sqrt(pow(imageSize.width, 2) + pow(imageSize.height, 2))
         
         return frame.width / longestLength * imageScale
     }
