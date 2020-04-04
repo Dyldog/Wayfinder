@@ -9,7 +9,7 @@ extension Target {
             platform: .iOS,
             product: .app,
             bundleId: bundleId,
-            infoPlist: .file(path: "\(name)/Sources/Info.plist"),
+            infoPlist: .extendingDefault(with: [:]),
             sources: [
                     "\(name)/Sources/**",
                     "Wayfinder Shared/**"
