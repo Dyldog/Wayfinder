@@ -9,3 +9,9 @@ xcuserdata
 *.ipa
 *.dSYM.zip
 *.mobileprovision
+fastlane/Preview.html
+fastlane/report.xml
+Derived
+xcuserdata
+*.xcodeproj
+fastlane/screenshots
