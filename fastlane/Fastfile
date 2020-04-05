@@ -41,7 +41,8 @@ lane :release do |options|
 			"walk",
 			app_subject_plural.downcase
 		] },
-		support_url: { "en-US":  "http://dylanelliottiphone.blogspot.com.au" },
+		privacy_url: { "en-US":  "http://dylanelliottiphone.blogspot.com.au" },
+		support_url:  { "en-US":  "http://dylanelliottiphone.blogspot.com.au" },
 		marketing_url: { "en-US":  "http://dylanelliottiphone.blogspot.com.au" },
 		copyright: "2020 Dylan Elliott",
 		"app_review_information": {
