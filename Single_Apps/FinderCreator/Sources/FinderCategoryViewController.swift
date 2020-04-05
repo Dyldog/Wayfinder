@@ -11,7 +11,7 @@ class FinderCategoryViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Select Category"
+        navigationItem.title = "Select Category"
     }
     
     override func viewWillAppear(_ animated: Bool) {

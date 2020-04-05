@@ -1,7 +1,7 @@
 import ProjectDescription
 
 let version = "1.0"
-let buildNumber = 1
+let buildNumber = 2
 
 enum PlaceType: Equatable {
     case single(_ identifier: String)
@@ -88,7 +88,7 @@ extension Target {
             "UISupportedInterfaceOrientations": .array(["UIInterfaceOrientationPortrait"]),
             "CFBundleShortVersionString": .string(version),
             "CFBundleVersion": .string("\(buildNumber)"),
-            "UIMainStoryboardFile": "CategoryList",
+            "UIMainStoryboardFile": "Home",
             "WFPlacesType": "supermarket",
             "NSAppTransportSecurity": .dictionary(["NSAllowsArbitraryLoads": .boolean(true)])
         ]

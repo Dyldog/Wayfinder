@@ -44,7 +44,7 @@ class SinglePlaceHeadingViewController: HeadingViewController, GooglePlacesManag
     }
     
     func didFindPlaces(_ places: [GooglePlace]) {
-        self.destination = places[0]
+        self.destination = places.first
         
         self.updateViewsForNewDestination()
     }
