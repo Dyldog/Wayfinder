@@ -1,7 +1,7 @@
 import ProjectDescription
 
 let version = "1.0"
-let buildNumber = 5
+let buildNumber = 7
 
 enum PlaceType: Equatable {
     case single(_ identifier: String)
