@@ -22,6 +22,7 @@ lane :release do |options|
 
     upload_to_app_store(
     	submit_for_review: true,
+    	automatic_release: true,
     	subtitle: { "en-US": "Find your own way" },
     	primary_category: "Navigation",
     	price_tier: 1,
