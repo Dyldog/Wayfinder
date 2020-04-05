@@ -19,7 +19,7 @@ while (( "$#" )); do
       shift 2
       ;;
     -out|--flag-with-argument)
-      out_dir=$2
+      out=$2
       shift 2
       ;;
     -toolbar|--flag-with-argument)
@@ -58,6 +58,8 @@ eval set -- "$PARAMS"
 echo "Name: "$app_name
 echo "File: "$in_file
 
+pushd "$out" > /dev/null
+
 ## ---------------------- ##
 ## -------- ICON -------- ##
 ## ---------------------- ##
@@ -67,7 +69,6 @@ mkdir -p $app_name
 
 convert $in_file -gravity center -resize 860x860 -background "#$background" -extent 1024x1024 /tmp/icon_assets/background_out.png
 
-pushd "$out" > /dev/null
 pushd "$app_name" > /dev/null
 
 mkdir -p "Resources"

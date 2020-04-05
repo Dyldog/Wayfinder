@@ -31,12 +31,12 @@ extension Target {
             deploymentTarget: .iOS(targetVersion: "12.0", devices: [.iphone]),
             infoPlist: .extendingDefault(with: infoPlistExtensions),
             sources: [
-                    "\(name)/Sources/**",
-                    "Wayfinder Shared/Sources/**"
+                    "Single_Apps/\(name)/Sources/**",
+                    "Single_Apps/Wayfinder Shared/Sources/**"
             ],
             resources: [
-                "\(name)/Resources/**",
-                "Wayfinder Shared/Resources/**"
+                "Single_Apps/\(name)/Resources/**",
+                "Single_Apps/Wayfinder Shared/Resources/**"
             ],
             dependencies: [
                 .framework(path: "Carthage/Build/iOS/Alamofire.framework")
@@ -64,7 +64,7 @@ extension Target {
             bundleId: "\(bundleId).uiTests",
             infoPlist: .extendingDefault(with: [:]),
             sources: [
-                "Wayfinder Shared/Tests/**",
+                "Single_Apps/Wayfinder Shared/Tests/**",
                 "fastlane/SnapshotHelper.swift"
             ],
             dependencies: [
@@ -100,12 +100,12 @@ extension Target {
             deploymentTarget: .iOS(targetVersion: "12.1", devices: [.iphone]),
             infoPlist: .extendingDefault(with: infoPlistExtensions),
             sources: [
-                    "Wayfinder Shared/Sources/**",
-                    "FinderCreator/Sources/**"
+                    "Single_Apps/Wayfinder Shared/Sources/**",
+                    "Single_Apps/FinderCreator/Sources/**"
             ],
             resources: [
-                "Wayfinder Shared/Resources/**",
-                "FinderCreator/Resources/**"
+                "Single_Apps/Wayfinder Shared/Resources/**",
+                "Single_Apps/FinderCreator/Resources/**"
             ],
             dependencies: [
                 .framework(path: "Carthage/Build/iOS/Alamofire.framework"),
@@ -134,7 +134,7 @@ extension Target {
     }
 }
 
-let projectList = ((try? String(contentsOfFile: "PROJECTS")) ?? (try? String(contentsOfFile: "../PROJECTS")))!
+let projectList = (try? String(contentsOfFile: "Single_Apps/PROJECTS")) ?? (try? String(contentsOfFile: "../Single_Apps/PROJECTS"))!
 
 let singleTargets: [Target] = projectList.components(separatedBy: "\n").compactMap { project in
     let components = project.components(separatedBy: "~")

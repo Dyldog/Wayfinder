@@ -35,10 +35,10 @@ def create():
 	h1 = colors["h1"]
 	h2 = colors["h2"]
 
-	make_assets_command = "Scripts/make_assets.sh -in /tmp/finder_image.png -name " + app_name + " -toolbar " + toolbar + " -background " + background + " -h1 " + h1 + " -h2 " + h2 + " -out ."
+	make_assets_command = "Scripts/make_assets.sh -in /tmp/finder_image.png -name " + app_name + " -toolbar " + toolbar + " -background " + background + " -h1 " + h1 + " -h2 " + h2 + " -out ./Single_Apps"
 	
 	runCommnad(make_assets_command)
-	runCommnad("Scripts/make_app_target.sh -name " + app_name + " -type " + place_type)
+	runCommnad("Scripts/make_app_target.sh -name " + app_name + " -type " + place_type + " -out ./Single_Apps")
 	runCommnad("tuist generate --project-only")
 	runCommnadAsync("fastlane release subject:" + app_name)
 	
