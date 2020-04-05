@@ -67,9 +67,7 @@ def apps():
 	project_names = map(makeResponse, projects)
 	return jsonify(list(project_names))
 
-def log_status(path):
-	with open(path, 'r') as f:
-	    log_text = "\n".join(f.readlines())
+def log_status(log_text):
 	if "fastlane" not in log_text:
 		return "noBuild"
 	elif "Successfully submitted the app for review!" in log_text:
@@ -78,6 +76,22 @@ def log_status(path):
 		return "failure"
 	else:
 		return "running"
+
+def log_final_step(text):
+	if "upload_to_app_store" in text:
+		return "upload_to_app_store"
+	elif "snapshot" in text:
+		return "snapshot"
+	elif "build_app" in text:
+		return "build_app"
+	elif "get_provisioning_profile" in text:
+		return "get_provisioning_profile"
+	elif "create_app_online" in text:
+		return "create_app_online"
+	elif "tuist" in text:
+		return "tuist"
+	else:
+		return "no_step"
 
 @app.route('/logs/<name>', methods=['GET'])
 def logs(name):
@@ -89,7 +103,13 @@ def logs(name):
 		return jsonify([])
 
 	def makeResponse(logname):
-		return {"name": logname, "status": log_status(log_dir + "/" + logname) }
+		with open(log_dir + "/" + logname, 'r') as f:
+		    log_text = "\n".join(f.readlines())
+		return {
+			"name": logname, 
+			"status": log_status(log_text),
+			"last_step": log_final_step(log_text)
+		}
 	
 	return jsonify(list(map(makeResponse, [name for name in os.listdir(log_dir)])))
 

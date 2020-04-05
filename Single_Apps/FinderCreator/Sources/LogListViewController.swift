@@ -25,20 +25,46 @@ struct LogFile: Codable {
         }
     }
     
+    enum LastStep: String, Codable {
+        case noStep = "no_step"
+        case tuist = "tuist"
+        case createAppOnline = "create_app_online"
+        case getProvisioningProfile = "get_provisioning_profile"
+        case buildApp = "build_app"
+        case snapshot = "snapshot"
+        case uploadToAppStore = "upload_to_app_store"
+        
+        var title: String {
+            return self.rawValue.components(separatedBy: "_").map { $0.capitalized }.joined(separator: " ")
+        }
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case name = "name"
+        case status = "status"
+        case lastStep = "last_step"
+    }
+    
     let name: String
     let status: Status
+    let lastStep: LastStep
 }
 
 class LogCell: UITableViewCell {
     let label: UILabel
+    let subtitleLabel: UILabel
     let statusView: UIView
     
     init(reuseIdentifier: String?) {
         label = UILabel()
+        subtitleLabel = UILabel()
         statusView = UIView()
         super.init(style: .default, reuseIdentifier: reuseIdentifier)
         
-        contentView.addSubview(label)
+        let labelStackView = UIStackView(arrangedSubviews: [label, subtitleLabel])
+        labelStackView.axis = .vertical
+        
+        contentView.addSubview(labelStackView)
         contentView.addSubview(statusView)
         
         statusView.snp.makeConstraints { make in
@@ -48,10 +74,13 @@ class LogCell: UITableViewCell {
             make.width.equalTo(14)
         }
         
-        label.snp.makeConstraints { make in
+        labelStackView.snp.makeConstraints { make in
             make.top.bottom.trailing.equalTo(contentView).inset(12)
             make.leading.equalTo(statusView.snp.trailing).offset(12)
         }
+        
+        setNeedsLayout()
+        layoutIfNeeded()
     }
     
     required init?(coder: NSCoder) {
@@ -117,7 +146,7 @@ class LogListViewController: UITableViewController {
             case .success(let data):
                 do {
                     self.logs = try JSONDecoder().decode([LogFile].self, from: data).sorted(by: {
-                        $0.name < $1.name
+                        $0.name > $1.name
                     })
                     completion(.success)
                     return
@@ -154,6 +183,7 @@ class LogListViewController: UITableViewController {
         let cell = (tableView.dequeueReusableCell(withIdentifier: cellID) as? LogCell) ?? LogCell(reuseIdentifier: cellID)
         let log = logs[indexPath.row]
         cell.label.text = log.name
+        cell.subtitleLabel.text = log.lastStep.title
         cell.statusView.backgroundColor = log.status.color
         return cell
     }
