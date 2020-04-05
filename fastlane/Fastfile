@@ -16,7 +16,8 @@ lane :release do |options|
 	    	"iPhone 8",
 	    	"iPhone 11",
 	    ],
-	    scheme: app_name + "_UITests"
+	    scheme: app_name + "_UITests",
+	    clear_previous_screenshots: true
     )
 
     upload_to_app_store(
