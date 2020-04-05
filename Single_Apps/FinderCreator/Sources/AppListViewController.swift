@@ -18,7 +18,13 @@ extension UIViewController {
 }
 
 extension UIViewController {
-    func showError(_ error: Error) { }
+    func showError(_ error: Error) {
+        onMain {
+            let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
 }
 
 class AppListViewController: UITableViewController {
