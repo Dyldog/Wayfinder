@@ -14,7 +14,7 @@ struct FinderApp: Codable {
 }
 
 extension UIViewController {
-    func showLoading(_ show: Bool) { }
+    @objc func showLoading(_ show: Bool) { }
 }
 
 extension UIViewController {

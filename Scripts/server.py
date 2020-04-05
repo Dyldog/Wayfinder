@@ -28,10 +28,7 @@ def create():
 
 	app_name = req_data["title"]
 
-	log_folder = "Single_Apps/" + app_name + "Finder/logs/"
-	runCommnad("mkdir -p " + log_folder)
-	log_file = log_folder + datetime.datetime.now().isoformat().replace("/", "") + ".txt"
-	runCommnad("touch " +log_file)
+	log_file = make_log_file(app_name)
 	
 	imageBase64 = req_data["image"]
 
@@ -52,7 +49,7 @@ def create():
 	runCommnad(make_assets_command)
 	runCommnad("Scripts/make_app_target.sh -name " + app_name + " -type " + place_type + " -out ./Single_Apps >> " + log_file)
 	runCommnad("tuist generate --project-only >> " + log_file)
-	runCommnadAsync("fastlane release subject:" + app_name + ">> " + log_file)
+	build(app_name)
 	
 	return "\n".join([app_name, place_type, toolbar, background, h1, h2])
 
@@ -94,6 +91,19 @@ def log(app, file):
 	    log_text = "\n".join(f.readlines())
 
 	return log_text
+
+@app.route('/build/<app>', methods=['GET'])
+def build(app):
+	app_name = app.replace("Finder", "")
+	runCommnadAsync("fastlane release subject:" + app_name + ">> " + make_log_file(app_name))
+	return "Woo"
+
+def make_log_file(app_name):
+	log_folder = "Single_Apps/" + app_name + "Finder/logs/"
+	runCommnad("mkdir -p " + log_folder)
+	log_file = log_folder + datetime.datetime.now().isoformat().replace("/", "") + ".txt"
+	runCommnad("touch " +log_file)
+	return log_file
 
 if __name__ == '__main__':
     app.run(host = '0.0.0.0', debug=True, port=5000) #run app in debug mode on port 5000

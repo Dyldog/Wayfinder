@@ -1,0 +1,64 @@
+[23:45:21]: [33mfastlane detected a Gemfile in the current directory[0m
+[23:45:21]: [33mhowever it seems like you don't use `bundle exec`[0m
+[23:45:21]: [33mto launch fastlane faster, please use[0m
+[23:45:21]: 
+[23:45:21]: [36m$ bundle exec fastlane release subject:ATMMachine[0m
+[23:45:21]: 
+[23:45:21]: [33mGet started using a Gemfile for fastlane https://docs.fastlane.tools/getting-started/ios/setup/#use-a-gemfile[0m
+[23:45:24]: [31mYour Fastfile has had smart quotes sanitised. To avoid issues in the future, you should not use TextEdit for editing it. If you are not using TextEdit, you should turn off smart quotes in your editor of choice.[0m
+[23:45:24]: [32mDriving the lane 'release' 🚀[0m
+[23:45:24]: [32m----------------------------------[0m
+[23:45:24]: [32m--- Step: Switch to tuist lane ---[0m
+[23:45:24]: [32m----------------------------------[0m
+[23:45:24]: Cruising over to lane 'tuist' 🚖
+[23:45:24]: [32m-------------------------------------------------[0m
+[23:45:24]: [32m--- Step: tuist generate -p .. --project-only ---[0m
+[23:45:24]: [32m-------------------------------------------------[0m
+[23:45:24]: [36m$ tuist generate -p .. --project-only[0m
+[23:45:26]: ▸ [35mGenerating project Wayfinder[0m
+[23:45:26]: ▸ [35m[1m[32mProject generated.[0m[1m[0m
+[23:45:26]: ▸ [35mTotal time taken: 2.604s[0m
+[23:45:26]: Cruising back to lane 'release' 🚘
+[23:45:26]: [32m-------------------------------[0m
+[23:45:26]: [32m--- Step: create_app_online ---[0m
+[23:45:26]: [32m-------------------------------[0m
+
++----------------+-----------------------------------+
+|            [32mSummary for produce 2.131.0[0m             |
++----------------+-----------------------------------+
+| app_name       | ATMMachineFinder                  |
+| app_identifier | com.dylanelliott.ATMMachineFinder |
+| username       | dylan.elliott@gmail.com           |
+| sku            | 1586094327                        |
+| platform       | ios                               |
+| language       | English                           |
+| skip_itc       | false                             |
+| skip_devcenter | false                             |
++----------------+-----------------------------------+
+
+[23:45:30]: [32m[DevCenter] App 'com.dylanelliott.ATMMachineFinder' already exists, nothing to do on the Dev Center[0m
+[23:45:34]: [32mApp 'com.dylanelliott.ATMMachineFinder' already exists (1506469517), nothing to do on App Store Connect[0m
+[23:45:35]: [32m--------------------------------------[0m
+[23:45:35]: [32m--- Step: get_provisioning_profile ---[0m
+[23:45:35]: [32m--------------------------------------[0m
+
++-------------------------------------+-----------------------------------+
+|                        [32mSummary for sigh 2.131.0[0m                         |
++-------------------------------------+-----------------------------------+
+| app_identifier                      | com.dylanelliott.ATMMachineFinder |
+| force                               | true                              |
+| adhoc                               | false                             |
+| developer_id                        | false                             |
+| development                         | false                             |
+| skip_install                        | false                             |
+| username                            | dylan.elliott@gmail.com           |
+| ignore_profiles_with_different_name | false                             |
+| skip_fetch_profiles                 | false                             |
+| skip_certificate_verification       | false                             |
+| platform                            | ios                               |
+| readonly                            | false                             |
++-------------------------------------+-----------------------------------+
+
+[23:45:35]: Starting login with user 'dylan.elliott@gmail.com'
+[23:45:38]: Successfully logged in
+[23:45:38]: Fetching profiles...
