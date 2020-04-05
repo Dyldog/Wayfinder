@@ -70,8 +70,9 @@ def apps():
 def log_status(path):
 	with open(path, 'r') as f:
 	    log_text = "\n".join(f.readlines())
-
-	if "Successfully submitted the app for review!" in log_text:
+	if "fastlane" not in log_text:
+		return "noBuild"
+	elif "Successfully submitted the app for review!" in log_text:
 		return "success"
 	elif "fastlane finished with errors" in log_text:
 		return "failure"

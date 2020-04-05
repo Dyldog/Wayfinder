@@ -13,12 +13,14 @@ struct LogFile: Codable {
         case success
         case failure
         case running
+        case noBuild
         
         var color: UIColor {
             switch self {
             case .success: return .init(hex: "#2ecc71")
             case .failure: return .init(hex: "#e74c3c")
             case .running: return .init(hex: "#f1c40f")
+            case .noBuild: return .init(hex: "#95a5a6")
             }
         }
     }
