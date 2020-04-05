@@ -1,0 +1,71 @@
+[00:46:06]: [33mfastlane detected a Gemfile in the current directory[0m
+[00:46:06]: [33mhowever it seems like you don't use `bundle exec`[0m
+[00:46:06]: [33mto launch fastlane faster, please use[0m
+[00:46:06]: 
+[00:46:06]: [36m$ bundle exec fastlane release subject:GoodBar[0m
+[00:46:06]: 
+[00:46:06]: [33mGet started using a Gemfile for fastlane https://docs.fastlane.tools/getting-started/ios/setup/#use-a-gemfile[0m
+[00:46:08]: [31mYour Fastfile has had smart quotes sanitised. To avoid issues in the future, you should not use TextEdit for editing it. If you are not using TextEdit, you should turn off smart quotes in your editor of choice.[0m
+[00:46:08]: [32mDriving the lane 'release' 🚀[0m
+[00:46:09]: [32m----------------------------------[0m
+[00:46:09]: [32m--- Step: Switch to tuist lane ---[0m
+[00:46:09]: [32m----------------------------------[0m
+[00:46:09]: Cruising over to lane 'tuist' 🚖
+[00:46:09]: [32m-------------------------------------------------[0m
+[00:46:09]: [32m--- Step: tuist generate -p .. --project-only ---[0m
+[00:46:09]: [32m-------------------------------------------------[0m
+[00:46:09]: [36m$ tuist generate -p .. --project-only[0m
+[00:46:11]: ▸ [35mGenerating project Wayfinder[0m
+[00:46:11]: ▸ [35m[1m[32mProject generated.[0m[1m[0m
+[00:46:11]: ▸ [35mTotal time taken: 2.131s[0m
+[00:46:11]: Cruising back to lane 'release' 🚘
+[00:46:11]: [32m-------------------------------[0m
+[00:46:11]: [32m--- Step: create_app_online ---[0m
+[00:46:11]: [32m-------------------------------[0m
+
++----------------+--------------------------------+
+|           [32mSummary for produce 2.131.0[0m           |
++----------------+--------------------------------+
+| app_name       | GoodBarFinder                  |
+| app_identifier | com.dylanelliott.GoodBarFinder |
+| username       | dylan.elliott@gmail.com        |
+| sku            | 1586097971                     |
+| platform       | ios                            |
+| language       | English                        |
+| skip_itc       | false                          |
+| skip_devcenter | false                          |
++----------------+--------------------------------+
+
+[00:46:14]: Creating new app 'GoodBarFinder' on the Apple Dev Center
+[00:46:15]: Created app N99Y2D483W
+[00:46:16]: [32mFinished creating new app 'GoodBarFinder' on the Dev Center[0m
+[00:46:20]: [32mCreating new app 'GoodBarFinder' on App Store Connect[0m
+[00:46:25]: Waiting for the newly created application to be available on App Store Connect...
+[00:46:40]: Ensuring version number
+[00:46:40]: [32mSuccessfully created new app 'GoodBarFinder' on App Store Connect with ID 1506484706[0m
+[00:46:41]: [32m--------------------------------------[0m
+[00:46:41]: [32m--- Step: get_provisioning_profile ---[0m
+[00:46:41]: [32m--------------------------------------[0m
+
++-------------------------------------+--------------------------------+
+|                       [32mSummary for sigh 2.131.0[0m                       |
++-------------------------------------+--------------------------------+
+| app_identifier                      | com.dylanelliott.GoodBarFinder |
+| force                               | true                           |
+| adhoc                               | false                          |
+| developer_id                        | false                          |
+| development                         | false                          |
+| skip_install                        | false                          |
+| username                            | dylan.elliott@gmail.com        |
+| ignore_profiles_with_different_name | false                          |
+| skip_fetch_profiles                 | false                          |
+| skip_certificate_verification       | false                          |
+| platform                            | ios                            |
+| readonly                            | false                          |
++-------------------------------------+--------------------------------+
+
+[00:46:41]: Starting login with user 'dylan.elliott@gmail.com'
+[00:46:43]: Successfully logged in
+[00:46:43]: Fetching profiles...
+[00:46:45]: Verifying certificates...
+[00:46:45]: [33mNo existing profiles found, that match the certificates you have installed locally! Creating a new provisioning profile for you[0m
