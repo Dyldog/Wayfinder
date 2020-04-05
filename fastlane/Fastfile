@@ -11,10 +11,13 @@ lane :release do |options|
 	get_provisioning_profile(app_identifier: bundle_id, force: true)
     build_app(scheme: app_name)
 
-    snapshot(devices:[
-    	"iPhone 8",
-    	"iPhone 11",
-    ])
+    snapshot(
+    	devices:[
+	    	"iPhone 8",
+	    	"iPhone 11",
+	    ],
+	    scheme: app_name + "_UITests"
+    )
 
     upload_to_app_store(
     	submit_for_review: true,
