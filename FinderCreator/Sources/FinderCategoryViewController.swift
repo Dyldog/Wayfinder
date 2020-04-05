@@ -42,7 +42,7 @@ class FinderCategoryViewController: UITableViewController {
 }
 
 extension GooglePlace {
-    enum PlaceType: String, CaseIterable {
+    enum PlaceType: String, CaseIterable, Codable {
         case accounting
         case airport
         case amusement_park

@@ -14,10 +14,6 @@ protocol GooglePlacesManagerDelegate {
     func didFindPlaces(_ places: [GooglePlace])
 }
 
-protocol WayfinderConfiguration {
-    static var placeType: String { get }
-}
-
 class GooglePlacesManager: NSObject {
     
     var currentRequest : DataRequest?

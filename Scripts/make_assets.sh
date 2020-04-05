@@ -11,7 +11,7 @@ out="."
 while (( "$#" )); do
   case "$1" in
   	-name|--flag-with-argument)
-      app_name=$2
+      app_name="$2Finder"
       shift 2
       ;;
     -in|--flag-with-argument)
@@ -55,18 +55,20 @@ done
 # set positional arguments in their proper place
 eval set -- "$PARAMS"
 
+echo "Name: "$app_name
+echo "File: "$in_file
+
 ## ---------------------- ##
 ## -------- ICON -------- ##
 ## ---------------------- ##
 
-app_dir="$out/$app_name"
-
 mkdir -p /tmp/icon_assets/
-mkdir -p $app_dir
+mkdir -p $app_name
 
-convert $in_file -gravity center -resize 860x860 -background "#$toolbar" -extent 1024x1024 /tmp/icon_assets/background_out.png
+convert $in_file -gravity center -resize 860x860 -background "#$background" -extent 1024x1024 /tmp/icon_assets/background_out.png
 
-pushd "$app_dir" > /dev/null
+pushd "$out" > /dev/null
+pushd "$app_name" > /dev/null
 
 mkdir -p "Resources"
 pushd "Resources" > /dev/null
@@ -134,5 +136,5 @@ extension UIColor {
 }
 EOF
 
-# Back to app dir
+# Back to out
 popd > /dev/null

@@ -89,7 +89,8 @@ extension Target {
             "CFBundleShortVersionString": .string(version),
             "CFBundleVersion": .string("\(buildNumber)"),
             "UIMainStoryboardFile": "CategoryList",
-            "WFPlacesType": "supermarket"
+            "WFPlacesType": "supermarket",
+            "NSAppTransportSecurity": .dictionary(["NSAllowsArbitraryLoads": .boolean(true)])
         ]
 
         let appTarget: Target = Target(name: targetName,
@@ -133,13 +134,21 @@ extension Target {
     }
 }
 
+let projectList = ((try? String(contentsOfFile: "PROJECTS")) ?? (try? String(contentsOfFile: "../PROJECTS")))!
+
+let singleTargets: [Target] = projectList.components(separatedBy: "\n").compactMap { project in
+    let components = project.components(separatedBy: "~")
+    guard components.count == 2 else { return nil }
+    return (components[0], components[1])
+}.flatMap { (components: (String, String)) -> [Target] in
+    return Target.makeFinder(components.0 + "Finder", type: .single(components.1))
+}
 
 let project = Project(
 	name: "Wayfinder",
 	targets: [
         Target.makeFinder("Wayfinder", type: .multi),
-        Target.makeFinder("Beerfinder", type: .single("liquor_store")),
-        Target.makeFinder("SupermarketFinder", type: .single("supermarket")),
+        singleTargets,
         Target.makeCreator()
 	].flatMap { $0 }
 )

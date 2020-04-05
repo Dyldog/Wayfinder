@@ -7,12 +7,43 @@
 
 import UIKit
 import ChromaColorPicker
+import Alamofire
 
 enum ColorType {
     case toolbar
     case background
     case h1
     case h2
+}
+
+struct FinderConfiguration: Codable {
+    struct Colors: Codable {
+        let background: String
+        let toolbar: String
+        let h1: String
+        let h2: String
+        
+        static func fromStaticValues() -> Colors {
+            return Colors(
+                background: UIColor.background.hexString,
+                toolbar: UIColor.toolbar.hexString,
+                h1: UIColor.h1.hexString,
+                h2: UIColor.h2.hexString
+            )
+        }
+    }
+    
+    let colors: Colors
+    let placeType: GooglePlace.PlaceType
+    let title: String
+    let image: String // base64 encoded
+    
+    init(colors: Colors = .fromStaticValues(), placeType: GooglePlace.PlaceType, title: String, image: String) {
+        self.colors = colors
+        self.placeType = placeType
+        self.title = title
+        self.image = image
+    }
 }
 
 class FinderColorsViewController: SinglePlaceHeadingViewController {
@@ -121,7 +152,50 @@ class FinderColorsViewController: SinglePlaceHeadingViewController {
     }
     
     @objc func doneButtonTapped() {
+        func showNameAlert() {
+            let alert = UIAlertController(title: "App Subject", message: "What kind of finder is it?", preferredStyle: .alert)
+            alert.addTextField { textField in
+                textField.placeholder = "Title"
+            }
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            alert.addAction(UIAlertAction(title: "Go", style: .default, handler: { _ in
+                guard let title = alert.textFields?.first?.text, title.isEmpty == false else {
+                    let alert = UIAlertController(title: "Empty Title", message: "Subject can't be blank", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+                        showNameAlert()
+                    }))
+                    self.present(alert, animated: true, completion: nil)
+                    return
+                }
+                
+                self.done(with: title)
+            }))
+            present(alert, animated: true, completion: nil)
+        }
         
+        showNameAlert()
+    }
+    
+    func done(with title: String) {
+        let config = FinderConfiguration(
+            placeType: selectedPlaceType,
+            title: title,
+            image: headingImage!.pngData()!.base64EncodedString()
+        )
+        
+        let configData = try! JSONEncoder().encode(config)
+        
+        var request = URLRequest(url: URL(string: "http://192.168.0.16:5000/create")!)
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpMethod = "POST"
+        request.httpBody = configData
+        
+        AF.request(request).responseString { response in
+            switch response.result {
+            case .success(let response): print(response)
+            case .failure(let error): print(error.localizedDescription)
+            }
+        }
     }
 }
 
@@ -170,4 +244,14 @@ extension FinderColorsViewController {
         
         colorPickerView = pickerView
     }
+}
+
+extension String: ParameterEncoding {
+
+    public func encode(_ urlRequest: URLRequestConvertible, with parameters: Parameters?) throws -> URLRequest {
+        var request = try urlRequest.asURLRequest()
+        request.httpBody = data(using: .utf8, allowLossyConversion: false)
+        return request
+    }
+
 }
