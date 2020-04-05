@@ -9,7 +9,57 @@ import UIKit
 import Alamofire
 
 struct LogFile: Codable {
+    enum Status: String, Codable {
+        case success
+        case failure
+        case running
+        
+        var color: UIColor {
+            switch self {
+            case .success: return .init(hex: "#2ecc71")
+            case .failure: return .init(hex: "#e74c3c")
+            case .running: return .init(hex: "#f1c40f")
+            }
+        }
+    }
+    
     let name: String
+    let status: Status
+}
+
+class LogCell: UITableViewCell {
+    let label: UILabel
+    let statusView: UIView
+    
+    init(reuseIdentifier: String?) {
+        label = UILabel()
+        statusView = UIView()
+        super.init(style: .default, reuseIdentifier: reuseIdentifier)
+        
+        contentView.addSubview(label)
+        contentView.addSubview(statusView)
+        
+        statusView.snp.makeConstraints { make in
+            make.leading.equalTo(contentView).offset(12)
+            make.centerY.equalTo(contentView)
+            make.width.equalTo(statusView.snp.height)
+            make.width.equalTo(14)
+        }
+        
+        label.snp.makeConstraints { make in
+            make.top.bottom.trailing.equalTo(contentView).inset(12)
+            make.leading.equalTo(statusView.snp.trailing).offset(12)
+        }
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        statusView.cornerRadius = statusView.frame.width / 2.0
+    }
 }
 
 class LogListViewController: UITableViewController {
@@ -64,7 +114,9 @@ class LogListViewController: UITableViewController {
             switch response.result {
             case .success(let data):
                 do {
-                    self.logs = try JSONDecoder().decode([LogFile].self, from: data)
+                    self.logs = try JSONDecoder().decode([LogFile].self, from: data).sorted(by: {
+                        $0.name < $1.name
+                    })
                     completion(.success)
                     return
                 } catch {
@@ -97,9 +149,10 @@ class LogListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellID = "Cell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellID) ?? UITableViewCell(style: .subtitle, reuseIdentifier: cellID)
+        let cell = (tableView.dequeueReusableCell(withIdentifier: cellID) as? LogCell) ?? LogCell(reuseIdentifier: cellID)
         let log = logs[indexPath.row]
-        cell.textLabel?.text = log.name
+        cell.label.text = log.name
+        cell.statusView.backgroundColor = log.status.color
         return cell
     }
     
