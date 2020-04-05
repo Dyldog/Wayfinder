@@ -19,9 +19,16 @@ class FinderColorsViewController: SinglePlaceHeadingViewController {
     
     @IBOutlet weak var colorPickerView: UIView!
     var currentType: ColorType?
+    var selectedPlaceType: GooglePlace.PlaceType! {
+        didSet {
+            placeManager.placesType = selectedPlaceType.rawValue
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Select Colors"
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .done,

@@ -9,6 +9,13 @@ import UIKit
 
 class FinderLogoViewController: DrawViewController {
 
+    var selectedType: GooglePlace.PlaceType?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Draw Logo"
+    }
+    
     @IBAction func doneButtonTapped() {
         do {
             let headingImage = try drawView.asImage().trim()
@@ -22,8 +29,9 @@ class FinderLogoViewController: DrawViewController {
     }
     
     func showHeadingScreen(headingImage: UIImage) {
-        let headingViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() as! HeadingViewController
+        let headingViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() as! FinderColorsViewController
         headingViewController.headingImage = headingImage
+        headingViewController.selectedPlaceType = selectedType
         navigationController?.pushViewController(headingViewController, animated: true)
     }
 }

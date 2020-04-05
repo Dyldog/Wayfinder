@@ -88,7 +88,7 @@ extension Target {
             "UISupportedInterfaceOrientations": .array(["UIInterfaceOrientationPortrait"]),
             "CFBundleShortVersionString": .string(version),
             "CFBundleVersion": .string("\(buildNumber)"),
-            "UIMainStoryboardFile": "DrawView",
+            "UIMainStoryboardFile": "CategoryList",
             "WFPlacesType": "supermarket"
         ]
 

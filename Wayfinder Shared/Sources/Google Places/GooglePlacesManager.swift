@@ -23,9 +23,7 @@ class GooglePlacesManager: NSObject {
     var currentRequest : DataRequest?
     var delegate : GooglePlacesManagerDelegate?
     
-    var placesType: String {
-        return Bundle.main.infoDictionary!["WFPlacesType"] as! String
-    }
+    var placesType: String
     
     let googlePlacesURL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     
@@ -34,6 +32,10 @@ class GooglePlacesManager: NSObject {
 //        let keys = NSDictionary(contentsOfFile: path)!
 //        return keys.object(forKey: "googleMapsAPIKey") as! String
 //    }()
+    
+    override init() {
+        placesType = Bundle.main.infoDictionary!["WFPlacesType"] as! String
+    }
     
     func searchForBottleshops(near searchLocation: CLLocation){
         guard currentRequest == nil else {
