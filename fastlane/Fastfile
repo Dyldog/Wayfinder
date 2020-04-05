@@ -13,8 +13,8 @@ lane :release do |options|
 
     snapshot(
     	devices:[
-	    	"iPhone 8",
-	    	"iPhone 11",
+	    	"iPhone 8 Plus",
+	    	"iPhone 11 Pro Max",
 	    ],
 	    scheme: app_name + "_UITests",
 	    clear_previous_screenshots: true
