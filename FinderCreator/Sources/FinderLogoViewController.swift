@@ -11,14 +11,20 @@ class FinderLogoViewController: DrawViewController {
 
     @IBAction func doneButtonTapped() {
         do {
-            try drawView
-                .asImage()
-                .pngData()!
-                .write(to: DocumentsDirectory.url.appendingPathComponent("Drawn.png"))
-            print(DocumentsDirectory.url.appendingPathComponent("Drawn.png"))
+            let headingImage = try drawView.asImage().trim()
+//                .pngData()!
+//                .write(to: DocumentsDirectory.url.appendingPathComponent("Drawn.png"))
+//            print(DocumentsDirectory.url.appendingPathComponent("Drawn.png"))
+            showHeadingScreen(headingImage: headingImage)
         } catch {
             print(error)
         }
+    }
+    
+    func showHeadingScreen(headingImage: UIImage) {
+        let headingViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() as! HeadingViewController
+        headingViewController.headingImage = headingImage
+        navigationController?.pushViewController(headingViewController, animated: true)
     }
 }
 

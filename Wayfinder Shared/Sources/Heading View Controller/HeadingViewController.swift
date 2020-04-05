@@ -19,18 +19,20 @@ class HeadingViewController: UIViewController, UserLocationManagerDelegate {
     var userLocationManager: UserLocationManagerType
     var destination : Headable?
     
+    @IBOutlet var headingImage: UIImage?
     @IBOutlet var headingView : HeadingView?
     
-    @IBOutlet var bottomView: UIView?
-    @IBOutlet var distanceView: UIView?
-    @IBOutlet var distanceTitleLabel : UILabel?
-    @IBOutlet var distanceLabel : UILabel?
+    @IBOutlet var bottomView: UIView!
+    @IBOutlet var distanceView: UIView!
+    @IBOutlet var distanceTitleLabel : UILabel!
+    @IBOutlet var distanceLabel : UILabel!
     
-    @IBOutlet var destinationView: UIView?
-    @IBOutlet var destinationTitleLabel : UILabel?
-    @IBOutlet var destinationLabel : UILabel?
+    @IBOutlet var destinationView: UIView!
+    @IBOutlet var destinationTitleLabel : UILabel!
+    @IBOutlet var destinationLabel : UILabel!
+    @IBOutlet var topStackView : UIStackView!
     
-    @IBOutlet var changeLocationButton: UIButton?
+    @IBOutlet var changeLocationButton: UIButton!
     
     required init?(coder: NSCoder) {
         if LaunchArguments.mockLocation.isPresent {
@@ -40,10 +42,8 @@ class HeadingViewController: UIViewController, UserLocationManagerDelegate {
         }
         super.init(coder: coder)
     }
-        
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    func updateColors() {
         view.backgroundColor = .background
         destinationView?.backgroundColor = .toolbar
         bottomView?.backgroundColor = .toolbar
@@ -55,10 +55,20 @@ class HeadingViewController: UIViewController, UserLocationManagerDelegate {
         distanceLabel?.textColor = .h2
         
         changeLocationButton?.setTitleColor(.button, for: .normal)
+    }
+        
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        if let headingImage = headingImage {
+            headingView?.headingImage = headingImage
+        }
         
         userLocationManager.delegate = self
         userLocationManager.startLocationEvents()
         
+        self.updateColors()
         self.updateViewsForNewDestination()
         
         // For taking screenshots

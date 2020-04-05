@@ -88,7 +88,8 @@ extension Target {
             "UISupportedInterfaceOrientations": .array(["UIInterfaceOrientationPortrait"]),
             "CFBundleShortVersionString": .string(version),
             "CFBundleVersion": .string("\(buildNumber)"),
-            "UIMainStoryboardFile": "DrawView"
+            "UIMainStoryboardFile": "DrawView",
+            "WFPlacesType": "supermarket"
         ]
 
         let appTarget: Target = Target(name: targetName,
@@ -114,6 +115,7 @@ extension Target {
             settings: Settings(
                 base: [
                     "DEVELOPMENT_TEAM": "6CW3378X23",
+                    "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : "CREATOR"
                 ],
                 debug: Configuration(settings: [
                     "SWIFT_ACTIVE_COMPILATION_CONDITIONS": "$(inherited) DEBUG",
