@@ -192,9 +192,17 @@ class FinderColorsViewController: SinglePlaceHeadingViewController {
         
         AF.request(request).responseString { response in
             switch response.result {
-            case .success(let response): print(response)
-            case .failure(let error): print(error.localizedDescription)
+            case .success(let response): self.afterSuccess()
+            case .failure(let error): self.showError(error)
             }
+        }
+    }
+    
+    func afterSuccess() {
+        onMain {
+            guard let tabBarController = self.tabBarController else { return }
+            tabBarController.selectedIndex = 1 - tabBarController.selectedIndex
+            self.navigationController?.popToRootViewController(animated: false)
         }
     }
 }
