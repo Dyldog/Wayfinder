@@ -1,7 +1,7 @@
 import ProjectDescription
 
 let version = "1.0"
-let buildNumber = 7
+let buildNumber = 1
 
 enum PlaceType: Equatable {
     case single(_ identifier: String)
@@ -78,6 +78,57 @@ extension Target {
         return [appTarget, testTarget]
 
     }
+
+    static func makeCreator() -> [Target] {
+        let targetName = "FinderCreator"
+        let bundleId = "com.dylanelliott.findercreator"
+        
+        var infoPlistExtensions: [String: InfoPlist.Value] = [
+            "NSLocationWhenInUseUsageDescription": "Location is required to show you to your destinations",
+            "UISupportedInterfaceOrientations": .array(["UIInterfaceOrientationPortrait"]),
+            "CFBundleShortVersionString": .string(version),
+            "CFBundleVersion": .string("\(buildNumber)"),
+            "UIMainStoryboardFile": "DrawView"
+        ]
+
+        let appTarget: Target = Target(name: targetName,
+            platform: .iOS,
+            product: .app,
+            bundleId: bundleId,
+            deploymentTarget: .iOS(targetVersion: "12.1", devices: [.iphone]),
+            infoPlist: .extendingDefault(with: infoPlistExtensions),
+            sources: [
+                    "Wayfinder Shared/Sources/**",
+                    "FinderCreator/Sources/**"
+            ],
+            resources: [
+                "Wayfinder Shared/Resources/**",
+                "FinderCreator/Resources/**"
+            ],
+            dependencies: [
+                .framework(path: "Carthage/Build/iOS/Alamofire.framework"),
+                .framework(path: "Carthage/Build/iOS/SwiftyDraw.framework"),
+                .framework(path: "Carthage/Build/iOS/ChromaColorPicker.framework"),
+                .framework(path: "Carthage/Build/iOS/SnapKit.framework")
+            ],
+            settings: Settings(
+                base: [
+                    "DEVELOPMENT_TEAM": "6CW3378X23",
+                ],
+                debug: Configuration(settings: [
+                    "SWIFT_ACTIVE_COMPILATION_CONDITIONS": "$(inherited) DEBUG",
+                    "CODE_SIGN_STYLE": "Automatic"
+                ]),
+                release: Configuration(settings: [
+                    "CODE_SIGN_IDENTITY": "iPhone Distribution: Dylan Elliott (6CW3378X23)",
+                    "PROVISIONING_PROFILE_SPECIFIER": "com.dylanelliott.\(targetName) AppStore"
+                ])
+            )
+        )
+        
+        return [appTarget]
+
+    }
 }
 
 
@@ -87,6 +138,6 @@ let project = Project(
         Target.makeFinder("Wayfinder", type: .multi),
         Target.makeFinder("Beerfinder", type: .single("liquor_store")),
         Target.makeFinder("SupermarketFinder", type: .single("supermarket")),
-        Target.makeFinder("GroceryFinder", type: .single("test"))
+        Target.makeCreator()
 	].flatMap { $0 }
 )

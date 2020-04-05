@@ -1,1 +1,5 @@
 github "Alamofire/Alamofire"
+github "awalz/SwiftyDraw"
+github "joncardasis/ChromaColorPicker"
+github "SnapKit/SnapKit"
+
