@@ -2,6 +2,7 @@
 
 rundir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 realpath="$rundir/realpath.py"
+make_stretchable_image="$rundir/make_stretchable_image.sh"
 
 PARAMS=""
 
@@ -101,55 +102,14 @@ cp "$in_file" Arrow.imageset/Arrow.png
 ## -------- LAUNCH IMAGE ------- ##
 ## ----------------------------- ##
 
-mkdir -p LaunchBG.imageset
-pushd LaunchBG.imageset > /dev/null
 
-cat > Contents.json << EOF      
-{
-  "images" : [
-    {
-      "idiom" : "universal",
-      "filename" : "LaunchBG.png"
-    }
-  ],
-  "info" : {
-    "version" : 1,
-    "author" : "xcode"
-  }
-}
-EOF
-
-convert -size 1x1 xc:#$background LaunchBG.png
-
-# Back to Images.xcassets
-popd > /dev/null
+$make_stretchable_image -name LaunchBG -color $background
 
 ## ----------------------------- ##
 ## -------- LAUNCH TOOLBAR ------- ##
 ## ----------------------------- ##
 
-mkdir -p LaunchToolbarBG.imageset
-pushd LaunchToolbarBG.imageset > /dev/null
-
-cat > Contents.json << EOF      
-{
-  "images" : [
-    {
-      "idiom" : "universal",
-      "filename" : "LaunchToolbarBG.png"
-    }
-  ],
-  "info" : {
-    "version" : 1,
-    "author" : "xcode"
-  }
-}
-EOF
-
-convert -size 1x1 xc:#$toolbar LaunchToolbarBG.png
-
-# Back to Images.xcassets
-popd > /dev/null
+$make_stretchable_image -name LaunchToolbarBG -color $toolbar
 
 # Back to Resources
 popd > /dev/null
