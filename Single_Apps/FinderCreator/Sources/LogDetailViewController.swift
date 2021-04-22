@@ -61,7 +61,7 @@ class LogDetailViewController: UIViewController {
     }
     
     func refreshData(completion: @escaping (Swift.Result<String, Error>) -> Void) {
-        AF.request("http://192.168.0.16:5000/log/\(app.name)/\(log.name)").responseData { response in
+        AF.request("http://192.168.100.144:5000/log/\(app.name)/\(log.name)").responseData { response in
             switch response.result {
             case .success(let data):
                 do {

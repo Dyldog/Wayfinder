@@ -185,7 +185,7 @@ class FinderColorsViewController: SinglePlaceHeadingViewController {
         
         let configData = try! JSONEncoder().encode(config)
         
-        var request = URLRequest(url: URL(string: "http://192.168.0.16:5000/create")!)
+        var request = URLRequest(url: URL(string: "http://192.168.100.144:5000/create")!)
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "POST"
         request.httpBody = configData

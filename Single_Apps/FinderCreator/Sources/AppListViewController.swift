@@ -59,7 +59,7 @@ class AppListViewController: UITableViewController {
     }
     
     func refreshData(completion: @escaping (Result<Error>) -> Void) {
-        AF.request("http://192.168.0.16:5000/apps").responseData { response in
+        AF.request("http://192.168.100.144:5000/apps").responseData { response in
             switch response.result {
             case .success(let data):
                 do {
