@@ -1,7 +1,7 @@
 import ProjectDescription
 
 let version = "1.0"
-let buildNumber = 3
+let buildNumber = 4
 
 enum PlaceType: Equatable {
     case single(_ identifier: String)
@@ -17,7 +17,8 @@ extension Target {
             "NSLocationWhenInUseUsageDescription": "Location is required to show you to your destinations",
             "UISupportedInterfaceOrientations": .array(["UIInterfaceOrientationPortrait"]),
             "CFBundleShortVersionString": .string(version),
-            "CFBundleVersion": .string("\(buildNumber)")
+            "CFBundleVersion": .string("\(buildNumber)"),
+            "UIMainStoryboardFile": "Main",
         ]
         
         if case let .single(identifier) = type {
@@ -39,7 +40,7 @@ extension Target {
                 "Single_Apps/Wayfinder Shared/Resources/**"
             ],
             dependencies: [
-                .framework(path: "Carthage/Build/iOS/Alamofire.framework")
+                .package(product: "Alamofire")
             ],
             settings: Settings(
                 base: [
@@ -108,10 +109,10 @@ extension Target {
                 "Single_Apps/FinderCreator/Resources/**"
             ],
             dependencies: [
-                .framework(path: "Carthage/Build/iOS/Alamofire.framework"),
-                .framework(path: "Carthage/Build/iOS/SwiftyDraw.framework"),
-                .framework(path: "Carthage/Build/iOS/ChromaColorPicker.framework"),
-                .framework(path: "Carthage/Build/iOS/SnapKit.framework")
+                .package(product: "Alamofire"),
+                .package(product: "SwiftyDraw"),
+                .package(product: "ChromaColorPicker"),
+                .package(product: "SnapKit")
             ],
             settings: Settings(
                 base: [
@@ -146,6 +147,12 @@ let singleTargets: [Target] = projectList.components(separatedBy: "\n").compactM
 
 let project = Project(
 	name: "Wayfinder",
+    packages: [
+        .package(url: "https://github.com/Alamofire/Alamofire", from: "5.0.0"),
+        .package(url: "https://github.com/Awalz/SwiftyDraw", from: "2.4.1"),
+        .package(url: "https://github.com/joncardasis/ChromaColorPicker", .branch("master")),
+        .package(url: "https://github.com/SnapKit/SnapKit", from: "5.0.1")
+    ],
 	targets: [
         Target.makeFinder("Wayfinder", type: .multi),
         singleTargets,
