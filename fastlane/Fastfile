@@ -76,5 +76,5 @@ lane :release do |options|
   end
 
 lane :tuist do
-	sh("tuist generate -p .. --project-only")
+	sh("tuist generate -p ..")
 end
