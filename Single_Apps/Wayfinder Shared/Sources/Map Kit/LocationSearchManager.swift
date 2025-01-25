@@ -11,7 +11,7 @@ import CoreLocation
 import MapKit
 
 protocol LocationSearchManagerDelegate {
-    func locationSearchManagerDidFindPlaces(places: [MKPlacemark], searchText: String)
+    func locationSearchManagerDidFindPlaces(places: [FinderPlace], searchText: String)
 }
 
 class LocationSearchManager: NSObject {
@@ -32,17 +32,24 @@ class LocationSearchManager: NSObject {
         lastSearch = search
         
         search.start { (response, error) in
-            var placemarks = [MKPlacemark]()
-            if let response = response {
-                for mapItem in response.mapItems {
-                    placemarks.append(mapItem.placemark)
-                }
-            }
-            
-            self.delegate?.locationSearchManagerDidFindPlaces(places: placemarks, searchText: searchText)
-            
             self.lastSearch = nil
+            
+            guard let response = response else { return }
+            
+            let places = response.mapItems.map { $0.placemark.finderPlace }
+            
+            self.delegate?.locationSearchManagerDidFindPlaces(
+                places: places, searchText: searchText)
         }
     }
+}
 
+private extension MKPlacemark {
+    var finderPlace: FinderPlace {
+        .init(
+            name: headableName(),
+            address: headableAddress(),
+            location: headableLocation()
+        )
+    }
 }

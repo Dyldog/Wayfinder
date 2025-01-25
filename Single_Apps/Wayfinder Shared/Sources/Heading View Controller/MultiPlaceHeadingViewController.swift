@@ -14,11 +14,6 @@ class MultiPlaceHeadingViewController: HeadingViewController, LocationSelectionV
         super.viewDidLoad()
         headingView?.headingImage = UIImage(named: "Arrow")
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     
     override func titleForEmptyDestination() -> String {
         return "North"
@@ -36,19 +31,19 @@ class MultiPlaceHeadingViewController: HeadingViewController, LocationSelectionV
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "LocationSelectionSegue" {
-            let locationSelectionVC = segue.destination as! LocationSelectionViewController
+            let navigationController = segue.destination as! UINavigationController
+            let locationSelectionVC = navigationController.viewControllers.first as! LocationSelectionViewController
             locationSelectionVC.delegate = self
         }
     }
     
-    func userDidSelectLocation(_ placemark: CLPlacemark?) {
+    func userDidSelectLocation(_ placemark: FinderPlace?) {
         self.destination = placemark
         
         self.updateViewsForNewDestination()
         
         self.presentedViewController?.dismiss(animated: true, completion: nil)
     }
-
 }
 
 

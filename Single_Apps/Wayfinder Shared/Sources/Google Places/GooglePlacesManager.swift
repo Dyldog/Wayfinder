@@ -23,12 +23,6 @@ class GooglePlacesManager: NSObject {
     
     let googlePlacesURL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     
-//    let googleMapsAPIKey : String = {
-//        let path = Bundle.main.path(forResource: "Credentials", ofType: "plist")!
-//        let keys = NSDictionary(contentsOfFile: path)!
-//        return keys.object(forKey: "googleMapsAPIKey") as! String
-//    }()
-    
     override init() {
         placesType = Bundle.main.infoDictionary!["WFPlacesType"] as! String
     }

@@ -6,39 +6,53 @@
 //  Copyright © 2017 Dylan Elliott. All rights reserved.
 //
 
-import UIKit
-import MapKit
 import Contacts
+import DylKit
+import MapKit
+import UIKit
 
 protocol LocationSelectionViewControllerDelegate {
-    func userDidSelectLocation(_ placemark: CLPlacemark?)
+    func userDidSelectLocation(_ placemark: FinderPlace?)
 }
 
 class LocationSelectionViewController: UIViewController, UITextFieldDelegate, LocationSearchManagerDelegate, UITableViewDelegate, UITableViewDataSource {
     
     let locationSearchManager = LocationSearchManager()
     
-    var places = [MKPlacemark]()
+    var places = [FinderPlace]()
+    @UserDefaultable(key: "SAVED_PLACES") var savedPlaces: [FinderPlace] = []
     
-    @IBOutlet var placesTableView : UITableView?
+    @IBOutlet var placesTableView : UITableView!
+    @IBOutlet var searchTextField: UITextField!
     @IBOutlet var keyboardSpaceConstraint : NSLayoutConstraint?
     @IBOutlet weak var buttonView: UIView?
+    
+    private var searchText: String? {
+        let text = searchTextField.text ?? ""
+        return text.isEmpty ? nil : text
+    }
+    
+    private var isSearching: Bool { searchText != nil }
+    
+    private var displayedPlaces: [FinderPlace] {
+        isSearching ? places : savedPlaces
+    }
     
     var delegate : LocationSelectionViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.navigationBar.shadowImage = UIImage()
-        
+        navigationController?.navigationBar.backgroundColor = .toolbar
         view.backgroundColor = .toolbar
-        self.placesTableView?.backgroundColor = .background
+        placesTableView.backgroundColor = .background
+        placesTableView.rowHeight = UITableView.automaticDimension
         buttonView?.backgroundColor = .toolbar
         
         self.locationSearchManager.delegate = self
         
-        self.placesTableView!.delegate = self
-        self.placesTableView!.dataSource = self
+        placesTableView.delegate = self
+        placesTableView.dataSource = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -77,8 +91,6 @@ class LocationSelectionViewController: UIViewController, UITextFieldDelegate, Lo
         self.dismiss(animated: true, completion: nil)
     }
     
-    
-    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if let searchString = textField.text {
             locationSearchManager.searchForLocationsWithString(searchText: searchString)
@@ -97,7 +109,11 @@ class LocationSelectionViewController: UIViewController, UITextFieldDelegate, Lo
     
     // MARK: - Address Manager Methods
     
-    func locationSearchManagerDidFindPlaces(places: [MKPlacemark], searchText: String) {
+    private func hasStarredPlace(_ place: FinderPlace) -> Bool {
+        savedPlaces.contains(where: { $0.id == place.id })
+    }
+    
+    func locationSearchManagerDidFindPlaces(places: [FinderPlace], searchText: String) {
         self.places = places
         self.placesTableView!.reloadData()
     }
@@ -105,31 +121,42 @@ class LocationSelectionViewController: UIViewController, UITextFieldDelegate, Lo
     // MARK: - Tableview Delegate/Datasource Methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return places.count
+        return displayedPlaces.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        isSearching ? "Search Results" : "Saved Places"
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellId = "LocationCell"
-        var cell = tableView.dequeueReusableCell(withIdentifier: cellId)
+        let cell: LocationTableViewCell = tableView.dequeue(for: indexPath)
         
-        if cell == nil {
-            cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: cellId)
+        let currentPlace = displayedPlaces[indexPath.row]
+        
+        cell.bind(with: .init(
+            name: currentPlace.name,
+            address: currentPlace.address,
+            isStarred: hasStarredPlace(currentPlace)
+        ))
+        
+        cell.onStarTapped = { [weak self] in
+            guard let self else { return }
+            
+            if hasStarredPlace(currentPlace) {
+                savedPlaces.removeAll(where: { $0.id == currentPlace.id })
+                tableView.deleteRows(at: [indexPath], with: .automatic)
+            } else {
+                savedPlaces.append(currentPlace)
+                tableView.reloadRows(at: tableView.indexPathsForVisibleRows ?? [], with: .automatic)
+            }
+            
         }
         
-        cell?.backgroundColor = .background
-        cell?.textLabel?.textColor = .h2
-        cell?.detailTextLabel?.textColor = .h1
-        
-        let currentPlace = places[indexPath.row]
-        
-        cell!.textLabel?.text = currentPlace.headableName()
-        cell!.detailTextLabel?.text = currentPlace.headableAddress()
-        
-        return cell!
+        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedPlace = places[indexPath.row]
+        let selectedPlace = displayedPlaces[indexPath.row]
         
         self.delegate?.userDidSelectLocation(selectedPlace)
     }
@@ -137,5 +164,4 @@ class LocationSelectionViewController: UIViewController, UITextFieldDelegate, Lo
     @IBAction func clearLocationButtonTapped() {
         self.delegate?.userDidSelectLocation(nil)
     }
-
 }
