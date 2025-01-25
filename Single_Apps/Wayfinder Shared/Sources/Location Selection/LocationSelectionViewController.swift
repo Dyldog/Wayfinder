@@ -43,6 +43,8 @@ class LocationSelectionViewController: UIViewController, UITextFieldDelegate, Lo
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        searchTextField.placeholder = "Search"
+        
         navigationController?.navigationBar.backgroundColor = .toolbar
         view.backgroundColor = .toolbar
         placesTableView.backgroundColor = .background
