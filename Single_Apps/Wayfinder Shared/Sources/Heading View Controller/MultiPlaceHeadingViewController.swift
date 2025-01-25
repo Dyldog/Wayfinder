@@ -44,6 +44,21 @@ class MultiPlaceHeadingViewController: HeadingViewController, LocationSelectionV
         
         self.presentedViewController?.dismiss(animated: true, completion: nil)
     }
+    
+    // MARK: Hall of Fame
+    
+    override func onHeadingViewLongPress() {
+        let controller = UIAlertController(
+            title: "Thank you to...",
+            message: """
+            Robert N - For nudging me to add favourites
+            """,
+            preferredStyle: .alert)
+        
+        controller.addAction(.init(title: "OK", style: .default))
+        
+        present(controller, animated: true)
+    }
 }
 
 

@@ -65,6 +65,8 @@ class HeadingViewController: UIViewController, UserLocationManagerDelegate {
             headingView?.headingImage = headingImage
         }
         
+        headingView?.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(onHeadingViewLongPress)))
+        
         userLocationManager.delegate = self
         userLocationManager.startLocationEvents()
         
@@ -176,6 +178,7 @@ class HeadingViewController: UIViewController, UserLocationManagerDelegate {
         updateHeadingViewAngle()
         updateDistanceLabel()
     }
-
+    
+    @objc open func onHeadingViewLongPress() { }
 }
 
