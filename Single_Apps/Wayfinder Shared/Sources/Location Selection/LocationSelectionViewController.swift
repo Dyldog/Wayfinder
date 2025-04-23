@@ -10,6 +10,7 @@ import Contacts
 import DylKit
 import MapKit
 import UIKit
+import WayfinderKit
 
 protocol LocationSelectionViewControllerDelegate {
     func userDidSelectLocation(_ placemark: FinderPlace?)

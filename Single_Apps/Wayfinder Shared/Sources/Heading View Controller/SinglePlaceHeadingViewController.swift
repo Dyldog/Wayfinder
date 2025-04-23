@@ -29,22 +29,22 @@ class SinglePlaceHeadingViewController: HeadingViewController, GooglePlacesManag
         return "Searching..."
     }
     
-    override func userLocationManagerDidUpdate() {
-        guard let userLocation = self.userLocationManager.latestLocation else {
+    override func wayfinderViewDidUpdate() {
+        guard let userLocation = self.headingView?.locationManager.latestLocation else {
             return
         }
         
-        if self.destination == nil {
+        if self.headingView?.destination == nil {
             self.placeManager.searchForBottleshops(near: userLocation)
         } else {
-            super.userLocationManagerDidUpdate()
+            super.wayfinderViewDidUpdate()
         }
         
         self.updateViewsForNewUserLocation()
     }
     
     func didFindPlaces(_ places: [GooglePlace]) {
-        self.destination = places.first
+        self.headingView?.destination = places.first
         
         self.updateViewsForNewDestination()
     }

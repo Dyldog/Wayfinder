@@ -8,11 +8,11 @@
 import Foundation
 import CoreLocation
 
-struct FinderPlace: Codable {
-    var id: String { name + address }
+public struct FinderPlace: Codable {
+    public var id: String { name + address }
     
-    let name: String
-    let address: String
+    public let name: String
+    public let address: String
     
     private var latitude: Double = 0.0
     private var longitude: Double = 0.0
@@ -27,7 +27,7 @@ struct FinderPlace: Codable {
         }
     }
     
-    init(name: String, address: String, location: CLLocation) {
+    public init(name: String, address: String, location: CLLocation) {
         self.name = name
         self.address = address
         self.location = location
@@ -35,7 +35,7 @@ struct FinderPlace: Codable {
 }
 
 extension FinderPlace: Headable {
-    func headableName() -> String { name }
-    func headableLocation() -> CLLocation { location }
-    func headableAddress() -> String { address }
+    public func headableName() -> String { name }
+    public func headableLocation() -> CLLocation { location }
+    public func headableAddress() -> String { address }
 }

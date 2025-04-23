@@ -7,20 +7,22 @@
 
 import UIKit
 import CoreLocation
+import WayfinderKit
 
 class MultiPlaceHeadingViewController: HeadingViewController, LocationSelectionViewControllerDelegate {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        headingView?.headingImage = UIImage(named: "Arrow")
-    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        headingView?.headingImage = UIImage(
+//            named: "Arrow", in: Bundle(for: WayfinderView.self), with: nil)
+//    }
     
     override func titleForEmptyDestination() -> String {
         return "North"
     }
     
     override func headingForEmptyDestination() -> CLLocationDirection {
-        guard let latestHeading = self.userLocationManager.latestHeading else {
+        guard let latestHeading = self.headingView?.locationManager.latestHeading else {
             return 0
         }
         
@@ -38,7 +40,7 @@ class MultiPlaceHeadingViewController: HeadingViewController, LocationSelectionV
     }
     
     func userDidSelectLocation(_ placemark: FinderPlace?) {
-        self.destination = placemark
+        self.headingView?.destination = placemark
         
         self.updateViewsForNewDestination()
         

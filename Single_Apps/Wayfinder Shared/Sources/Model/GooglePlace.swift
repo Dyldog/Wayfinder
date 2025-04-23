@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import WayfinderKit
 
 class GooglePlace: NSObject, Headable {
     let name : String

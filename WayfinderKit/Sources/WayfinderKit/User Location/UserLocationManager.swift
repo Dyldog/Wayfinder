@@ -76,15 +76,33 @@ class MockUserLocationManager: UserLocationManagerType {
     }
 }
 
-class UserLocationManager: NSObject, UserLocationManagerType, CLLocationManagerDelegate {
+public class UserLocationManager: NSObject, UserLocationManagerType, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     
     var delegate : UserLocationManagerDelegate?
     
-    var latestHeading : CLLocationDirection?
-    var latestLocation : CLLocation?
+    public var latestHeading : CLLocationDirection?
+    public var latestLocation : CLLocation?
     
-    func startLocationEvents() {
+    public func distance(to destination: CLLocation) -> CLLocationDistance? {
+        guard let userLocation = latestLocation else { return nil }
+        return userLocation.distance(from: destination)
+    }
+     
+    public func distanceString(to destination: CLLocation) -> String? {
+        guard let metersToLocation = distance(to: destination) else { return nil }
+           
+        switch Int(metersToLocation) {
+        case 0...1000:
+            return String(format:"%d m", Int(metersToLocation))
+            //case  101...1000:
+            //    return String(format:"%.2f km", metersToLocation / 1000.0)
+        default:
+            return String(format:"%.1f km", metersToLocation / 1000.0)
+        }
+    }
+    
+    public func startLocationEvents() {
         locationManager.delegate = self
         
         if CLLocationManager.headingAvailable() {
@@ -100,7 +118,7 @@ class UserLocationManager: NSObject, UserLocationManagerType, CLLocationManagerD
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
+    public func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
         
         // Debug
         //print(newHeading.trueHeading)
@@ -109,7 +127,7 @@ class UserLocationManager: NSObject, UserLocationManagerType, CLLocationManagerD
         self.delegate?.userLocationManagerDidUpdate()
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 
         // Debug
         //print(locations)
@@ -120,7 +138,7 @@ class UserLocationManager: NSObject, UserLocationManagerType, CLLocationManagerD
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+    public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error)
     }
 }

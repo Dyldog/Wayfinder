@@ -8,22 +8,22 @@
 
 import CoreLocation
 
-protocol Headable {
+public protocol Headable {
     func headableName() -> String
     func headableLocation() -> CLLocation
     func headableAddress() -> String
 }
 
 extension CLPlacemark : Headable {
-    func headableName() -> String {
+    public func headableName() -> String {
         return self.name!
     }
     
-    func headableLocation() -> CLLocation {
+    public func headableLocation() -> CLLocation {
         return self.location!
     }
     
-    func headableAddress() -> String {
+    public func headableAddress() -> String {
         var addressLines : [String] = self.addressDictionary!["FormattedAddressLines"] as! [String]
         
         if self.headableName() == addressLines[0] {
@@ -32,5 +32,11 @@ extension CLPlacemark : Headable {
         
         let placeAddress = addressLines.joined(separator: ", ")
         return placeAddress
+    }
+}
+
+public extension CLLocation {
+    func headable(withName name: String, address: String = "NO ADDRESS") -> FinderPlace {
+        .init(name: name, address: address, location: self)
     }
 }

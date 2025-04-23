@@ -15,7 +15,7 @@
         <!--Main View Controller-->
         <scene sceneID="fOM-n8-GnU">
             <objects>
-                <viewController id="kwD-kz-8ra" customClass="MainViewController" customModule="ATMMachineFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kwD-kz-8ra" customClass="MainViewController" customModule="Wayfinder" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h3P-I2-IHH"/>
                         <viewControllerLayoutGuide type="bottom" id="8uZ-c4-fVt"/>
@@ -108,7 +108,7 @@
                                     <constraint firstAttribute="trailingMargin" secondItem="kvI-9g-AqR" secondAttribute="trailing" constant="20" id="pdp-xj-7OU"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9df-kR-UN9" customClass="HeadingView" customModule="ATMMachineFinder" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9df-kR-UN9" customClass="WayfinderView" customModule="WayfinderKit">
                                 <rect key="frame" x="40" y="281" width="334" height="334"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -142,7 +142,7 @@
                         <outlet property="distanceLabel" destination="9Hk-8m-Md6" id="hmu-zc-Uom"/>
                         <outlet property="distanceTitleLabel" destination="QF6-lq-zjS" id="Tcl-Ub-Fxj"/>
                         <outlet property="distanceView" destination="pqQ-xN-rXw" id="Vgf-p5-6LY"/>
-                        <outlet property="headingView" destination="9df-kR-UN9" id="2UT-UU-NyA"/>
+                        <outlet property="headingView" destination="9df-kR-UN9" id="K1z-Fg-rhc"/>
                         <outlet property="topStackView" destination="xur-iz-dwb" id="2gf-Cs-hFs"/>
                         <outlet property="view" destination="7VO-Ew-3g9" id="zMP-M5-6Sq"/>
                     </connections>

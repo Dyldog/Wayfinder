@@ -9,6 +9,7 @@
 import UIKit
 import CoreLocation
 import MapKit
+import WayfinderKit
 
 protocol LocationSearchManagerDelegate {
     func locationSearchManagerDidFindPlaces(places: [FinderPlace], searchText: String)

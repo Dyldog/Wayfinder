@@ -14,7 +14,7 @@ class HeadingView: UIView {
     
     var headingAngle:  CGFloat = 0.0
     
-    @IBInspectable var headingImage: UIImage?
+    @IBInspectable var headingImage: UIImage!
     @IBInspectable var imageScale : CGFloat = 1.0
     
     var imageToViewScale: CGFloat! {
@@ -28,16 +28,27 @@ class HeadingView: UIView {
         self.headingImage = image
         self.imageScale = scale
         super.init(frame: .zero)
+        sharedInit()
+    }
+    
+    init() {
+        headingImage = UIImage(named: "Arrow", in: .module, with: nil)
+        super.init(frame: .zero)
+        sharedInit()
     }
     
     required init?(coder: NSCoder) {
-        headingImage = UIImage(named: "Arrow")
+        headingImage = UIImage(named: "Arrow", in: .module, with: nil)
         super.init(coder: coder)
+        sharedInit()
+    }
+    
+    func sharedInit() {
+        backgroundColor = .clear
+        isOpaque = false
     }
     
     override func draw(_ rect: CGRect) {
-        guard let headingImage = headingImage else { return }
-        
         let context = UIGraphicsGetCurrentContext()
         
         context?.translateBy(x: rect.midX, y: rect.midY)

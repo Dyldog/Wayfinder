@@ -13,14 +13,15 @@
 
 import UIKit
 import CoreLocation
+import WayfinderKit
 
-class HeadingViewController: UIViewController, UserLocationManagerDelegate {
+class HeadingViewController: UIViewController, WayfinderViewDelegate {
     
-    var userLocationManager: UserLocationManagerType
-    var destination : Headable?
+//    var userLocationManager: UserLocationManagerType
+//    var destination : Headable?
     
     @IBOutlet var headingImage: UIImage?
-    @IBOutlet var headingView : HeadingView?
+    @IBOutlet var headingView : WayfinderView?
     
     @IBOutlet var bottomView: UIView!
     @IBOutlet var distanceView: UIView!
@@ -35,12 +36,11 @@ class HeadingViewController: UIViewController, UserLocationManagerDelegate {
     @IBOutlet var changeLocationButton: UIButton!
     
     required init?(coder: NSCoder) {
-        if LaunchArguments.mockLocation.isPresent {
-            userLocationManager = MockUserLocationManager()
-        } else {
-            userLocationManager = UserLocationManager()
-        }
         super.init(coder: coder)
+        
+//        if LaunchArguments.mockLocation.isPresent {
+//            headingView?.locationManager = MockUserLocationManager()
+//        }
     }
     
     func updateColors() {
@@ -61,14 +61,13 @@ class HeadingViewController: UIViewController, UserLocationManagerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        headingView?.delegate = self
+        
         if let headingImage = headingImage {
             headingView?.headingImage = headingImage
         }
         
         headingView?.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(onHeadingViewLongPress)))
-        
-        userLocationManager.delegate = self
-        userLocationManager.startLocationEvents()
         
         self.updateColors()
         self.updateViewsForNewDestination()
@@ -81,7 +80,7 @@ class HeadingViewController: UIViewController, UserLocationManagerDelegate {
     
     // MARK: - User Location Manager
     
-    func userLocationManagerDidUpdate() {
+    func wayfinderViewDidUpdate() {
         self.updateViewsForNewUserLocation()
     }
     
@@ -96,50 +95,13 @@ class HeadingViewController: UIViewController, UserLocationManagerDelegate {
         
     }
     
-    func updateHeadingViewAngle() {
-        guard let latestHeading = self.userLocationManager.latestHeading else {
-            print("No heading yet...")
-            return
-        }
-        
-        if let destinationLocation = self.destination?.headableLocation() { // We're pointing towards north
-            guard let userLocation = self.userLocationManager.latestLocation else {
-                print("No location yet...")
-                return
-            }
-            
-            let destinationAngle = userLocation.bearingBetween(heading: latestHeading, and: destinationLocation).toRadians()
-            
-            headingView?.headingAngle = CGFloat(destinationAngle)
-        } else { // We're pointing towards the destination
-            let northAngle = self.headingForEmptyDestination()
-            let northAngleRadians = northAngle.toRadians()
-            headingView?.headingAngle = CGFloat(northAngleRadians)
-        }
-        
-        headingView?.setNeedsDisplay()
-    }
-    
     func updateDistanceLabel() {
-        if let userLocation = self.userLocationManager.latestLocation, let destination = self.destination {
-            let metersToLocation = userLocation.distance(from: destination.headableLocation())
-            
-            var distanceString = ""
-            
-            switch Int(metersToLocation) {
-            case 0...1000:
-                distanceString = String(format:"%d m", Int(metersToLocation))
-                break
-            //case  101...1000:
-            //    return String(format:"%.2f km", metersToLocation / 1000.0)
-            default:
-                distanceString = String(format:"%.1f km", metersToLocation / 1000.0)
-                break
-            }
-            
-            
-            self.distanceLabel?.text = distanceString
-        }
+        guard 
+            let destination = headingView?.destination,
+            let distanceString = headingView?.locationManager.distanceString(to: destination)
+        else { return }
+
+        self.distanceLabel?.text = distanceString
     }
     
     func titleForEmptyDestination() -> String {
@@ -151,7 +113,7 @@ class HeadingViewController: UIViewController, UserLocationManagerDelegate {
     }
     
     func updateDestinationLabel() {
-        if let destination = self.destination {
+        if let destination = headingView?.destination {
             self.destinationLabel?.text = destination.headableName()
         } else {
             self.destinationLabel?.text = self.titleForEmptyDestination()
@@ -162,7 +124,7 @@ class HeadingViewController: UIViewController, UserLocationManagerDelegate {
     }
     
     func updateViewsForNewDestination() {
-        if self.destination != nil {
+        if headingView?.destination != nil {
             self.distanceView?.isHidden = false
         } else {
             self.distanceView?.isHidden = true
@@ -175,7 +137,7 @@ class HeadingViewController: UIViewController, UserLocationManagerDelegate {
     }
     
     func updateViewsForNewUserLocation() {
-        updateHeadingViewAngle()
+        headingView?.updateHeadingViewAngle()
         updateDistanceLabel()
     }
     
