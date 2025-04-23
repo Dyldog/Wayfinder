@@ -11,6 +11,7 @@
 
 import UIKit
 import CoreLocation
+import DylKit
 
 protocol UserLocationManagerDelegate {
     // TODO: Make separate methods for location and heading updates
@@ -105,16 +106,18 @@ public class UserLocationManager: NSObject, UserLocationManagerType, CLLocationM
     public func startLocationEvents() {
         locationManager.delegate = self
         
-        if CLLocationManager.headingAvailable() {
-            locationManager.startUpdatingHeading()
-        }
-        
-        if CLLocationManager.authorizationStatus() == .notDetermined {
-            locationManager.requestWhenInUseAuthorization()
-        }
-        
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.startUpdatingLocation()
+        onBG {
+            if CLLocationManager.headingAvailable() {
+                self.locationManager.startUpdatingHeading()
+            }
+            
+            if CLLocationManager.authorizationStatus() == .notDetermined {
+                self.locationManager.requestWhenInUseAuthorization()
+            }
+            
+            if CLLocationManager.locationServicesEnabled() {
+                self.locationManager.startUpdatingLocation()
+            }
         }
     }
     
