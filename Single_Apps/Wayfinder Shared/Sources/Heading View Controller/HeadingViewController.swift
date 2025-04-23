@@ -98,7 +98,7 @@ class HeadingViewController: UIViewController, WayfinderViewDelegate {
     func updateDistanceLabel() {
         guard 
             let destination = headingView?.destination,
-            let distanceString = headingView?.locationManager.distanceString(to: destination)
+            let distanceString = headingView?.locationManager.distanceString(to: destination.headableLocation())
         else { return }
 
         self.distanceLabel?.text = distanceString
